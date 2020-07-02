@@ -1,0 +1,1 @@
+Exemples de règlements compatibles

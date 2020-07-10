@@ -17,8 +17,8 @@
 			<xs:attribute name="nom" type="xs:string" use="required"/>
 			<xs:attribute name="typeDoc" type="plu:typeDocEnum" use="required"/>
 			<xs:attribute name="lien" type="xs:anyURI" use="required"/>
-			<!-- IDURBA du standard PLU -->
 			<xs:attribute name="idUrba" type="xs:string" use="required"/>
+			<!-- IDURBA du standard PLU -->
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="Titre" type="plu:TitreType"/>
@@ -49,12 +49,12 @@
 		<xs:attribute name="intitule" type="xs:string"/>
 		<xs:attribute name="niveau" type="xs:string"/>
 		<xs:attribute name="numero" type="xs:string"/>
-		<!-- LIBELLE de la couche ZONE_URBA du standard PLU -->
 		<xs:attribute name="libelleZone" type="xs:string" use="required"/>
-		<!-- champ INSEE de la couche COMMUNE du standard PLU -->
 		<xs:attribute name="inseeCommune" type="xs:string" use="required"/>
 		<xs:attribute name="libellePrescription" type="xs:string"/>
 		<xs:attribute ref="xlink:href"/>
+		<!-- LIBELLE de la couche ZONE_URBA du standard PLU -->
+		<!-- champ INSEE de la couche COMMUNE du standard PLU -->
 	</xs:complexType>
 	<xs:simpleType name="typeDocEnum">
 		<xs:restriction base="xs:string">

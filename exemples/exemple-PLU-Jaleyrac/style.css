@@ -1,0 +1,55 @@
+
+Titre[niveau="2"] *
+{
+  margin-left: 5px;
+}
+
+Titre[niveau="3"] *
+{
+  margin-left: 10px;
+}
+
+Titre[niveau="4"] *
+{
+  margin-left: 15px;
+}
+
+*[class=center]
+{
+ display:bloc;
+ text-align:center;
+}
+
+h1
+{
+  font-weight: bold;
+  font-size: 14;
+  text-transform: uppercase;
+}
+
+h2
+{
+  color: grey;
+  font-weight: bold;
+  font-size: 12;
+  text-transform: uppercase;
+}
+
+h3
+ {
+  font-weight: bold;
+  font-size: 13;
+  font-variant-caps: all-small-caps;
+}
+
+h4
+{
+  background-color: grey;
+  font-weight: bold;
+  color: white;
+}
+
+div
+{
+  margin-top: 10px; // on ajoute un espace avant chaque paragraphe
+}

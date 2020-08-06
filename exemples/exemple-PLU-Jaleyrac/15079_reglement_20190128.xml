@@ -46,12 +46,12 @@ Sont autorisées, à condition de ne pas excéder une emprise au sol de 300 m² 
 				</div>
 			</plu:Titre>
 		</plu:Titre>
-		<plu:Titre id="I.B" intitule="cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE" libelleZone="UG" inseeCommune="15079" numero="I.B" niveau="2">
+		<plu:Titre id="I.B" intitule="cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE" libelleZone="UG,1AU" inseeCommune="15079" numero="I.B" niveau="2">
 			<h2 id="I.B">
 b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
-			<plu:Titre id="I.B.1" intitule="empRise au sol, hauteuR et implantation des constRuctions" libelleZone="UG" inseeCommune="15079" numero="I.B.1" niveau="3">
+			<plu:Titre id="I.B.1" intitule="empRise au sol, hauteuR et implantation des constRuctions" libelleZone="UG,1AU" inseeCommune="15079" numero="I.B.1" niveau="3">
 				<h3>1.	empRise au sol, hauteuR et implantation des constRuctions</h3>
-				<plu:Titre id="I.B.1.titre-1" intitule="hauteur maximale des constructions" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.1.titre-1" intitule="hauteur maximale des constructions" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4> hauteur maximale des constructions </h4>
 					<div>
 La hauteur maximale des constructions ne peut dépasser la hauteur des bâtiments environnants, c’est à dire R+1 plus combles. En cas de construction dans la pente la hauteur maximale est comptée depuis le terrain naturel le plus haut.
@@ -69,7 +69,7 @@ La hauteur des annexes ne peut dépasser celle du bâtiment principal.</div>
 						</ul>
 					</div>
 				</plu:Titre>
-				<plu:Titre id="I.B.1.titre-2" intitule="Implantation des constructions" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.1.titre-2" intitule="Implantation des constructions" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4>Implantation des constructions</h4>
 					<div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
 					<div>Par rapport aux voies et emprises publiques
@@ -103,15 +103,15 @@ pourront être exceptionnellement autorisées dans les cas suivants :
 						</ul>
 					</div>
 				</plu:Titre>
-				<plu:Titre id="I.B.1.titre-3" intitule="Volumes des constructions" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.1.titre-3" intitule="Volumes des constructions" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4>Volumes des constructions</h4>
 					<div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»). Les formes de type tripode, ou tétrapode sont interdite.</div>
 				</plu:Titre>
 			</plu:Titre>
-			<plu:Titre id="I.B.2" intitule="Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe" libelleZone="UG" inseeCommune="15079" numero="I.B.2" niveau="3">
+			<plu:Titre id="I.B.2" intitule="Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe" libelleZone="UG,1AU" inseeCommune="15079" numero="I.B.2" niveau="3">
 				<h3>2.	Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
 				<div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
-				<plu:Titre id="I.B.2.titre-1" intitule="caractéristiques architecturales" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.2.titre-1" intitule="caractéristiques architecturales" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4>caractéristiques architecturales </h4>
 					<div>
 						<i>Les façades</i>
@@ -167,16 +167,16 @@ Sont interdits :
 					<div style="text-decoration: underline">En limite séparative et en fond d’unité foncière :</div>
 					<div>Elles ne peuvent excéder une hauteur maximale 1,80 m.</div>
 				</plu:Titre>
-				<plu:Titre id="I.B.2.titre-2" intitule="obligations en matière de performances énergétiques et environnementales" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.2.titre-2" intitule="obligations en matière de performances énergétiques et environnementales" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4>obligations en matière de performances énergétiques et environnementales</h4>
 					<div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
 				</plu:Titre>
-				<plu:Titre id="I.B.2.titre-3" intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.2.titre-3" intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
 					<div>L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
 					<div>L’installation de panneaux solaires au sol est interdite.</div>
 				</plu:Titre>
-				<plu:Titre id="I.B.2.titre-4" intitule="surfaces non imperméabilisées ou  éco-aménageables" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.2.titre-4" intitule="surfaces non imperméabilisées ou  éco-aménageables" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4>surfaces non imperméabilisées ou  éco-aménageables </h4>
 					<div>Les surfaces imperméabilisées ne peuvent dépasser 350 m². Par unité foncière, il est imposé la plantation d’un arbre pour :
 <ul>
@@ -185,20 +185,20 @@ Sont interdits :
 						</ul>
 					</div>
 				</plu:Titre>
-				<plu:Titre id="I.B.2.titre-5" intitule="Espaces libres et de plantations, d’aires de jeux et de loisir" libelleZone="UG" inseeCommune="15079" niveau="4">
+				<plu:Titre id="I.B.2.titre-5" intitule="Espaces libres et de plantations, d’aires de jeux et de loisir" libelleZone="UG,1AU" inseeCommune="15079" niveau="4">
 					<h4>Espaces libres et de plantations, d’aires de jeux et de loisir </h4>
 					<div>Les plantations monospécifiques sont interdites.</div>
 					<div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
 				</plu:Titre>
 			</plu:Titre>
 		</plu:Titre>
-		<plu:Titre id="I.C" intitule="EqUIpEmENts Et RÉsEAUX" libelleZone="UG" inseeCommune="15079" numero="I.C" niveau="2">
+		<plu:Titre id="I.C" intitule="EqUIpEmENts Et RÉsEAUX" libelleZone="UG,1AU" inseeCommune="15079" numero="I.C" niveau="2">
 			<h2 id="I.C">c. EqUIpEmENts Et RÉsEAUX</h2>
-			<plu:Titre id="I.C.1" intitule="desseRte paR les voies publiQues ou pRivées" libelleZone="UG" inseeCommune="15079" numero="I.C.1" niveau="3">
+			<plu:Titre id="I.C.1" intitule="desseRte paR les voies publiQues ou pRivées" libelleZone="UG,1AU" inseeCommune="15079" numero="I.C.1" niveau="3">
 				<h3>1.	desseRte paR les voies publiQues ou pRivées</h3>
 				<div>Au delà de 10 m de long, les voies en impasse sont interdites. Des dérogations peuvent être accordées sous réserve qu’un bouclage soit prévu par un cheminement doux.</div>
 			</plu:Titre>
-			<plu:Titre id="I.C.2" intitule="Réseaux de communications électRoniQues" libelleZone="UG" inseeCommune="15079" numero="I.C.2" niveau="3">
+			<plu:Titre id="I.C.2" intitule="Réseaux de communications électRoniQues" libelleZone="UG,1AU" inseeCommune="15079" numero="I.C.2" niveau="3">
 				<h3>2.	Réseaux de communications électRoniQues</h3>
 				<div>Ils doivent être réalisés en souterrain ou s’intégrer au bâti, sous réserve de ne pas faire obstacle à la fourniture du service universel pour les réseaux de télécommunication.</div>
 			</plu:Titre>

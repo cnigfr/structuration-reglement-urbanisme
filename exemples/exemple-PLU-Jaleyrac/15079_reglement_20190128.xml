@@ -1,6 +1,6 @@
 <?xhtml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css" ?>
-<plu:ReglementDU xmlns:plu="https://cnig.gouv.fr/reglementDU" xsi:schemaLocation="https://cnig.gouv.fr/reglementDU reglementDU_XHTML.xsd" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="https://www.geoportail-urbanisme.gouv.fr/document/by-id/cd22628fc5f7f6f8fa21ea49ceb4cc8d" nom="Règlement du PLU Jaleyrac" typeDoc="PLU" lien="https://www.geoportail-urbanisme.gouv.fr/document/by-id/cd22628fc5f7f6f8fa21ea49ceb4cc8d" idUrba="15079_PLU_20190128">
+<plu:ReglementDU xmlns:plu="https://cnig.gouv.fr/reglementDU" xsi:schemaLocation="https://cnig.gouv.fr/reglementDU ../../schemas/reglementDU_XHTML.xsd" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="https://www.geoportail-urbanisme.gouv.fr/document/by-id/cd22628fc5f7f6f8fa21ea49ceb4cc8d" nom="Règlement du PLU Jaleyrac" typeDoc="PLU" lien="https://www.geoportail-urbanisme.gouv.fr/document/by-id/cd22628fc5f7f6f8fa21ea49ceb4cc8d" idUrba="15079_PLU_20190128">
 	<plu:Titre id="titre-1" intitule="Plan Local d’Urbanisme" libelleZone="porteeGenerale" inseeCommune="15079">
 		<h1>COMMUNE DE JALEYRAC (15)</h1>
 		<h1>Plan Local d’Urbanisme</h1>

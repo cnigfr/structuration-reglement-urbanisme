@@ -70,540 +70,1363 @@
                  niveau="2">
          <plu:Contenu id="d1e18" libelleZone="UG" libellePrescription="nonConcerne">
             <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
-            <div>Sont interdits : </div>
-            <ul>
-               <li>les industries et entrepôts, </li>
-               <li>les exploitations agricoles et forestières, </li>
-               <li>les terrains de camping et de caravaning, </li>
-               <li>les dépôts de ferraille, de matériaux, de déchets ainsi que les dépôts de véhicules désaffectés ou de tous les matériaux susceptibles de générer des nuisances environnementales ou de santé publique. </li>
-            </ul>
-            <div>Sont autorisées, à condition de ne pas excéder une emprise au sol de 300 m² : </div>
-            <ul>
-               <li>les constructions destinées à la vente directe des produits de la ferme ; </li>
-               <li>les commerces et activités de services. </li>
-            </ul>
          </plu:Contenu>
+         <plu:Titre id="d1e23"
+                    intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
+                    libelleZone="UG"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e20" libelleZone="UG" libellePrescription="nonConcerne">
+               <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
+               <div>Sont interdits : </div>
+               <ul>
+                  <li>les industries et entrepôts, </li>
+                  <li>les exploitations agricoles et forestières, </li>
+                  <li>les terrains de camping et de caravaning, </li>
+                  <li>les dépôts de ferraille, de matériaux, de déchets ainsi que les dépôts de véhicules désaffectés ou de tous les matériaux susceptibles de générer des nuisances environnementales ou de santé publique. </li>
+               </ul>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e33"
+                    intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
+                    libelleZone="UG"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e28" libelleZone="UG" libellePrescription="nonConcerne">
+               <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
+               <div>Sont autorisées, à condition de ne pas excéder une emprise au sol de 300 m² : </div>
+               <ul>
+                  <li>les constructions destinées à la vente directe des produits de la ferme ; </li>
+                  <li>les commerces et activités de services. </li>
+               </ul>
+            </plu:Contenu>
+         </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e33"
+      <plu:Titre id="d1e40"
                  intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
                  libelleZone="UG,1AU"
                  libellePrescription="nonConcerne"
                  inseeCommune="15079"
                  niveau="2">
-         <plu:Contenu id="d1e30" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+         <plu:Contenu id="d1e35" libelleZone="UG,1AU" libellePrescription="nonConcerne">
             <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
-            <div>La hauteur maximale des constructions ne peut dépasser la hauteur des bâtiments environnants, c’est à dire R+1 plus combles. En cas de construction dans la pente la hauteur maximale est comptée depuis le terrain naturel le plus haut. La hauteur des annexes ne peut dépasser celle du bâtiment principal.</div>
-            <div>
-               <p class="center">
-                  <img src="ressources/img-1.png" alt="0"/>
-               </p>
-            </div>
-            <div>
-               <em>Dispositions particulières</em>
-            </div>
-            <div>Sous réserve de justifications techniques ou architecturales, des hauteurs différentes peuvent être exceptionnellement autorisées dans les cas suivants : </div>
-            <ul>
-               <li>pour le respect d’une harmonie d’ensemble, lorsque l’ordonnancement des constructions voisines diffère des règles générales ; </li>
-               <li>pour les installations et équipements techniques liés aux réseaux des services publics (assainissement, eau potable, électricité, télécommunications…) ou à la production d’énergie renouvelable. </li>
-            </ul>
-            <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
-            <div>Par rapport aux voies et emprises publiques Les implantations doivent être parallèles à une limite du domaine public.</div>
          </plu:Contenu>
-         <plu:Contenu id="d1e44" libelleZone="UGa" libellePrescription="nonConcerne">
-            <div>En secteur UGa , les nouvelles constructions doivent s’implanter à l’alignement avec le domaine public.</div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e47" libelleZone="UGb" libellePrescription="nonConcerne">
-            <div>En secteur UGb , les nouvelles constructions doivent s’implanter soit à l’alignement avec le domaine public, soit avec un retrait maximum de 5 m.</div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e50" libelleZone="UG,1AU" libellePrescription="nonConcerne">
-            <div>Les constructions annexes inférieures à 15 m² et les extensions ne sont pas concernées par cette règle.</div>
-            <div>
-               <p class="center">
-                  <img src="ressources/img-2.png" alt="1"/>
-               </p>
-            </div>
-            <div>
-               <em>Par rapport aux autres constructions sur une même propriété</em>
-            </div>
-            <div>Les constructions situées sur une même unité foncière doivent être implantées soit en continuité, soit à une distance maximale de 10 m, soit en limite séparative. Cette règle ne s’applique pas aux annexes inférieures à 10 m² d’emprise au sol.</div>
-            <div>
-               <em>Dispositions particulières</em>
-            </div>
-            <div>Sous réserve de justifications techniques ou architecturales, des dispositions d’implantation autres pourront être exceptionnellement autorisées dans les cas suivants : </div>
-            <ul>
-               <li>soit pour le respect d’une harmonie d’ensemble, lorsque l’ordonnancement des constructions voisines diffère des règles générales ; </li>
-               <li>soit pour bénéficier de conditions bioclimatiques plus favorables ; </li>
-               <li>soit pour les installations et équipements techniques liés aux réseaux des services publics (assainissement, eau potable, électricité, </li>
-               <li>télécommunications…) ou à la production d’énergie renouvelable; </li>
-               <li>soit en raison d’un dénivelé du terrain contraignant. </li>
-            </ul>
-            <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»). Les formes de type tripode, ou tétrapode sont interdite.</div>
-            <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
-            <div>
-               <em>Les façades</em>
-            </div>
-            <div>Les façades doivent être de ton gris clair, pierre, grège ou blanc cassé. . En cas de murs en pierre, les joints doivent être plus foncés que les pierres. Sont interdits : </div>
-            <ul>
-               <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
-               <li>les enduits de couleur blanche ; </li>
-               <li>les enduits en ciment destinés à rester apparents. </li>
-            </ul>
-            <div>Le faîtage des constructions implantées en bordure de voie doit être parallèle à l’alignement des façades principales. Les murs pignon sur rue ne sont autorisés que s’il est démontré que la configuration de la parcelle rend impossible une autre disposition.</div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e78" libelleZone="UGa" libellePrescription="nonConcerne">
-            <div>En secteur UGa , les éléments techniques tels que souches de cheminées, matériels de ventilation et de climatisation, caissons de volets roulants, etc. doivent faire l’objet d’une intégration soignée.</div>
-            <div>Dans le secteur UGa , l’isolation par l’extérieur pourra être refusée (en particulier sur les façades principales) pour des raisons patrimoniales.</div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e81" libelleZone="UG,1AU" libellePrescription="nonConcerne">
-            <div>
-               <em>Les toitures</em>
-            </div>
-            <div>La volumétrie de toiture doit être harmonisée avec la silhouette urbaine environnante.</div>
-            <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérent au regard de la trame d’ouvertures de la façade : </div>
-            <ul>
-               <li>plus hauts que larges, </li>
-               <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
-               <li>et alignés sur les fenêtres du dernier niveau. </li>
-            </ul>
-            <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze.</div>
-            <div>Les bardeaux sont autorisés.</div>
-            <div>Elles peuvent être végétalisée.</div>
-            <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti.</div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e95" libelleZone="UGa" libellePrescription="nonConcerne">
-            <div>En outre, en secteur UGa la couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e97" libelleZone="UG,1AU" libellePrescription="nonConcerne">
-            <div>Dans le bâti ancien, la pente de toit existante doit être conservée.</div>
-            <div>En extension du bâti ancien, une pente de toit différente peut être autorisée si l’harmonie globale de la construction est préservée.</div>
-            <div>
-               <em>Les menuiseries</em>
-            </div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e103" libelleZone="UGa" libellePrescription="nonConcerne">
-            <div>En secteur UGa la couleur blanche est interdite.</div>
-         </plu:Contenu>
-         <plu:Contenu id="d1e105" libelleZone="UG,1AU" libellePrescription="nonConcerne">
-            <div>
-               <em>Les clôtures</em>
-            </div>
-            <div>Elles ne sont pas obligatoires.</div>
-            <div style="text-decoration:underline">En limite de l’espace public :</div>
-            <div>Elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
-            <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
-            <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière.</div>
-            <div>Les portails devront être implantés face aux garages. Des dérogations peuvent être accordées si le garage est accolé à la maison en partie nord et que l’accès n’est possible que depuis la limite sud de l’emprise foncière.</div>
-            <div style="text-decoration:underline">En limite séparative et en fond d’unité foncière :</div>
-            <div>Elles ne peuvent excéder une hauteur maximale 1,80 m.</div>
-            <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
-            <div>L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
-            <div>L’installation de panneaux solaires au sol est interdite.</div>
-            <div>Les surfaces imperméabilisées ne peuvent dépasser 350 m². Par unité foncière, il est imposé la plantation d’un arbre pour : </div>
-            <ul>
-               <li>4 places de stationnement, • 200 m² d’espace libre de pleine terre. </li>
-            </ul>
-            <div>Les plantations monospécifiques sont interdites.</div>
-            <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
-         </plu:Contenu>
+         <plu:Titre id="d1e43"
+                    intitule="1. empRise au sol, hauteuR et implantation des constRuctions"
+                    libelleZone="UG,1AU"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e37" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+               <h3>1. empRise au sol, hauteuR et implantation des constRuctions</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e46"
+                       intitule="hauteur maximale des constructions "
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e39" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>hauteur maximale des constructions </h4>
+                  <div>La hauteur maximale des constructions ne peut dépasser la hauteur des bâtiments environnants, c’est à dire R+1 plus combles. En cas de construction dans la pente la hauteur maximale est comptée depuis le terrain naturel le plus haut. La hauteur des annexes ne peut dépasser celle du bâtiment principal.</div>
+                  <div>
+                     <p class="center">
+                        <img src="ressources/img-1.png" alt="0"/>
+                     </p>
+                  </div>
+                  <div>
+                     <em>Dispositions particulières</em>
+                  </div>
+                  <div>Sous réserve de justifications techniques ou architecturales, des hauteurs différentes peuvent être exceptionnellement autorisées dans les cas suivants : </div>
+                  <ul>
+                     <li>pour le respect d’une harmonie d’ensemble, lorsque l’ordonnancement des constructions voisines diffère des règles générales ; </li>
+                     <li>pour les installations et équipements techniques liés aux réseaux des services publics (assainissement, eau potable, électricité, télécommunications…) ou à la production d’énergie renouvelable. </li>
+                  </ul>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e59"
+                       intitule="Implantation des constructions"
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e52" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>Implantation des constructions</h4>
+                  <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
+                  <div>Par rapport aux voies et emprises publiques Les implantations doivent être parallèles à une limite du domaine public.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e55" libelleZone="UGa" libellePrescription="nonConcerne">
+                  <div>En secteur UGa , les nouvelles constructions doivent s’implanter à l’alignement avec le domaine public.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e58" libelleZone="UGb" libellePrescription="nonConcerne">
+                  <div>En secteur UGb , les nouvelles constructions doivent s’implanter soit à l’alignement avec le domaine public, soit avec un retrait maximum de 5 m.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e61" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <div>Les constructions annexes inférieures à 15 m² et les extensions ne sont pas concernées par cette règle.</div>
+                  <div>
+                     <p class="center">
+                        <img src="ressources/img-2.png" alt="1"/>
+                     </p>
+                  </div>
+                  <div>
+                     <em>Par rapport aux autres constructions sur une même propriété</em>
+                  </div>
+                  <div>Les constructions situées sur une même unité foncière doivent être implantées soit en continuité, soit à une distance maximale de 10 m, soit en limite séparative. Cette règle ne s’applique pas aux annexes inférieures à 10 m² d’emprise au sol.</div>
+                  <div>
+                     <em>Dispositions particulières</em>
+                  </div>
+                  <div>Sous réserve de justifications techniques ou architecturales, des dispositions d’implantation autres pourront être exceptionnellement autorisées dans les cas suivants : </div>
+                  <ul>
+                     <li>soit pour le respect d’une harmonie d’ensemble, lorsque l’ordonnancement des constructions voisines diffère des règles générales ; </li>
+                     <li>soit pour bénéficier de conditions bioclimatiques plus favorables ; </li>
+                     <li>soit pour les installations et équipements techniques liés aux réseaux des services publics (assainissement, eau potable, électricité, </li>
+                     <li>télécommunications…) ou à la production d’énergie renouvelable; </li>
+                     <li>soit en raison d’un dénivelé du terrain contraignant. </li>
+                  </ul>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e86"
+                       intitule="Volumes des constructions"
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e79" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>Volumes des constructions</h4>
+                  <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»). Les formes de type tripode, ou tétrapode sont interdite.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+         <plu:Titre id="d1e90"
+                    intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
+                    libelleZone="UG,1AU"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e83" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+               <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
+               <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
+            </plu:Contenu>
+            <plu:Titre id="d1e94"
+                       intitule="caractéristiques architecturales "
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e86" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>caractéristiques architecturales </h4>
+                  <div>
+                     <em>Les façades</em>
+                  </div>
+                  <div>Les façades doivent être de ton gris clair, pierre, grège ou blanc cassé. . En cas de murs en pierre, les joints doivent être plus foncés que les pierres. Sont interdits : </div>
+                  <ul>
+                     <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
+                     <li>les enduits de couleur blanche ; </li>
+                     <li>les enduits en ciment destinés à rester apparents. </li>
+                  </ul>
+                  <div>Le faîtage des constructions implantées en bordure de voie doit être parallèle à l’alignement des façades principales. Les murs pignon sur rue ne sont autorisés que s’il est démontré que la configuration de la parcelle rend impossible une autre disposition.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e95" libelleZone="UGa" libellePrescription="nonConcerne">
+                  <div>En secteur UGa , les éléments techniques tels que souches de cheminées, matériels de ventilation et de climatisation, caissons de volets roulants, etc. doivent faire l’objet d’une intégration soignée.</div>
+                  <div>Dans le secteur UGa , l’isolation par l’extérieur pourra être refusée (en particulier sur les façades principales) pour des raisons patrimoniales.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e99" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <div>
+                     <em>Les toitures</em>
+                  </div>
+                  <div>La volumétrie de toiture doit être harmonisée avec la silhouette urbaine environnante.</div>
+                  <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérent au regard de la trame d’ouvertures de la façade : </div>
+                  <ul>
+                     <li>plus hauts que larges, </li>
+                     <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
+                     <li>et alignés sur les fenêtres du dernier niveau. </li>
+                  </ul>
+                  <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze.</div>
+                  <div>Les bardeaux sont autorisés.</div>
+                  <div>Elles peuvent être végétalisée.</div>
+                  <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e112" libelleZone="UGa" libellePrescription="nonConcerne">
+                  <div>En outre, en secteur UGa la couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e115" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <div>Dans le bâti ancien, la pente de toit existante doit être conservée.</div>
+                  <div>En extension du bâti ancien, une pente de toit différente peut être autorisée si l’harmonie globale de la construction est préservée.</div>
+                  <div>
+                     <em>Les menuiseries</em>
+                  </div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e120" libelleZone="UGa" libellePrescription="nonConcerne">
+                  <div>En secteur UGa la couleur blanche est interdite.</div>
+               </plu:Contenu>
+               <plu:Contenu id="d1e122" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <div>
+                     <em>Les clôtures</em>
+                  </div>
+                  <div>Elles ne sont pas obligatoires.</div>
+                  <div style="text-decoration:underline">En limite de l’espace public :</div>
+                  <div>Elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
+                  <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
+                  <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière.</div>
+                  <div>Les portails devront être implantés face aux garages. Des dérogations peuvent être accordées si le garage est accolé à la maison en partie nord et que l’accès n’est possible que depuis la limite sud de l’emprise foncière.</div>
+                  <div style="text-decoration:underline">En limite séparative et en fond d’unité foncière :</div>
+                  <div>Elles ne peuvent excéder une hauteur maximale 1,80 m.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e144"
+                       intitule="obligations en matière de performances énergétiques et environnementales"
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e137" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>obligations en matière de performances énergétiques et environnementales</h4>
+                  <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e148"
+                       intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e140" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
+                  <div>L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
+                  <div>L’installation de panneaux solaires au sol est interdite.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e153"
+                       intitule="surfaces non imperméabilisées ou éco-aménageables "
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e145" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>surfaces non imperméabilisées ou éco-aménageables </h4>
+                  <div>Les surfaces imperméabilisées ne peuvent dépasser 350 m². Par unité foncière, il est imposé la plantation d’un arbre pour : </div>
+                  <ul>
+                     <li>4 places de stationnement, • 200 m² d’espace libre de pleine terre. </li>
+                  </ul>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e159"
+                       intitule="Espaces libres et de plantations, d’aires de jeux et de loisir "
+                       libelleZone="UG,1AU"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e150" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+                  <h4>Espaces libres et de plantations, d’aires de jeux et de loisir </h4>
+                  <div>Les plantations monospécifiques sont interdites.</div>
+                  <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e128"
+      <plu:Titre id="d1e165"
                  intitule="c. EqUIpEmENts Et RÉsEAUX"
                  libelleZone="UG,1AU"
                  libellePrescription="nonConcerne"
                  inseeCommune="15079"
                  niveau="2">
-         <plu:Contenu id="d1e128" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+         <plu:Contenu id="d1e155" libelleZone="UG,1AU" libellePrescription="nonConcerne">
             <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
-            <div>Au delà de 10 m de long, les voies en impasse sont interdites. Des dérogations peuvent être accordées sous réserve qu’un bouclage soit prévu par un cheminement doux.</div>
-            <div>Ils doivent être réalisés en souterrain ou s’intégrer au bâti, sous réserve de ne pas faire obstacle à la fourniture du service universel pour les réseaux de télécommunication.</div>
          </plu:Contenu>
+         <plu:Titre id="d1e168"
+                    intitule="1. desseRte paR les voies publiQues ou pRivées"
+                    libelleZone="UG,1AU"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e157" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+               <h3>1. desseRte paR les voies publiQues ou pRivées</h3>
+               <div>Au delà de 10 m de long, les voies en impasse sont interdites. Des dérogations peuvent être accordées sous réserve qu’un bouclage soit prévu par un cheminement doux.</div>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e172"
+                    intitule="2. Réseaux de communications électRoniQues"
+                    libelleZone="UG,1AU"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e160" libelleZone="UG,1AU" libellePrescription="nonConcerne">
+               <h3>2. Réseaux de communications électRoniQues</h3>
+               <div>Ils doivent être réalisés en souterrain ou s’intégrer au bâti, sous réserve de ne pas faire obstacle à la fourniture du service universel pour les réseaux de télécommunication.</div>
+            </plu:Contenu>
+         </plu:Titre>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e134"
+   <plu:Titre id="d1e176"
               intitule="II. ZoNE URbAINE D’ÉqUIpEmENts stRUctURANts (UE)"
               libelleZone="UE"
               libellePrescription="nonConcerne"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e133" libelleZone="UE" libellePrescription="nonConcerne">
+      <plu:Contenu id="d1e163" libelleZone="UE" libellePrescription="nonConcerne">
          <h1>II. ZoNE URbAINE D’ÉqUIpEmENts stRUctURANts (UE)</h1>
          <div>La zone UE couvre des secteurs destinés à accueillir des équipement et infrastructures publics et d’intérêt général.</div>
-         <div>Sont interdites toutes les occupations et utilisations du sol à l’exception de celles liées aux équipements d’intérêt collectif et services publics.</div>
-         <div>La hauteur maximale des constructions ne peut excéder 10 mètres au faîtage. </div>
-         <div>La hauteur des annexes ne pourra excéder celle du bâtiment principal.</div>
-         <div>
-            <em>Dispositions particulières</em>
-         </div>
-         <div>Sous réserve de justifications techniques ou architecturales, des hauteurs différentes peuvent être exceptionnellement autorisées dans les cas suivants : </div>
-         <ul>
-            <li>pour le respect d’une harmonie d’ensemble, lorsque l’ordonnancement des constructions voisines diffère des règles générales ; </li>
-            <li>pour les installations et équipements techniques liés aux réseaux des services publics (assainissement, eau potable, électricité, télécommunications…) ou à la production d’énergie renouvelable. </li>
-         </ul>
-         <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
-         <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»).</div>
-         <div>Il est demandé une recherche de rythme au niveau des formes, des structures apparentes, des traitements des façades et des couvertures.</div>
-         <div>Les petits volumes doivent être traités avec simplicité.</div>
-         <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
-         <div>
-            <em>Les façades</em>
-         </div>
-         <div>Les façades devront être de ton gris clair, pierre, grège ou blanc cassé. En cas de murs en pierre, les joints doivent être plus foncés que les pierres.</div>
-         <div>Sont interdits : </div>
-         <ul>
-            <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
-            <li>les enduits de couleur blanche ; </li>
-            <li>les enduits en ciment destinés à rester apparents. </li>
-         </ul>
-         <div>
-            <em>Les toitures</em>
-         </div>
-         <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérent au regard de la trame d’ouvertures de la façade : </div>
-         <ul>
-            <li>plus hauts que larges, </li>
-            <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
-            <li>et alignés sur les fenêtres du dernier niveau. </li>
-         </ul>
-         <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze.</div>
-         <div>Les bardeaux sont autorisés.</div>
-         <div>Elles peuvent être végétalisée.</div>
-         <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. La couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
-         <div>
-            <em>Les menuiseries</em>
-         </div>
-         <div>La couleur blanche est interdite.</div>
-         <div>
-            <em>Les clôtures</em>
-         </div>
-         <div>Elles ne sont pas obligatoires.</div>
-         <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
-         <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière.</div>
-         <div>En bordure de voies elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
-         <div>En limites séparatives elles ne peuvent excéder une hauteur maximale de 3 m.</div>
-         <div>Les installations et équipements pour lesquels une réglementation ou une assurance impose des hauteurs de clôture supérieure peuvent déroger. Dans ce cas, un soin particulier d’intégration paysagère de la clôture est demandé.</div>
-         <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un <em>albedo</em> élevé.</div>
-         <div>Les abords des constructions et aménagements doivent être agrémentés de plantations. L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
-         <div>Pour toute création ou extension d’équipement accueillant du public, il est imposé la plantation : </div>
-         <ul>
-            <li>d’un arbre minimum pour 4 places de stationnement, </li>
-            <li>un arbre pour 200 m² d’espace imperméabilisé (tout types de surface confondues : emprise des bâtiments, espaces de stationnement, voies de circulation, aires de stockage, aires étanches...). </li>
-         </ul>
-         <div>Les plantations monospécifiques sont interdites.</div>
-         <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
-         <div>
-            <em>Nombre de places de stationnement</em>
-         </div>
-         <div>Une place de stationnement est prévue au maximum par tranche de 3 personnes susceptibles d’être accueillies.</div>
-         <div>
-            <em>Caractéristiques des aires de stationnement</em>
-         </div>
-         <div>Pour les équipements exigeant plus de 20 places de stationnement, l’espace dédié doit être multifonctionnel (aire de jeux, aire engazonnée...).</div>
-         <div>Si les aires de stationnement sont imperméables, l’eau de pluie doit être récupérée, stockée et traitée pour des usages non nobles (arrosage des espaces verts, lavage des sols et/ou des véhicules, aménagement hydraulique paysager...).</div>
       </plu:Contenu>
+      <plu:Titre id="d1e180"
+                 intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
+                 libelleZone="UE"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e167" libelleZone="UE" libellePrescription="nonConcerne">
+            <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
+            <div>Sont interdites toutes les occupations et utilisations du sol à l’exception de celles liées aux équipements d’intérêt collectif et services publics.</div>
+         </plu:Contenu>
+      </plu:Titre>
+      <plu:Titre id="d1e185"
+                 intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
+                 libelleZone="UE"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e170" libelleZone="UE" libellePrescription="nonConcerne">
+            <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e188"
+                    intitule="1. hauteuR et implantation des constRuctions"
+                    libelleZone="UE"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e172" libelleZone="UE" libellePrescription="nonConcerne">
+               <h3>1. hauteuR et implantation des constRuctions</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e191"
+                       intitule="hauteur maximale des constructions"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e174" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>hauteur maximale des constructions</h4>
+                  <div>La hauteur maximale des constructions ne peut excéder 10 mètres au faîtage. </div>
+                  <div>La hauteur des annexes ne pourra excéder celle du bâtiment principal.</div>
+                  <div>
+                     <em>Dispositions particulières</em>
+                  </div>
+                  <div>Sous réserve de justifications techniques ou architecturales, des hauteurs différentes peuvent être exceptionnellement autorisées dans les cas suivants : </div>
+                  <ul>
+                     <li>pour le respect d’une harmonie d’ensemble, lorsque l’ordonnancement des constructions voisines diffère des règles générales ; </li>
+                     <li>pour les installations et équipements techniques liés aux réseaux des services publics (assainissement, eau potable, électricité, télécommunications…) ou à la production d’énergie renouvelable. </li>
+                  </ul>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e202"
+                       intitule="Implantation des constructions"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e185" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>Implantation des constructions</h4>
+                  <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e206"
+                       intitule="Volumes des constructions"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e188" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>Volumes des constructions</h4>
+                  <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»).</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+         <plu:Titre id="d1e210"
+                    intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
+                    libelleZone="UE"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e191" libelleZone="UE" libellePrescription="nonConcerne">
+               <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
+               <div>Il est demandé une recherche de rythme au niveau des formes, des structures apparentes, des traitements des façades et des couvertures.</div>
+               <div>Les petits volumes doivent être traités avec simplicité.</div>
+               <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
+            </plu:Contenu>
+            <plu:Titre id="d1e217"
+                       intitule="caractéristiques architecturales et paysagères"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e197" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>caractéristiques architecturales et paysagères</h4>
+                  <div>
+                     <em>Les façades</em>
+                  </div>
+                  <div>Les façades devront être de ton gris clair, pierre, grège ou blanc cassé. En cas de murs en pierre, les joints doivent être plus foncés que les pierres.</div>
+                  <div>Sont interdits : </div>
+                  <ul>
+                     <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
+                     <li>les enduits de couleur blanche ; </li>
+                     <li>les enduits en ciment destinés à rester apparents. </li>
+                  </ul>
+                  <div>
+                     <em>Les toitures</em>
+                  </div>
+                  <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérent au regard de la trame d’ouvertures de la façade : </div>
+                  <ul>
+                     <li>plus hauts que larges, </li>
+                     <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
+                     <li>et alignés sur les fenêtres du dernier niveau. </li>
+                  </ul>
+                  <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze.</div>
+                  <div>Les bardeaux sont autorisés.</div>
+                  <div>Elles peuvent être végétalisée.</div>
+                  <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. La couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
+                  <div>
+                     <em>Les menuiseries</em>
+                  </div>
+                  <div>La couleur blanche est interdite.</div>
+                  <div>
+                     <em>Les clôtures</em>
+                  </div>
+                  <div>Elles ne sont pas obligatoires.</div>
+                  <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
+                  <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière.</div>
+                  <div>En bordure de voies elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
+                  <div>En limites séparatives elles ne peuvent excéder une hauteur maximale de 3 m.</div>
+                  <div>Les installations et équipements pour lesquels une réglementation ou une assurance impose des hauteurs de clôture supérieure peuvent déroger. Dans ce cas, un soin particulier d’intégration paysagère de la clôture est demandé.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e251"
+                       intitule="obligations en matière de performances énergétiques et environnementales"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e231" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>obligations en matière de performances énergétiques et environnementales</h4>
+                  <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un <em>albedo</em> élevé.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e258"
+                       intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e237" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
+                  <div>Les abords des constructions et aménagements doivent être agrémentés de plantations. L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e262"
+                       intitule="surfaces non imperméabilisées ou éco-aménageables"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e240" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>surfaces non imperméabilisées ou éco-aménageables</h4>
+                  <div>Pour toute création ou extension d’équipement accueillant du public, il est imposé la plantation : </div>
+                  <ul>
+                     <li>d’un arbre minimum pour 4 places de stationnement, </li>
+                     <li>un arbre pour 200 m² d’espace imperméabilisé (tout types de surface confondues : emprise des bâtiments, espaces de stationnement, voies de circulation, aires de stockage, aires étanches...). </li>
+                  </ul>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e269"
+                       intitule="Espaces libres et de plantations, d’aires de jeux et de loisir"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e247" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>Espaces libres et de plantations, d’aires de jeux et de loisir</h4>
+                  <div>Les plantations monospécifiques sont interdites.</div>
+                  <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e275"
+                       intitule="stationnement"
+                       libelleZone="UE"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e251" libelleZone="UE" libellePrescription="nonConcerne">
+                  <h4>stationnement</h4>
+                  <div>
+                     <em>Nombre de places de stationnement</em>
+                  </div>
+                  <div>Une place de stationnement est prévue au maximum par tranche de 3 personnes susceptibles d’être accueillies.</div>
+                  <div>
+                     <em>Caractéristiques des aires de stationnement</em>
+                  </div>
+                  <div>Pour les équipements exigeant plus de 20 places de stationnement, l’espace dédié doit être multifonctionnel (aire de jeux, aire engazonnée...).</div>
+                  <div>Si les aires de stationnement sont imperméables, l’eau de pluie doit être récupérée, stockée et traitée pour des usages non nobles (arrosage des espaces verts, lavage des sols et/ou des véhicules, aménagement hydraulique paysager...).</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+      </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e203"
+   <plu:Titre id="d1e285"
               intitule="III. ZoNE URbAINE D’ActIVItÉs (UX)"
               libelleZone="UX"
               libellePrescription="nonConcerne"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e202" libelleZone="UX" libellePrescription="nonConcerne">
+      <plu:Contenu id="d1e261" libelleZone="UX" libellePrescription="nonConcerne">
          <h1>III. ZoNE URbAINE D’ActIVItÉs (UX)</h1>
          <div>La zone UX couvre des secteurs destinés à accueillir des activités de production industrielle, artisanale, de stockage et de logistique, en raison - d’une part - de la spécificité de leurs besoins en termes de foncier et d’infrastructures de transport, et - d’autre part - des nuisances qu’elles génèrent.</div>
-         <div>Sont interdits : </div>
-         <ul>
-            <li>les exploitations agricoles, exploitations forestières ; </li>
-            <li>les hébergements hôteliers et touristiques, les cinémas ; </li>
-            <li>les locaux et bureaux accueillant du public des administrations publiques et assimilés, les locaux techniques et industriels des administrations publiques et assimilés, les établissements d’enseignement, de santé et d’action sociale, les salles d’art et de spectacles, les équipements sportifs et autres équipements recevant du public ; </li>
-            <li>les centres de congrès et d’exposition. </li>
-         </ul>
-         <div>Les logements peuvent être autorisés à la double condition qu’ils soient destinés aux personnes dont la présence permanente est nécessaire pour assurer la direction, la surveillance ou le gardiennage des établissements dont l’activité est autorisée sur la zone et d’être intégrés au bâtiment d’activité principal.</div>
-         <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais doivent être les plus réduits possibles. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales. Les constructions situées sur une même unité foncière doivent être implantées soit accolées aux constructions existantes, soit à une distance maximale de 30 mètres.</div>
-         <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder :</div>
-         <ul>
-            <li>un étage sur rez-de-chaussée plus un étage de combles pour l’habitat (les combles peuvent être aménagés) ; </li>
-            <li>10 mètres pour les bâtiments (au faîtage). </li>
-         </ul>
-         <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire devra argumenter le parti architectural souhaité. Une hauteur supérieure pourra être admise pour l’installation d’éoliennes.</div>
-         <div>Il est demandé une recherche de rythme au niveau des formes, des structures apparentes, des traitements des façades et des couvertures.</div>
-         <div>Les petits volumes doivent être traités avec simplicité.</div>
-         <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
-         <div>
-            <em>Les façades</em>
-         </div>
-         <div>Les façades doivent être de couleur sombre et doivent comprendre au minimum 1/3 de surface en bois naturel non vernis.</div>
-         <div>Les façades végétalisées sont autorisées.</div>
-         <div>
-            <em>Les toitures</em>
-         </div>
-         <div>Elles doivent être plus foncées que les façades. Les toitures végétalisées sont autorisées. Les toitures terrasses sont autorisées à condition d’être végétalisées.</div>
-         <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. et que la couleur des panneaux et des cadres soit la plus proche possible du noir.</div>
-         <div>
-            <em>Les menuiseries</em>
-         </div>
-         <div>Les menuiseries doivent être de teinte plus foncée que le reste de la façade.</div>
-         <div>
-            <em>Les clôtures</em>
-         </div>
-         <div>Elles ne sont pas obligatoires.</div>
-         <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
-         <div>En bordure de voies de desserte interne, elles ne peuvent excéder une hauteur maximale de 2 m. Dans le cas de l’implantation d’une haie vive, l’utilisation du grillage est autorisée à l’intérieur, et la hauteur maximale autorisée est de 3 m.</div>
-         <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
-         <div>L’installation de panneaux solaires au sol est interdite.</div>
-         <div>Les abords des constructions et aménagements doivent être agrémentés de plantations combinant les strates arbustive et arborées pour créer des filtres visuels depuis l’extérieur de la zone qui permettent une vue fragmentée des volumes bâtis.</div>
-         <div>Les espaces de stockage doivent être localisés de manière à ne pas être visibles depuis l’espace public dans la mesure du possible.</div>
-         <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
-         <div>Ils doivent être réalisés en souterrain ou s’intégrer au bâti, sous réserve de ne pas faire obstacle à la fourniture du service universel pour les réseaux de télécommunication.</div>
-         <div>Les eaux pluviales issues des constructions et des revêtements des accès doivent être résorbées sur la parcelle.</div>
       </plu:Contenu>
+      <plu:Titre id="d1e289"
+                 intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
+                 libelleZone="UX"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e264" libelleZone="UX" libellePrescription="nonConcerne">
+            <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e292"
+                    intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
+                    libelleZone="UX"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e266" libelleZone="UX" libellePrescription="nonConcerne">
+               <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
+               <div>Sont interdits : </div>
+               <ul>
+                  <li>les exploitations agricoles, exploitations forestières ; </li>
+                  <li>les hébergements hôteliers et touristiques, les cinémas ; </li>
+                  <li>les locaux et bureaux accueillant du public des administrations publiques et assimilés, les locaux techniques et industriels des administrations publiques et assimilés, les établissements d’enseignement, de santé et d’action sociale, les salles d’art et de spectacles, les équipements sportifs et autres équipements recevant du public ; </li>
+                  <li>les centres de congrès et d’exposition. </li>
+               </ul>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e301"
+                    intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
+                    libelleZone="UX"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e275" libelleZone="UX" libellePrescription="nonConcerne">
+               <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
+               <div>Les logements peuvent être autorisés à la double condition qu’ils soient destinés aux personnes dont la présence permanente est nécessaire pour assurer la direction, la surveillance ou le gardiennage des établissements dont l’activité est autorisée sur la zone et d’être intégrés au bâtiment d’activité principal.</div>
+            </plu:Contenu>
+         </plu:Titre>
+      </plu:Titre>
+      <plu:Titre id="d1e305"
+                 intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
+                 libelleZone="UX"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e278" libelleZone="UX" libellePrescription="nonConcerne">
+            <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e309"
+                    intitule="1. implantation et hauteuRs des constRuctions"
+                    libelleZone="UX"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e280" libelleZone="UX" libellePrescription="nonConcerne">
+               <h3>1. implantation et hauteuRs des constRuctions</h3>
+               <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais doivent être les plus réduits possibles. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales. Les constructions situées sur une même unité foncière doivent être implantées soit accolées aux constructions existantes, soit à une distance maximale de 30 mètres.</div>
+               <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder :</div>
+               <ul>
+                  <li>un étage sur rez-de-chaussée plus un étage de combles pour l’habitat (les combles peuvent être aménagés) ; </li>
+                  <li>10 mètres pour les bâtiments (au faîtage). </li>
+               </ul>
+               <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire devra argumenter le parti architectural souhaité. Une hauteur supérieure pourra être admise pour l’installation d’éoliennes.</div>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e318"
+                    intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
+                    libelleZone="UX"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e289" libelleZone="UX" libellePrescription="nonConcerne">
+               <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
+               <div>Il est demandé une recherche de rythme au niveau des formes, des structures apparentes, des traitements des façades et des couvertures.</div>
+               <div>Les petits volumes doivent être traités avec simplicité.</div>
+               <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
+            </plu:Contenu>
+            <plu:Titre id="d1e324"
+                       intitule="caractéristiques architecturales et paysagères"
+                       libelleZone="UX"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e294" libelleZone="UX" libellePrescription="nonConcerne">
+                  <h4>caractéristiques architecturales et paysagères</h4>
+                  <div>
+                     <em>Les façades</em>
+                  </div>
+                  <div>Les façades doivent être de couleur sombre et doivent comprendre au minimum 1/3 de surface en bois naturel non vernis.</div>
+                  <div>Les façades végétalisées sont autorisées.</div>
+                  <div>
+                     <em>Les toitures</em>
+                  </div>
+                  <div>Elles doivent être plus foncées que les façades. Les toitures végétalisées sont autorisées. Les toitures terrasses sont autorisées à condition d’être végétalisées.</div>
+                  <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. et que la couleur des panneaux et des cadres soit la plus proche possible du noir.</div>
+                  <div>
+                     <em>Les menuiseries</em>
+                  </div>
+                  <div>Les menuiseries doivent être de teinte plus foncée que le reste de la façade.</div>
+                  <div>
+                     <em>Les clôtures</em>
+                  </div>
+                  <div>Elles ne sont pas obligatoires.</div>
+                  <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
+                  <div>En bordure de voies de desserte interne, elles ne peuvent excéder une hauteur maximale de 2 m. Dans le cas de l’implantation d’une haie vive, l’utilisation du grillage est autorisée à l’intérieur, et la hauteur maximale autorisée est de 3 m.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e344"
+                       intitule="obligations en matière de performances énergétiques et environnementales"
+                       libelleZone="UX"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e313" libelleZone="UX" libellePrescription="nonConcerne">
+                  <h4>obligations en matière de performances énergétiques et environnementales</h4>
+                  <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e348"
+                       intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
+                       libelleZone="UX"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e317" libelleZone="UX" libellePrescription="nonConcerne">
+                  <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
+                  <div>L’installation de panneaux solaires au sol est interdite.</div>
+                  <div>Les abords des constructions et aménagements doivent être agrémentés de plantations combinant les strates arbustive et arborées pour créer des filtres visuels depuis l’extérieur de la zone qui permettent une vue fragmentée des volumes bâtis.</div>
+                  <div>Les espaces de stockage doivent être localisés de manière à ne pas être visibles depuis l’espace public dans la mesure du possible.</div>
+                  <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+      </plu:Titre>
+      <plu:Titre id="d1e356"
+                 intitule="c. EqUIpEmENts Et RÉsEAUX"
+                 libelleZone="UX"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e323" libelleZone="UX" libellePrescription="nonConcerne">
+            <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e359"
+                    intitule="1. Réseaux de communications électRoniQues"
+                    libelleZone="UX"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e325" libelleZone="UX" libellePrescription="nonConcerne">
+               <h3>1. Réseaux de communications électRoniQues</h3>
+               <div>Ils doivent être réalisés en souterrain ou s’intégrer au bâti, sous réserve de ne pas faire obstacle à la fourniture du service universel pour les réseaux de télécommunication.</div>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e363"
+                    intitule="2. gestion des eaux pluviales"
+                    libelleZone="UX"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e329" libelleZone="UX" libellePrescription="nonConcerne">
+               <h3>2. gestion des eaux pluviales</h3>
+               <div>Les eaux pluviales issues des constructions et des revêtements des accès doivent être résorbées sur la parcelle.</div>
+            </plu:Contenu>
+         </plu:Titre>
+      </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e248"
+   <plu:Titre id="d1e367"
               intitule="IV. ZoNE à URbANIsER (1AU)"
               libelleZone="1AU"
               libellePrescription="nonConcerne"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e247" libelleZone="1AU" libellePrescription="nonConcerne">
+      <plu:Contenu id="d1e332" libelleZone="1AU" libellePrescription="nonConcerne">
          <h1>IV. ZoNE à URbANIsER (1AU)</h1>
          <div>La zone 1AU couvre des secteurs non équipés et à urbaniser dans lesquels une mixité des fonctions urbaines est souhaitée.</div>
-         <div>Sont interdits : </div>
-         <ul>
-            <li>les industries et entrepôts, </li>
-            <li>les exploitation agricole et forestière, </li>
-            <li>les terrains de camping et de caravanage, les parcs résidentiels de loisirs, les habitations légères de loisirs et résidences mobiles de loisirs, </li>
-            <li>les dépôts de ferraille, de matériaux, de déchets ainsi que les dépôts de véhicules désaffectés ou de tous les matériaux susceptibles de générer des nuisances environnementales ou de santé publique. </li>
-         </ul>
-         <div>Sont autorisées, à condition de ne pas excéder une emprise au sol de 300 m² : </div>
-         <ul>
-            <li>les constructions destinées à la vente directe des produits de la ferme ; </li>
-            <li>les commerces et activités de services. </li>
-         </ul>
-         <div/>
-         <div/>
       </plu:Contenu>
+      <plu:Titre id="d1e371"
+                 intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
+                 libelleZone="1AU"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e335" libelleZone="1AU" libellePrescription="nonConcerne">
+            <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e374"
+                    intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
+                    libelleZone="1AU"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e337" libelleZone="1AU" libellePrescription="nonConcerne">
+               <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
+               <div>Sont interdits : </div>
+               <ul>
+                  <li>les industries et entrepôts, </li>
+                  <li>les exploitation agricole et forestière, </li>
+                  <li>les terrains de camping et de caravanage, les parcs résidentiels de loisirs, les habitations légères de loisirs et résidences mobiles de loisirs, </li>
+                  <li>les dépôts de ferraille, de matériaux, de déchets ainsi que les dépôts de véhicules désaffectés ou de tous les matériaux susceptibles de générer des nuisances environnementales ou de santé publique. </li>
+               </ul>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e384"
+                    intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
+                    libelleZone="1AU"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e346" libelleZone="1AU" libellePrescription="nonConcerne">
+               <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
+               <div>Sont autorisées, à condition de ne pas excéder une emprise au sol de 300 m² : </div>
+               <ul>
+                  <li>les constructions destinées à la vente directe des produits de la ferme ; </li>
+                  <li>les commerces et activités de services. </li>
+               </ul>
+            </plu:Contenu>
+         </plu:Titre>
+      </plu:Titre>
+      <plu:Titre id="d1e391"
+                 intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
+                 libelleZone="1AU"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e352" libelleZone="1AU" libellePrescription="nonConcerne">
+            <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
+            <div>S’appliquent ici les dispositions correspondantes édictées pour la zone urbaine générale (UG).</div>
+         </plu:Contenu>
+      </plu:Titre>
+      <plu:Titre id="d1e395"
+                 intitule="c. EqUIpEmENts Et RÉsEAUX"
+                 libelleZone="1AU"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e355" libelleZone="1AU" libellePrescription="nonConcerne">
+            <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
+            <div>S’appliquent ici les dispositions correspondantes édictées pour la zone urbaine générale (UG).</div>
+         </plu:Contenu>
+      </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e264"
+   <plu:Titre id="d1e399"
               intitule="V. ZoNE à URbANIsER fERmÉE (2AU)"
               libelleZone="2AU"
               libellePrescription="nonConcerne"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e263" libelleZone="2AU" libellePrescription="nonConcerne">
+      <plu:Contenu id="d1e359" libelleZone="2AU" libellePrescription="nonConcerne">
          <h1>V. ZoNE à URbANIsER fERmÉE (2AU)</h1>
          <div>La zone 2AU couvre des secteurs non équipés et à urbaniser ultérieurement dans lesquels une mixité des fonctions urbaines est souhaitée. L’ouverture à l’urbanisation des secteurs concernés nécessite une révision ou une modification du PLU. </div>
       </plu:Contenu>
    </plu:Titre>
-   <plu:Titre id="d1e268"
+   <plu:Titre id="d1e403"
               intitule="VI. ZoNE AGRIcoLE (A)"
               libelleZone="A"
               libellePrescription="nonConcerne"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e266" libelleZone="A" libellePrescription="nonConcerne">
+      <plu:Contenu id="d1e362" libelleZone="A" libellePrescription="nonConcerne">
          <h1>VI. ZoNE AGRIcoLE (A)</h1>
          <div>La zone A a pour vocation de préserver les terres agricoles et d’accueillir les constructions et installations nécessaires aux activités agricoles, pastorales forestières.</div>
-         <div>Sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
-         <ul>
-            <li>des constructions et installations nécessaires à l’activité agricole y compris les maisons d’habitation des exploitants et les installations et constructions liées à l’activité forestière ; </li>
-            <li>des extensions et annexes des bâtiments existants ; </li>
-            <li>des dépôts et stockages à l’air libre nécessaires à l’activité agricole ; </li>
-            <li>des clôtures ; </li>
-            <li>des installations techniques nécessaires au service public ou d’intérêt collectif à condition qu’ils soient compatibles avec une activité agricole ou forestière et qu’ils ne portent pas atteinte aux espaces naturels et aux paysages ; </li>
-            <li>des changements de destination des bâtiments agricoles identifiés aux documents graphiques du règlement. </li>
-         </ul>
-         <div>Les constructions destinées aux activités agro-touristiques à condition de constituer une activité accessoire à l’activité agricole et d’être situées à proximité des bâtiments d’exploitation agricole. </div>
-         <div>Les aménagements légers destinés à mettre en valeur les espaces naturels ou permettre leur découverte (équipements pédagogiques, abris et objets mobiliers destinés à l’information du public, cheminements piétonniers ni bitumés ni cimentés, etc.) sont autorisés à condition qu’ils ne dénaturent pas leurs caractères paysagers ou environnementaux. </div>
-         <div>Les installations techniques nécessaires au service public ou d’intérêt collectif ou à la production d’énergies renouvelables sont autorisées à condition qu’elles soient compatibles avec une activité agricole ou forestière et qu’elles ne portent pas atteinte aux espaces naturels et aux paysages. </div>
-         <div>Les déblais et remblais sont autorisés à condition de ne pas excéder 2 m de hauteur/profondeur et 100 m² maximum d’emprise au sol. </div>
-         <div>L’emprise au sol des extensions et annexes des habitations existantes ne peut pas dépasser respectivement 50 m² et 20 m².</div>
-         <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder : </div>
-         <ul>
-            <li>un étage sur rez-de-chaussée plus un étage de combles pour l’habitat (les combles peuvent être aménagés) ; </li>
-            <li>10 mètres pour les bâtiments agricoles (au faîtage). </li>
-         </ul>
-         <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire devra argumenter le parti architectural souhaité.</div>
-         <div>Une hauteur supérieure peut être admise pour l’installation d’éoliennes.</div>
-         <div>La hauteur des annexes et extensions ne peut excéder celle du bâtiment principal.</div>
-         <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
-         <div>Les nouvelles maisons d’habitations doivent s’implanter au maximum à 100 m d’un bâtiment d’exploitation.</div>
-         <div>L’implantation des annexes de devra pas être localisée à plus de 30 m de la maison d’habitation.</div>
-         <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»).</div>
-         <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
-         <div>
-            <em>Pour les maisons d’habitation et annexes</em>
-         </div>
-         <div style="text-decoration:underline">Les façades</div>
-         <div>Les façades devront être de ton gris clair, pierre, grège ou blanc cassé. En cas de murs en pierre, les joints doivent être plus foncés que les pierres.</div>
-         <div>Sont interdits : </div>
-         <ul>
-            <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
-            <li>les enduits de couleur blanche ; </li>
-            <li>les enduits en ciment destinés à rester apparents. </li>
-         </ul>
-         <div style="text-decoration:underline">Les toitures</div>
-         <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérents au regard de la trame d’ouvertures de la façade : </div>
-         <ul>
-            <li>plus hauts que larges, </li>
-            <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
-            <li>et alignés sur les fenêtres du dernier niveau. </li>
-         </ul>
-         <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze. </div>
-         <div>Les bardeaux sont autorisés.</div>
-         <div>Elles peuvent être végétalisée.</div>
-         <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. La couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
-         <div>Dans le bâti ancien, la pente de toit existante doit être conservée.</div>
-         <div>En extension du bâti ancien, une pente de toit différente peut être autorisée si l’harmonie globale de la construction est préservée.</div>
-         <div style="text-decoration:underline">Les menuiseries</div>
-         <div>La couleur blanche est interdite.</div>
-         <div>L’isolation par l’extérieur pourra être refusée pour des raisons patrimoniales.</div>
-         <div>Les éléments techniques tels que souches de cheminées, matériels de ventilation et de climatisation, caissons de volets roulants, etc. doivent faire l’objet d’une intégration soignée.</div>
-         <div>
-            <em>Pour les bâtiments agricoles</em>
-         </div>
-         <div>Les projets de nouveaux bâtiments doivent s’inspirer des principes présentés dans la brochure produite par le CAUE 15 « Concilier les bâtiments agricoles et le paysage du Cantal », en annexe du présent règlement écrit.</div>
-         <div style="text-decoration:underline">Les façades</div>
-         <div>Les façades devront être de couleur sombre.</div>
-         <div>Les structures légères à usage agricole de type tunnel, doivent s’appuyer sur un élément de paysage existant ou à créer (haie, bosquet...). Leur couleur est choisie dans une gamme permettant une intégration satisfaisante dans l’environnement (teinte gris anthracite, ou à défaut noir ou vert sombre).</div>
-         <div>Cette règle ne concerne pas les serres.</div>
-         <div style="text-decoration:underline">Les toitures</div>
-         <div>Les toitures devront être de couleur sombre. </div>
-         <div style="text-decoration:underline">Les menuiseries</div>
-         <div>Les menuiseries doivent être de teinte plus foncée que le reste de la façade.</div>
-         <div>
-            <em>Les clôtures</em>
-         </div>
-         <div>Elles ne sont pas obligatoires.</div>
-         <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
-         <div style="text-decoration:underline">Pour les maisons d’habitation existantes</div>
-         <div>En bordure de voies, elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
-         <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
-         <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière. Des dérogations peuvent être accordées sur les clôtures en limite séparative entre deux maisons.</div>
-         <div>L’emploi de revêtement de sols pour les espaces extérieurs des maisons d’habitation ou de leurs annexes doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
-         <div>Les dépôts ou matériaux visibles de l’espace public doivent être masqués par un accompagnement végétal.</div>
-         <div>Les bâches non biodégradables sont interdites. Les bâches biodégradables doivent être végétalisées</div>
-         <div>Les plantations monospécifiques sont interdites.</div>
-         <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
-         <div>Pour être constructible, un terrain doit avoir accès à une voie publique ou à une voie privée.</div>
-         <div>La largeur des accès sur la voie publique doit être proportionnée à la taille et au besoin des constructions. Elle est limitée à 5 mètres.</div>
-         <div>Les voies et les accès à créer ou à aménager doivent être adaptés aux usages qu’ils supportent et aux opérations qu’ils doivent desservir.</div>
-         <div>Dans tous les cas, les voies doivent permettre l’accès et la bonne circulation des véhicules de secours et de lutte contre les incendies.</div>
-         <div>L’alimentation de toute construction nouvelle, dont le besoin en eau potable est reconnu, est assurée par le réseau public s’il existe ou à défaut, par un moyen conforme à la réglementation en vigueur. Il en est de même pour le changement de destination d’un bâtiment agricole.</div>
-         <div>Les nouvelles constructions ou le changement de destination d’un bâtiment agricole nécessitant une desserte par le réseaux électrique ne doivent pas conduire à une baisse de tension qui impliquerait le renforcement du réseau</div>
       </plu:Contenu>
+      <plu:Titre id="d1e408"
+                 intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
+                 libelleZone="A"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e365" libelleZone="A" libellePrescription="nonConcerne">
+            <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e411"
+                    intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
+                    libelleZone="A"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e367" libelleZone="A" libellePrescription="nonConcerne">
+               <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
+               <div>Sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
+               <ul>
+                  <li>des constructions et installations nécessaires à l’activité agricole y compris les maisons d’habitation des exploitants et les installations et constructions liées à l’activité forestière ; </li>
+                  <li>des extensions et annexes des bâtiments existants ; </li>
+                  <li>des dépôts et stockages à l’air libre nécessaires à l’activité agricole ; </li>
+                  <li>des clôtures ; </li>
+                  <li>des installations techniques nécessaires au service public ou d’intérêt collectif à condition qu’ils soient compatibles avec une activité agricole ou forestière et qu’ils ne portent pas atteinte aux espaces naturels et aux paysages ; </li>
+                  <li>des changements de destination des bâtiments agricoles identifiés aux documents graphiques du règlement. </li>
+               </ul>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e422"
+                    intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
+                    libelleZone="A"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e378" libelleZone="A" libellePrescription="nonConcerne">
+               <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
+               <div>Les constructions destinées aux activités agro-touristiques à condition de constituer une activité accessoire à l’activité agricole et d’être situées à proximité des bâtiments d’exploitation agricole. </div>
+               <div>Les aménagements légers destinés à mettre en valeur les espaces naturels ou permettre leur découverte (équipements pédagogiques, abris et objets mobiliers destinés à l’information du public, cheminements piétonniers ni bitumés ni cimentés, etc.) sont autorisés à condition qu’ils ne dénaturent pas leurs caractères paysagers ou environnementaux. </div>
+               <div>Les installations techniques nécessaires au service public ou d’intérêt collectif ou à la production d’énergies renouvelables sont autorisées à condition qu’elles soient compatibles avec une activité agricole ou forestière et qu’elles ne portent pas atteinte aux espaces naturels et aux paysages. </div>
+               <div>Les déblais et remblais sont autorisés à condition de ne pas excéder 2 m de hauteur/profondeur et 100 m² maximum d’emprise au sol. </div>
+            </plu:Contenu>
+         </plu:Titre>
+      </plu:Titre>
+      <plu:Titre id="d1e429"
+                 intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
+                 libelleZone="A"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e384" libelleZone="A" libellePrescription="nonConcerne">
+            <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e432"
+                    intitule="1. empRise au sol, hauteuR et implantation des constRuctions"
+                    libelleZone="A"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e386" libelleZone="A" libellePrescription="nonConcerne">
+               <h3>1. empRise au sol, hauteuR et implantation des constRuctions</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e435"
+                       intitule="Emprise au sol maximale des constructions "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e389" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>Emprise au sol maximale des constructions </h4>
+                  <div>L’emprise au sol des extensions et annexes des habitations existantes ne peut pas dépasser respectivement 50 m² et 20 m².</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e440"
+                       intitule="hauteur maximale des constructions "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e392" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>hauteur maximale des constructions </h4>
+                  <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder : </div>
+                  <ul>
+                     <li>un étage sur rez-de-chaussée plus un étage de combles pour l’habitat (les combles peuvent être aménagés) ; </li>
+                     <li>10 mètres pour les bâtiments agricoles (au faîtage). </li>
+                  </ul>
+                  <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire devra argumenter le parti architectural souhaité.</div>
+                  <div>Une hauteur supérieure peut être admise pour l’installation d’éoliennes.</div>
+                  <div>La hauteur des annexes et extensions ne peut excéder celle du bâtiment principal.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e450"
+                       intitule="Implantation des constructions "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e401" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>Implantation des constructions </h4>
+                  <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
+                  <div>Les nouvelles maisons d’habitations doivent s’implanter au maximum à 100 m d’un bâtiment d’exploitation.</div>
+                  <div>L’implantation des annexes de devra pas être localisée à plus de 30 m de la maison d’habitation.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e456"
+                       intitule="Volumes des constructions "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e407" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>Volumes des constructions </h4>
+                  <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»).</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+         <plu:Titre id="d1e460"
+                    intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
+                    libelleZone="A"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e410" libelleZone="A" libellePrescription="nonConcerne">
+               <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
+               <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
+            </plu:Contenu>
+            <plu:Titre id="d1e464"
+                       intitule="caractéristiques architecturales "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e413" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>caractéristiques architecturales </h4>
+                  <div>
+                     <em>Pour les maisons d’habitation et annexes</em>
+                  </div>
+                  <div style="text-decoration:underline">Les façades</div>
+                  <div>Les façades devront être de ton gris clair, pierre, grège ou blanc cassé. En cas de murs en pierre, les joints doivent être plus foncés que les pierres.</div>
+                  <div>Sont interdits : </div>
+                  <ul>
+                     <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
+                     <li>les enduits de couleur blanche ; </li>
+                     <li>les enduits en ciment destinés à rester apparents. </li>
+                  </ul>
+                  <div style="text-decoration:underline">Les toitures</div>
+                  <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérents au regard de la trame d’ouvertures de la façade : </div>
+                  <ul>
+                     <li>plus hauts que larges, </li>
+                     <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
+                     <li>et alignés sur les fenêtres du dernier niveau. </li>
+                  </ul>
+                  <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze. </div>
+                  <div>Les bardeaux sont autorisés.</div>
+                  <div>Elles peuvent être végétalisée.</div>
+                  <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. La couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
+                  <div>Dans le bâti ancien, la pente de toit existante doit être conservée.</div>
+                  <div>En extension du bâti ancien, une pente de toit différente peut être autorisée si l’harmonie globale de la construction est préservée.</div>
+                  <div style="text-decoration:underline">Les menuiseries</div>
+                  <div>La couleur blanche est interdite.</div>
+                  <div>L’isolation par l’extérieur pourra être refusée pour des raisons patrimoniales.</div>
+                  <div>Les éléments techniques tels que souches de cheminées, matériels de ventilation et de climatisation, caissons de volets roulants, etc. doivent faire l’objet d’une intégration soignée.</div>
+                  <div>
+                     <em>Pour les bâtiments agricoles</em>
+                  </div>
+                  <div>Les projets de nouveaux bâtiments doivent s’inspirer des principes présentés dans la brochure produite par le CAUE 15 « Concilier les bâtiments agricoles et le paysage du Cantal », en annexe du présent règlement écrit.</div>
+                  <div style="text-decoration:underline">Les façades</div>
+                  <div>Les façades devront être de couleur sombre.</div>
+                  <div>Les structures légères à usage agricole de type tunnel, doivent s’appuyer sur un élément de paysage existant ou à créer (haie, bosquet...). Leur couleur est choisie dans une gamme permettant une intégration satisfaisante dans l’environnement (teinte gris anthracite, ou à défaut noir ou vert sombre).</div>
+                  <div>Cette règle ne concerne pas les serres.</div>
+                  <div style="text-decoration:underline">Les toitures</div>
+                  <div>Les toitures devront être de couleur sombre. </div>
+                  <div style="text-decoration:underline">Les menuiseries</div>
+                  <div>Les menuiseries doivent être de teinte plus foncée que le reste de la façade.</div>
+                  <div>
+                     <em>Les clôtures</em>
+                  </div>
+                  <div>Elles ne sont pas obligatoires.</div>
+                  <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
+                  <div style="text-decoration:underline">Pour les maisons d’habitation existantes</div>
+                  <div>En bordure de voies, elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
+                  <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
+                  <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière. Des dérogations peuvent être accordées sur les clôtures en limite séparative entre deux maisons.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e522"
+                       intitule="obligations en matière de performances énergétiques et environnementales"
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e470" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>obligations en matière de performances énergétiques et environnementales</h4>
+                  <div>L’emploi de revêtement de sols pour les espaces extérieurs des maisons d’habitation ou de leurs annexes doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e526"
+                       intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e473" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
+                  <div>Les dépôts ou matériaux visibles de l’espace public doivent être masqués par un accompagnement végétal.</div>
+                  <div>Les bâches non biodégradables sont interdites. Les bâches biodégradables doivent être végétalisées</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e531"
+                       intitule="Espaces libres et de plantations, d’aires de jeux et de loisir "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e477" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>Espaces libres et de plantations, d’aires de jeux et de loisir </h4>
+                  <div>Les plantations monospécifiques sont interdites.</div>
+                  <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+      </plu:Titre>
+      <plu:Titre id="d1e536"
+                 intitule="c. EqUIpEmENts Et RÉsEAUX"
+                 libelleZone="A"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e482" libelleZone="A" libellePrescription="nonConcerne">
+            <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e539"
+                    intitule="1. accès et voiRie"
+                    libelleZone="A"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e484" libelleZone="A" libellePrescription="nonConcerne">
+               <h3>1. accès et voiRie</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e542"
+                       intitule="accès et voiRie"
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e486" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>accès et voiRie</h4>
+                  <div>Pour être constructible, un terrain doit avoir accès à une voie publique ou à une voie privée.</div>
+                  <div>La largeur des accès sur la voie publique doit être proportionnée à la taille et au besoin des constructions. Elle est limitée à 5 mètres.</div>
+                  <div>Les voies et les accès à créer ou à aménager doivent être adaptés aux usages qu’ils supportent et aux opérations qu’ils doivent desservir.</div>
+                  <div>Dans tous les cas, les voies doivent permettre l’accès et la bonne circulation des véhicules de secours et de lutte contre les incendies.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+         <plu:Titre id="d1e550"
+                    intitule="2. conditions de desseRte paR les Réseaux"
+                    libelleZone="A"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e493" libelleZone="A" libellePrescription="nonConcerne">
+               <h3>2. conditions de desseRte paR les Réseaux</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e553"
+                       intitule="Eau potable "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e495" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>Eau potable </h4>
+                  <div>L’alimentation de toute construction nouvelle, dont le besoin en eau potable est reconnu, est assurée par le réseau public s’il existe ou à défaut, par un moyen conforme à la réglementation en vigueur. Il en est de même pour le changement de destination d’un bâtiment agricole.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e557"
+                       intitule="Réseau électrique "
+                       libelleZone="A"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e498" libelleZone="A" libellePrescription="nonConcerne">
+                  <h4>Réseau électrique </h4>
+                  <div>Les nouvelles constructions ou le changement de destination d’un bâtiment agricole nécessitant une desserte par le réseaux électrique ne doivent pas conduire à une baisse de tension qui impliquerait le renforcement du réseau</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+      </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e365"
+   <plu:Titre id="d1e561"
               intitule="VII. ZoNE NAtURELLE (N)"
               libelleZone="N"
               libellePrescription="nonConcerne"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e362" libelleZone="N" libellePrescription="nonConcerne">
+      <plu:Contenu id="d1e501" libelleZone="N" libellePrescription="nonConcerne">
          <h1>VII. ZoNE NAtURELLE (N)</h1>
          <div>La zone N a pour vocation de préserver les espaces naturels au titre de la richesse de la biodiversité ou de leur qualité paysagère. Elle comprend deux secteurs limitant plus ou moins les possibilités de constructions, et localisés sur le plan de zonage.</div>
       </plu:Contenu>
-      <plu:Contenu id="d1e364" libelleZone="Na" libellePrescription="nonConcerne">
-         <div>Dans le secteur Na sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
-         <ul>
-            <li>des clôtures nécessaires à l’activité pastorale ; </li>
-            <li>des extensions et annexes des bâtiments existants ; </li>
-            <li>des installations techniques nécessaires au service public ou d’intérêt collectif à condition qu’ils soient compatibles avec une activité agricole ou forestière et qu’ils ne portent pas atteinte aux espaces naturels et aux paysages ; </li>
-            <li>des installations et constructions liées à l’activité forestière. </li>
-         </ul>
-      </plu:Contenu>
-      <plu:Contenu id="d1e372" libelleZone="Np" libellePrescription="nonConcerne">
-         <div>Dans le secteur Np sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
-         <ul>
-            <li>des installations techniques nécessaires au service public ou d’intérêt collectif à condition qu’ils soient compatibles avec une activité agricole ou forestière et qu’ils ne portent pas atteinte aux espaces naturels et aux paysages ; </li>
-            <li>des clôtures nécessaires à l’activité pastorale. </li>
-         </ul>
-      </plu:Contenu>
-      <plu:Contenu id="d1e378" libelleZone="N" libellePrescription="nonConcerne">
-         <div>Les aménagements légers destinés à mettre en valeur les espaces naturels ou permettre leur découverte (équipements pédagogiques, abris et objets mobiliers destinés à l’information du public, cheminements piétonniers ni bitumés ni cimentés) sont autorisés à condition qu’ils ne dénaturent pas leurs caractères paysagers ou environnementaux ;</div>
-         <div>L’emprise au sol des extensions et annexes des habitations existantes ne peut pas excéder respectivement 50 m² et 20 m².</div>
-         <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder 10 mètres au faîtage.</div>
-         <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire doit argumenter le parti architectural souhaité.</div>
-         <div>La hauteur des annexes et extensions ne peut excéder celle du bâtiment principal</div>
-         <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum.</div>
-         <div>La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
-         <div>Les annexes de doivent pas être localisées à plus de 30 m de la maison d’habitation.</div>
-         <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement</div>
-         <div>
-            <em>Pour les maisons d’habitation existantes, annexes et extensions</em>
-         </div>
-         <div style="text-decoration:underline">Les façades</div>
-         <div>Les façades doivent être de ton gris clair, pierre, grège ou blanc cassé. En cas de murs en pierre, les joints doivent être plus foncés que les pierres.</div>
-         <div>Sont interdits : </div>
-         <ul>
-            <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
-            <li>les enduits de couleur blanche ; </li>
-            <li>les enduits en ciment destinés à rester apparents. </li>
-         </ul>
-         <div style="text-decoration:underline">Les toitures</div>
-         <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérents au regard de la trame d’ouvertures de la façade : </div>
-         <ul>
-            <li>plus hauts que larges, </li>
-            <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
-            <li>et alignés sur les fenêtres du dernier niveau. </li>
-         </ul>
-         <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze.</div>
-         <div>Les bardeaux sont autorisés.</div>
-         <div>Elles peuvent être végétalisée.</div>
-         <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. La couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
-         <div>Dans le bâti ancien, la pente de toit existante doit être conservée.</div>
-         <div>En extension du bâti ancien, une pente de toit différente peut être autorisée si l’harmonie globale de la construction est préservée.</div>
-         <div style="text-decoration:underline">Les menuiseries</div>
-         <div>La couleur blanche est interdite.</div>
-         <div>L’isolation par l’extérieur pourra être refusée pour des raisons patrimoniales.</div>
-         <div>Les éléments techniques tels que souches de cheminées, matériels de ventilation et de climatisation, caissons de volets roulants, etc. doivent faire l’objet d’une intégration soignée.</div>
-         <div>
-            <em>Pour les autres constructions</em>
-         </div>
-         <div style="text-decoration:underline">Les façades</div>
-         <div>Les façades devront être de couleur sombre.</div>
-         <div style="text-decoration:underline">Les toitures</div>
-         <div>Les châssis de toiture sont interdits.</div>
-         <div>Les toitures doivent être de couleur sombre.</div>
-         <div style="text-decoration:underline">Les menuiseries</div>
-         <div>Les menuiseries seront de teinte plus foncée que le reste de la façade.</div>
-         <div>
-            <em>Les clôtures</em>
-         </div>
-         <div>Elles ne sont pas obligatoires.</div>
-         <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
-         <div style="text-decoration:underline">Pour les maisons d’habitation existantes</div>
-         <div>En bordure de voies, elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
-         <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
-         <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière. Des dérogations peuvent être accordées sur les clôtures en limite séparative entre deux maisons.</div>
-         <div style="text-decoration:underline">Pour les autres constructions ou aménagements</div>
-         <div>Elles ne peuvent excéder une hauteur maximale de 2 m .</div>
-         <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
-         <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière.</div>
-         <div>Les dépôts ou matériaux visibles de l’espace public doivent être masqués par un accompagnement végétal.</div>
-         <div>Les abords des constructions et aménagements doivent être agrémentés de plantations.</div>
-         <div>L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
-         <div>Les plantations monospécifique sont interdites.</div>
-         <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
-         <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
-         <div>Pour être constructible, un terrain doit avoir accès à une voie publique ou à une voie privée.</div>
-         <div>La largeur des accès sur la voie publique doit être proportionnée à la taille et au besoin des constructions. Elle est limitée à 5 mètres.</div>
-         <div>Les voies et les accès à créer ou à aménager doivent être adaptés aux usages qu’ils supportent et aux opérations qu’ils doivent desservir.</div>
-         <div>Dans tous les cas, les voies doivent permettre l’accès et la bonne circulation des véhicules de secours et de lutte contre les incendies.</div>
-         <div>L’alimentation de toute construction nouvelle, dont le besoin en eau potable est reconnu, est assurée par le réseau public s’il existe ou à défaut, par un moyen conforme à la réglementation en vigueur. Il en est de même pour le changement de destination d’un bâtiment agricole.</div>
-         <div>Les nouvelles constructions ou le changement de destination d’un bâtiment agricole nécessitant une desserte par le réseaux électrique ne doivent pas conduire à une baisse de tension qui impliquerait le renforcement du réseau</div>
-      </plu:Contenu>
+      <plu:Titre id="d1e565"
+                 intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
+                 libelleZone="N"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e505" libelleZone="N" libellePrescription="nonConcerne">
+            <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e569"
+                    intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
+                    libelleZone="N"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e507" libelleZone="N" libellePrescription="nonConcerne">
+               <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
+            </plu:Contenu>
+            <plu:Contenu id="d1e508" libelleZone="Na" libellePrescription="nonConcerne">
+               <div>Dans le secteur Na sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
+               <ul>
+                  <li>des clôtures nécessaires à l’activité pastorale ; </li>
+                  <li>des extensions et annexes des bâtiments existants ; </li>
+                  <li>des installations techniques nécessaires au service public ou d’intérêt collectif à condition qu’ils soient compatibles avec une activité agricole ou forestière et qu’ils ne portent pas atteinte aux espaces naturels et aux paysages ; </li>
+                  <li>des installations et constructions liées à l’activité forestière. </li>
+               </ul>
+            </plu:Contenu>
+            <plu:Contenu id="d1e516" libelleZone="Np" libellePrescription="nonConcerne">
+               <div>Dans le secteur Np sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
+               <ul>
+                  <li>des installations techniques nécessaires au service public ou d’intérêt collectif à condition qu’ils soient compatibles avec une activité agricole ou forestière et qu’ils ne portent pas atteinte aux espaces naturels et aux paysages ; </li>
+                  <li>des clôtures nécessaires à l’activité pastorale. </li>
+               </ul>
+            </plu:Contenu>
+         </plu:Titre>
+         <plu:Titre id="d1e584"
+                    intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
+                    libelleZone="N"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e524" libelleZone="N" libellePrescription="nonConcerne">
+               <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
+               <div>Les aménagements légers destinés à mettre en valeur les espaces naturels ou permettre leur découverte (équipements pédagogiques, abris et objets mobiliers destinés à l’information du public, cheminements piétonniers ni bitumés ni cimentés) sont autorisés à condition qu’ils ne dénaturent pas leurs caractères paysagers ou environnementaux ;</div>
+            </plu:Contenu>
+         </plu:Titre>
+      </plu:Titre>
+      <plu:Titre id="d1e588"
+                 intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
+                 libelleZone="N"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e527" libelleZone="N" libellePrescription="nonConcerne">
+            <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e591"
+                    intitule="1. empRise au sol, hauteuR et implantation des constRuctions"
+                    libelleZone="N"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e529" libelleZone="N" libellePrescription="nonConcerne">
+               <h3>1. empRise au sol, hauteuR et implantation des constRuctions</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e594"
+                       intitule="Emprise au sol maximale des constructions "
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e531" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>Emprise au sol maximale des constructions </h4>
+                  <div>L’emprise au sol des extensions et annexes des habitations existantes ne peut pas excéder respectivement 50 m² et 20 m².</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e599"
+                       intitule="hauteur des constructions "
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e535" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>hauteur des constructions </h4>
+                  <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder 10 mètres au faîtage.</div>
+                  <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire doit argumenter le parti architectural souhaité.</div>
+                  <div>La hauteur des annexes et extensions ne peut excéder celle du bâtiment principal</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e605"
+                       intitule="Implantation des constructions "
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e540" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>Implantation des constructions </h4>
+                  <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum.</div>
+                  <div>La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
+                  <div>Les annexes de doivent pas être localisées à plus de 30 m de la maison d’habitation.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+         <plu:Titre id="d1e611"
+                    intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
+                    libelleZone="N"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e546" libelleZone="N" libellePrescription="nonConcerne">
+               <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
+               <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement</div>
+               <div>
+                  <em>Pour les maisons d’habitation existantes, annexes et extensions</em>
+               </div>
+               <div style="text-decoration:underline">Les façades</div>
+               <div>Les façades doivent être de ton gris clair, pierre, grège ou blanc cassé. En cas de murs en pierre, les joints doivent être plus foncés que les pierres.</div>
+               <div>Sont interdits : </div>
+               <ul>
+                  <li>l’emploi à nu de matériaux destinés à être recouverts (carreaux de plâtre, briques creuses, parpaings et autres...) ; </li>
+                  <li>les enduits de couleur blanche ; </li>
+                  <li>les enduits en ciment destinés à rester apparents. </li>
+               </ul>
+               <div style="text-decoration:underline">Les toitures</div>
+               <div>Les châssis de toiture sont autorisés à condition d’être bien intégrés au pan de celle-ci et cohérents au regard de la trame d’ouvertures de la façade : </div>
+               <ul>
+                  <li>plus hauts que larges, </li>
+                  <li>avec une largeur identique ou inférieure à celle des fenêtres du dernier niveau, </li>
+                  <li>et alignés sur les fenêtres du dernier niveau. </li>
+               </ul>
+               <div>Les toitures doivent avoir la teinte de l’ardoise ou de la lauze.</div>
+               <div>Les bardeaux sont autorisés.</div>
+               <div>Elles peuvent être végétalisée.</div>
+               <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti. La couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
+               <div>Dans le bâti ancien, la pente de toit existante doit être conservée.</div>
+               <div>En extension du bâti ancien, une pente de toit différente peut être autorisée si l’harmonie globale de la construction est préservée.</div>
+               <div style="text-decoration:underline">Les menuiseries</div>
+               <div>La couleur blanche est interdite.</div>
+               <div>L’isolation par l’extérieur pourra être refusée pour des raisons patrimoniales.</div>
+               <div>Les éléments techniques tels que souches de cheminées, matériels de ventilation et de climatisation, caissons de volets roulants, etc. doivent faire l’objet d’une intégration soignée.</div>
+               <div>
+                  <em>Pour les autres constructions</em>
+               </div>
+               <div style="text-decoration:underline">Les façades</div>
+               <div>Les façades devront être de couleur sombre.</div>
+               <div style="text-decoration:underline">Les toitures</div>
+               <div>Les châssis de toiture sont interdits.</div>
+               <div>Les toitures doivent être de couleur sombre.</div>
+               <div style="text-decoration:underline">Les menuiseries</div>
+               <div>Les menuiseries seront de teinte plus foncée que le reste de la façade.</div>
+               <div>
+                  <em>Les clôtures</em>
+               </div>
+               <div>Elles ne sont pas obligatoires.</div>
+               <div>Elles doivent être, par leur nature, leur aspect, leur implantation et leurs dimensions, intégrées à leur environnement immédiat et privilégier les compositions végétales. Les clôtures naturelles existantes (talus plantés ou haies bocagères) doivent, dans la mesure du possible, être conservées, voire régénérées. De manière générale, elles doivent être perméables pour permettre le passage de la petite faune.</div>
+               <div style="text-decoration:underline">Pour les maisons d’habitation existantes</div>
+               <div>En bordure de voies, elles ne peuvent excéder une hauteur maximale de 1,20 m.</div>
+               <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
+               <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière. Des dérogations peuvent être accordées sur les clôtures en limite séparative entre deux maisons.</div>
+               <div style="text-decoration:underline">Pour les autres constructions ou aménagements</div>
+               <div>Elles ne peuvent excéder une hauteur maximale de 2 m .</div>
+               <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
+               <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière.</div>
+            </plu:Contenu>
+            <plu:Titre id="d1e672"
+                       intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e606" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
+                  <div>Les dépôts ou matériaux visibles de l’espace public doivent être masqués par un accompagnement végétal.</div>
+                  <div>Les abords des constructions et aménagements doivent être agrémentés de plantations.</div>
+                  <div>L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e678"
+                       intitule="Espaces libres et de plantations, d’aires de jeux et de loisir "
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e612" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>Espaces libres et de plantations, d’aires de jeux et de loisir </h4>
+                  <div>Les plantations monospécifique sont interdites.</div>
+                  <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e684"
+                       intitule="obligations en matière de performances énergétiques et environnementales"
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e616" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>obligations en matière de performances énergétiques et environnementales</h4>
+                  <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+      </plu:Titre>
+      <plu:Titre id="d1e688"
+                 intitule="c. EqUIpEmENts Et RÉsEAUX"
+                 libelleZone="N"
+                 libellePrescription="nonConcerne"
+                 inseeCommune="15079"
+                 niveau="2">
+         <plu:Contenu id="d1e619" libelleZone="N" libellePrescription="nonConcerne">
+            <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
+         </plu:Contenu>
+         <plu:Titre id="d1e691"
+                    intitule="1. accès et voiRie"
+                    libelleZone="N"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e622" libelleZone="N" libellePrescription="nonConcerne">
+               <h3>1. accès et voiRie</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e694"
+                       intitule="accès et voiRie"
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e624" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>accès et voiRie</h4>
+                  <div>Pour être constructible, un terrain doit avoir accès à une voie publique ou à une voie privée.</div>
+                  <div>La largeur des accès sur la voie publique doit être proportionnée à la taille et au besoin des constructions. Elle est limitée à 5 mètres.</div>
+                  <div>Les voies et les accès à créer ou à aménager doivent être adaptés aux usages qu’ils supportent et aux opérations qu’ils doivent desservir.</div>
+                  <div>Dans tous les cas, les voies doivent permettre l’accès et la bonne circulation des véhicules de secours et de lutte contre les incendies.</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+         <plu:Titre id="d1e701"
+                    intitule="2. conditions de desseRte paR les Réseaux"
+                    libelleZone="N"
+                    libellePrescription="nonConcerne"
+                    inseeCommune="15079"
+                    niveau="3">
+            <plu:Contenu id="d1e630" libelleZone="N" libellePrescription="nonConcerne">
+               <h3>2. conditions de desseRte paR les Réseaux</h3>
+            </plu:Contenu>
+            <plu:Titre id="d1e704"
+                       intitule="Eau potable "
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e632" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>Eau potable </h4>
+                  <div>L’alimentation de toute construction nouvelle, dont le besoin en eau potable est reconnu, est assurée par le réseau public s’il existe ou à défaut, par un moyen conforme à la réglementation en vigueur. Il en est de même pour le changement de destination d’un bâtiment agricole.</div>
+               </plu:Contenu>
+            </plu:Titre>
+            <plu:Titre id="d1e709"
+                       intitule="Réseau électrique "
+                       libelleZone="N"
+                       libellePrescription="nonConcerne"
+                       inseeCommune="15079"
+                       niveau="4">
+               <plu:Contenu id="d1e636" libelleZone="N" libellePrescription="nonConcerne">
+                  <h4>Réseau électrique </h4>
+                  <div>Les nouvelles constructions ou le changement de destination d’un bâtiment agricole nécessitant une desserte par le réseaux électrique ne doivent pas conduire à une baisse de tension qui impliquerait le renforcement du réseau</div>
+               </plu:Contenu>
+            </plu:Titre>
+         </plu:Titre>
+      </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e462"
+   <plu:Titre id="d1e713"
               intitule="VIII. ÉLÉmENts DE pAysAGE Et sItEs Et sEctEURs à pRotÉGER"
               libelleZone="porteeGenerale"
               libellePrescription="porteeGenerale"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e460"
+      <plu:Contenu id="d1e639"
                    libelleZone="porteeGenerale"
                    libellePrescription="porteeGenerale">
          <h1>VIII. ÉLÉmENts DE pAysAGE Et sItEs Et sEctEURs à pRotÉGER</h1>
          <div>Les éléments identifiés au plan de zonage comme éléments de paysage (articles L151-19 et R.151-41 du code de l’urbanisme) et sites et secteurs à protéger pour des motifs d’ordre écologique articles L151- 23 et R.151-43 du code de l’urbanisme) concernent des éléments surfaciques, linéaires et ponctuels.</div>
       </plu:Contenu>
-      <plu:Contenu id="d1e462"
+      <plu:Contenu id="d1e642"
+                   libelleZone="porteeGenerale"
+                   libellePrescription="porteeGenerale">
+         <h4>Éléments de paysage</h4>
+      </plu:Contenu>
+      <plu:Contenu id="d1e643"
                    libelleZone="porteeGenerale"
                    libellePrescription="Paysage-d-emprunt">
          <div>Les éléments surfaciques sont les paysages d’emprunt : </div>
@@ -613,7 +1436,7 @@
          </ul>
          <div>Toutes constructions ou plantations susceptibles de limiter les perceptions globales des sites sont interdites.</div>
       </plu:Contenu>
-      <plu:Contenu id="d1e469"
+      <plu:Contenu id="d1e650"
                    libelleZone="porteeGenerale"
                    libellePrescription="porteeGenerale">
          <div>Les éléments linéaires sont : </div>
@@ -624,13 +1447,13 @@
             <li>des haies à créer (150 m). </li>
          </ul>
       </plu:Contenu>
-      <plu:Contenu id="d1e476"
+      <plu:Contenu id="d1e657"
                    libelleZone="porteeGenerale"
                    libellePrescription="Murets,Haies">
          <div>La destruction des murets identifiés est interdite. Leur réparation doit être effectuée suivant les mêmes principes constructifs et avec des matériaux similaires (pierre de pays). Le jointoiement au ciment est interdit.</div>
          <div>L’arrachage des haies identifiées est interdit. La coupe sélective d’entretien est autorisée.</div>
       </plu:Contenu>
-      <plu:Contenu id="d1e480"
+      <plu:Contenu id="d1e661"
                    libelleZone="porteeGenerale"
                    libellePrescription="Bati-a-proteger">
          <div>Les éléments ponctuels sont des éléments bâtis : maisons, granges et autres annexes agricoles, moulin, chapelle, pont, puits, fontaines, croix. Leur localisation et leur représentation photographique sont présentés pages suivantes :</div>
@@ -755,7 +1578,12 @@
             </p>
          </div>
       </plu:Contenu>
-      <plu:Contenu id="d1e567"
+      <plu:Contenu id="d1e749"
+                   libelleZone="porteeGenerale"
+                   libellePrescription="porteeGenerale">
+         <h4>sites et secteurs à protéger pour des motifs écologiques </h4>
+      </plu:Contenu>
+      <plu:Contenu id="d1e750"
                    libelleZone="porteeGenerale"
                    libellePrescription="continuite-ecologique">
          <div>Les éléments surfaciques sont des zones humides (3,7 ha). Tous les projets susceptibles de modifier le régime hydrologique des zones humides sont interdits.</div>
@@ -768,13 +1596,13 @@
          <div>L’arrachage des haies identifiées est interdit. La coupe sélective d’entretien est autorisée. La création de passage limité à 3 m est autorisé.</div>
       </plu:Contenu>
    </plu:Titre>
-   <plu:Titre id="d1e576"
+   <plu:Titre id="d1e833"
               intitule="LEXIqUE"
               libelleZone="porteeGenerale"
               libellePrescription="nonConcerne"
               inseeCommune="15079"
               niveau="1">
-      <plu:Contenu id="d1e578"
+      <plu:Contenu id="d1e761"
                    libelleZone="porteeGenerale"
                    libellePrescription="nonConcerne">
          <h1>LEXIqUE</h1>

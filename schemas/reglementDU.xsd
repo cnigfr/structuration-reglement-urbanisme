@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:plu="https://cnig.gouv.fr/reglementDU" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml" targetNamespace="https://cnig.gouv.fr/reglementDU" elementFormDefault="qualified">
+	<xs:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"/>
+	<xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/1999/xlink.xsd"/>
+	<!--   
+ /* Définition des éléments */
+ -->
+	<xs:element name="ReglementDU">
+		<xs:annotation>
+			<xs:documentation>Contient le règlement d'urbanisme pour un périmètre donnée</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="plu:Titre" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:anyURI" use="required"/>
+			<xs:attribute name="nom" type="xs:string" use="required"/>
+			<xs:attribute name="typeDoc" type="plu:typeDocEnum" use="required"/>
+			<xs:attribute name="lien" type="xs:anyURI" use="required"/>
+			<xs:attribute name="idUrba" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Titre" type="plu:TitreType"/>
+	<xs:element name="Contenu" type="plu:ContenuType"/>
+	<!-- balises html autorisées dans le contenu -->
+	<xs:group name="Html">
+		<xs:choice>
+			<xs:element ref="p"/>
+			<xs:group ref="heading"/>
+			<xs:element ref="div"/>
+			<xs:group ref="lists"/>
+			<xs:group ref="blocktext"/>
+			<xs:element ref="table"/>
+			<xs:group ref="special"/>
+			<xs:group ref="fontstyle"/>
+			<xs:group ref="phrase"/>
+			<xs:group ref="misc"/>
+		</xs:choice>
+	</xs:group>
+	<!--   
+ /* Définition des types */
+ -->
+	<xs:complexType name="TitreType">
+		<xs:sequence>
+			<xs:element ref="plu:Contenu" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="plu:Titre" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:anyURI" use="required"/>
+		<xs:attribute name="intitule" type="xs:string"/>
+		<xs:attribute name="niveau" type="xs:string"/>
+		<xs:attribute name="numero" type="xs:string"/>
+		<xs:attribute name="libelleZone" type="xs:string" use="required"/>
+		<xs:attribute name="libellePrescription" type="xs:string" use="required"/>
+		<xs:attribute name="inseeCommune" type="xs:string" use="required"/>
+		<xs:attribute ref="xlink:href"/>
+	</xs:complexType>
+	<xs:complexType name="ContenuType">
+		<xs:sequence>
+			<xs:group ref="plu:Html" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:anyURI" use="required"/>
+		<xs:attribute name="libelleZone" type="xs:string"/>
+		<xs:attribute name="libellePrescription" type="xs:string"/>
+		<xs:attribute ref="xlink:href"/>
+	</xs:complexType>
+	<!--   
+ /* Définition du vocabulaire */
+ -->
+	<xs:simpleType name="typeDocEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PLU"/>
+			<xs:enumeration value="PLUi"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

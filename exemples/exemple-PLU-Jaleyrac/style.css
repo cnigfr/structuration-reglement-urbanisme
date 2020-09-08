@@ -65,3 +65,8 @@ div
 {
   margin-top: 10px; // on ajoute un espace avant chaque paragraphe
 }
+
+strong
+{
+  font-weight: bold;
+}

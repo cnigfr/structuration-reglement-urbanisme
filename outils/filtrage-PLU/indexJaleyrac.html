@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Consultation des zones PLU de Jaleyrac</title>
+ 	<meta name="description" content="page permettant de filtrer le PLU en fonction du zonage" />
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 	<meta name="keywords" content="CNIG,PLU,règlement,zonage" />
+ 	<meta name="author" content="Stéphane Garcia, CNIG" />
+ 	<link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+ 	<header>
+ 		<table>
+ 			<tr><td>
+ 				<!-- liste déroulante 1 -->
+ 				<FORM NAME="Choix1">Consulter un zonage :
+ 					<SELECT NAME="Liste" onChange="ChangeList();FiltreZone()">
+ 						<OPTION VALUE="," selected>Toutes les zones</OPTION>
+ 						<OPTION VALUE=",UG,">UG / Zone Urbaine Générale</OPTION>
+ 						<OPTION VALUE=",UE,">UE /Zone Urbaine d'Equipements</OPTION>
+ 						<OPTION VALUE=",UX,">UX / Zone urbaine d'activités</OPTION>
+ 						<OPTION VALUE=",1AU,">1AU / Zone à urbaniser</OPTION>
+ 						<OPTION VALUE=",2AU,">2AU / Zone à urbaniser fermée</OPTION>
+ 						<OPTION VALUE=",A,">A / Zone Agricole</OPTION>
+ 						<OPTION VALUE=",N,">N / Zone Naturelle</OPTION>
+ 					</SELECT>
+ 				</FORM>
+ 			</td>
+ 			<td>
+ 				<!-- liste déroulante 2 liée à la 1e -->
+ 				<FORM NAME="Choix2">
+ 					<SELECT id="liste2" NAME="Liste" onChange="FiltreZone()">
+ 						<OPTION VALUE="," selected>Toutes les secteurs</OPTION>
+ 					</SELECT>
+ 				</FORM>
+ 			</td>
+ 			<td>
+ 				<!-- liste déroulante 3 -->
+ 				<FORM NAME="Choix3">
+ 					<SELECT NAME="Liste" onChange="FiltreZone()">
+ 						<OPTION VALUE="," selected>Toutes les prescriptions</OPTION>
+ 						<OPTION VALUE=",Paysage-d-emprunt,">Les paysages d'emprunt</OPTION>
+ 						<OPTION VALUE=",Murets,">Les murets à conserver</OPTION>
+ 						<OPTION VALUE=",Haies,">Les haies à conserver</OPTION>
+ 						<OPTION VALUE=",Bati-a-proteger,">Le bâti à protéger</OPTION>
+ 						<OPTION VALUE=",continuite-ecologique,">Les continuités écologiques</OPTION>
+ 					</SELECT>
+ 				</FORM>
+ 			</td>
+ 		</tr>
+ 	</table>
+ 	<hr/>
+ 	<script type="text/javascript">
+ 		// fonction pour lier les 2 liste déroulantes
+ 		function ChangeList() {
+
+ 			i = document.Choix1.Liste.selectedIndex;
+ 			var option = [];
+ 			if (i == 1) {
+ 				option = [document.createElement("option"),document.createElement("option")];
+ 				option[0].text = "secteur UGa";
+ 				option[0].value = ",UGa,";
+ 				option[1].text = "secteur UGb";
+ 				option[1].value = ",UGb,";
+ 			}
+ 			if (i == 7) {
+ 				option = [document.createElement("option"),document.createElement("option")];
+ 				option[0].text = "secteur Na";
+ 				option[0].value = ",Na,";
+ 				option[1].text = "secteur Np";
+ 				option[1].value = ",Np,";
+ 			}
+ 			var select = document.getElementById("liste2");
+ 			for (j = 1; j < select.length; j++) {
+
+ 				select.remove(j);
+ 				select. length = 1;
+
+ 			}
+ 			for (k = 0; k < option.length; k++) {
+ 				select.appendChild(option[k]);
+ 			}
+ 		}
+ 	</script>
+ </header>
+ <!-- emplacement du PLU après traitement -->
+ <div id="plu" />
+ <script>
+ 	var xslStylesheet;
+ 	var xsltProcessor = new XSLTProcessor();
+ 	var xmlDoc;
+
+    // chargement du fichier xml
+    myXMLHTTPRequest = new XMLHttpRequest();
+    //ici adresse du XML du PLU sur mon localhost
+    myXMLHTTPRequest.open("GET", "http://localhost:8080/jaleyrac/15079_reglement_20190128.xml", false);
+    myXMLHTTPRequest.send(null);
+    xmlDoc = myXMLHTTPRequest.responseXML;
+
+    //fonction déclanchée par la liste déroulante
+    function FiltreZone(){
+    //changement de la valeur du zonage à partir de la liste déroulante
+    var i = document.Choix1.Liste.selectedIndex;
+    var j = document.Choix2.Liste.selectedIndex;
+    var k = document.Choix3.Liste.selectedIndex;
+    var monZonage1 = document.Choix1.Liste.options[i].value;
+    var monZonage2 = document.Choix2.Liste.options[j].value;
+    var maPresc = document.Choix3.Liste.options[k].value;
+    document.getElementById("plu").innerHTML = "";
+
+    //if (monZonage2==",") {monZonage2=monZonage1;}
+
+    // chargement du fichier xslt
+    var myXMLHTTPRequest = new XMLHttpRequest();
+    //ici adresse du XSL sur mon localhost
+    myXMLHTTPRequest.open("GET", "http://localhost:8080/jaleyrac/filtreZone.xsl", false);
+    myXMLHTTPRequest.send(null);
+
+    xslStylesheet = myXMLHTTPRequest.responseXML;
+    xsltProcessor.reset();
+    xsltProcessor.importStylesheet(xslStylesheet);
+
+   //initialisation du processeur xslt
+   xsltProcessor.setParameter(null,"idZone1", monZonage1);
+   xsltProcessor.setParameter(null,"idZone2", monZonage2);
+   xsltProcessor.setParameter(null,"idPresc", maPresc);
+   var fragment = xsltProcessor.transformToFragment(xmlDoc, document);
+   document.getElementById("plu").appendChild(fragment);
+}
+
+//lancement de la fonction à l'ouverture de la page
+FiltreZone();
+</script>
+</body>
+</html> 

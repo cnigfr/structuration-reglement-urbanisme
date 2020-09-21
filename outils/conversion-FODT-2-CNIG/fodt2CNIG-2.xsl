@@ -2,7 +2,7 @@
 <!--...................................-->
 <!-- Transformation FODT > format CNIG -->
 <!--          Date: 2020-11-08         -->
-<!--            Version : 0.1          -->
+<!--            Version : béta 1       -->
 <!--     Author: Stéphane Garcia       -->
 <!--...................................-->
 <!-- 2e étape :                        -->
@@ -20,12 +20,13 @@
 			<xsl:apply-templates select="node()|@*"/>
 		</xsl:copy>
 	</xsl:template>
+	<!-- structuration du document -->
 	<xsl:template match="plu:ReglementDU">
 		<plu:ReglementDU id="{@id}" nom="{@nom}" typeDoc="{@typeDoc}" lien="{@lien}" idUrba="{@idUrba}">
 			<xsl:for-each-group select="*" group-starting-with="plu:Titre">
 				<xsl:variable name="titreZone" select="if(@zone='') then preceding::plu:Titre[@zone!=''and @niveau &lt; current()/@niveau][1]/@zone else @zone"/>
 				<xsl:variable name="titrePresc" select="if(@presc='') then preceding::plu:Titre[@presc!=''and @niveau &lt; current()/@niveau][1]/@presc else @presc"/>
-				<plu:Titre zone="{$titreZone}" prescription="{$titrePresc}" niveau="{@niveau}" intitule="{@intitule}"/>
+				<plu:Titre id="{@id}" zone="{$titreZone}" prescription="{$titrePresc}" niveau="{@niveau}" intitule="{@intitule}"/>
 				<xsl:for-each-group select="current-group() except ." group-starting-with="plu:Bloc">
 				<xsl:variable name="contenuZone" select="if(.[@type='start']/@zone) then @zone else $titreZone"/>
 				<xsl:variable name="contenuPresc" select="if(.[@type='start']/@presc) then @presc else $titrePresc"/>

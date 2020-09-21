@@ -2,10 +2,11 @@
 <!--...................................-->
 <!-- Transformation FODT > format CNIG -->
 <!--          Date: 2020-11-08         -->
-<!--            Version : 0.1          -->
+<!--            Version : béta 1       -->
 <!--     Author: Stéphane Garcia       -->
 <!--...................................-->
 <!-- 3e étape :                        -->
+<!-- Hiérarchise les titres            -->
 <!-- Mise au format CNIG               -->
 <!--...................................-->
 <xsl:stylesheet version="3.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:plu="https://cnig.gouv.fr/reglementDU">
@@ -42,7 +43,7 @@
 					</xsl:where-populated>
 				</xsl:when>
 				<xsl:otherwise>
-					<plu:Titre id="{generate-id(.)}" intitule="{@intitule}" libelleZone="{@zone}" libellePrescription="{if (@prescription = '') then 'nonConcerne' else @prescription}" inseeCommune="15079" niveau="{@niveau}">
+					<plu:Titre id="{@id}" intitule="{@intitule}" libelleZone="{@zone}" libellePrescription="{if (@prescription = '') then 'nonConcerne' else @prescription}" inseeCommune="15079" niveau="{@niveau}">
 						<xsl:sequence select="plu:hierarchiser(current-group() except ., ($level + 1))"/>
 					</plu:Titre>
 				</xsl:otherwise>

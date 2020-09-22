@@ -32,11 +32,13 @@ merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/git
 La première étape consiste à copier le contenu du PDF dans le fichier "template FODT2CNIG".
 Pour cela, sélectionner l'intégralité du PDF (Ctrl+A) et copier le au format texte brut dans Libre Office.
 Attention, il est important de ne pas copier la mise en page pour les raisons suivantes :
+
 * ne pas perturber l'étape ultérieure de transformation
 * obtenir une homogénéïté des règlements
 
 Ensuite, il convient d'enlever le texte superflu.
 Ex: 
+
 * les en-têtes et pied de page qui vont être répétées à chaque page.
 * Les illustration et textes "décoratifs" et qui n'ont pas valeur réglementaire.
 
@@ -47,6 +49,7 @@ Il est souhaitable de supprimer ces sauts de lignes indésirables.
 
 Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
 Pour cela :
+
 * Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur (si ce n'est pas possible, essayez de retrouver l'image d'origine
 en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran). Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
 Note : les images doivent être enregistrées dans un dossier "ressources" situé au même emplacement que le fichier Libre Office et avoir un nom unique.
@@ -60,6 +63,7 @@ Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, eff
 Il convient maintenant de faire une mise en page sommaire. Il ne s'agit pas de recréer exactement la même mise en page que le PDF. En effet,
 l'outil de conversion ne prend en charge qu'un nombre limité d'option.
 Les options prises en charge sont les suivantes :
+
 * Titres
 * Images
 * gras
@@ -76,6 +80,7 @@ dans la liste déroulante, sélectionner le niveau de titre qui convient. Par ex
 === hyperliens 
 
 Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner Insérsion/Hyperlien dans le menu (ou Ctrl+K).
+
 * S'il s'agit d'une URL externe, copier-coller l'URL dans le champ URL
 * S'il s'agit d'un lien interne (pour faire un renvoi), sélectionner Document/Cible et sélectionner le titre correspondant.
 
@@ -84,6 +89,7 @@ Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner
 Le fichier template FODT2CNIG est pré-enregistré avec des métadonnées.
 
 Pour les modifier, aller dans Fichier/Propriétés/propriétés personnalisées, et renseignez les valeurs suivantes :
+
 * id : URL du règlement en ligne ou, sinon, le nom du règlement (pièce écrite du standard CNIG PLU). Ex : 44712_reglement_20041103
 * nom : nom du règlement d’urbanisme. Le nom doit être explicite et mentionner le nom de la collectivité. Ex : Règlement écrit du PLUi de Lille Métropole
 * typeDoc : Correspond au champ TYPEDOC de la classe DOC_URBA du Standard CNIG PLU. Limité aux valeurs PLU et PLUI.

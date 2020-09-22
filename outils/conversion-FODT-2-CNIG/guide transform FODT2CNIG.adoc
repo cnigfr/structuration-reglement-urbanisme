@@ -26,4 +26,28 @@ Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guid
 
 == 1. Copie du PLU original
 
+La première étape consiste à copier le contenu du PDF dans le fichier "template FODT2CNIG".
+Pour cela, sélectionner l'intégralité du PDF (Ctrl+A) et copier le au format texte brut dans Libre Office.
+Attention, il est important de ne pas copier la mise en page pour les raisons suivantes :
+* ne pas perturber l'étape ultérieure de transformation
+* obtenir une homogénéïté des règlements
+
+Ensuite, il convient d'enlever le texte superflu.
+Ex: 
+* les en-têtes et pied de page qui vont être répétées à chaque page.
+* Les illustration et textes "décoratifs" et qui n'ont pas valeur réglementaire.
+
+=== Copie des images
+
+Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
+Pour cela :
+* Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur (si ce n'est pas possible, essayez de retrouver l'image d'origine
+en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran). Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
+Note : les images doivent être enregistrées dans un dossier "ressources" situé au même emplacement que le fichier Libre Office et avoir un nom unique.
+
+
+== 1. Mise en page
+
+
+
 

@@ -1,0 +1,29 @@
+= Guide d'utilisation de l'outil de conversion FODT vers le format CNIG règlement d'urbanisme
+
+Version béta 1
+
+== Introduction
+
+Le CNIG développe actuellement un format de structuration des règlements d'urbanisme afin de les rendre plus facilement exploitables par des machines.
+L'objectif à long terme de ce standard est de développer des applications pour faciliter l'instruction des demandes de permis de construire par exemple.
+
+Afin de faciliter la transformation d'un PLU dans ce nouveau format, un outil a été créé à partir de LibreOffice. Et nous le mettons à disposition afin de
+permettre à tous de pouvoir tester le format de structuration des règlements d'urbanisme du CNIG en cours de développement.
+
+== Objectif
+
+L'objectif de ce guide est de donner toutes les étapes pour transformer un PLU dans le nouveau format.
+Cela nous permettra de voir si le nouveau format est bien adapté aux différents PLU et de le corriger si nécessaire.
+
+== A qui est destiné ce guide ?
+
+Ce guide est destiné à toute personne ou collectivité souhaitant participer à l'élaboration du nouveau format de structuration des règlements d'urbanisme
+et tester la transformation de son PLU au nouveau format.
+
+== Support
+
+Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guide, merci de créer une nouvelle "issue" dans GitHub.
+
+== 1. Copie du PLU original
+
+

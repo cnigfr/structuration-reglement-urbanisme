@@ -36,21 +36,21 @@
 	<xsl:key name="titre" match="text:h" use="text()"/>
 	<!-- balises plu -->
 	<xsl:template match="text:h">
-		<plu:Titre id="{generate-id(.)}" zone="{substring(./text:variable-set[@text:name='libelleZone']/@text:formula,6)}" presc="{substring(./text:variable-set[@text:name='libellePresc']/@text:formula,6)}" niveau="{@text:outline-level}" intitule="{text()}"/>
+		<plu:Titre id="{generate-id(.)}" zone="{substring(./text:variable-set[@text:name='idZone']/@text:formula,6)}" presc="{substring(./text:variable-set[@text:name='idPresc']/@text:formula,6)}" niveau="{@text:outline-level}" intitule="{text()}"/>
 		<xsl:element name="{concat('h',@text:outline-level)}">
 			<xsl:value-of select="."/>
 		</xsl:element>
 	</xsl:template>
-	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='libelleZoneStart']">
+	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='idZoneStart']">
 		<plu:Bloc type="start" zone="{substring(./*[1]/@text:formula,6)}"/>
 	</xsl:template>
-	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='libelleZoneEnd']">
+	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='idZoneEnd']">
 		<plu:Bloc type="end" zone="{substring(./*[1]/@text:formula,6)}"/>
 	</xsl:template>
-	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='libellePrescStart']">
+	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='idPrescStart']">
 		<plu:Bloc type="start" presc="{substring(./*[1]/@text:formula,6)}"/>
 	</xsl:template>
-	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='libellePrescEnd']">
+	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='idPrescEnd']">
 		<plu:Bloc type="end" presc="{substring(./*[1]/@text:formula,6)}"/>
 	</xsl:template>
 	<!-- conversion ODT/html -->

@@ -77,7 +77,7 @@ dans la liste déroulante, sélectionner le niveau de titre qui convient. Par ex
 
 Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner Insérsion/Hyperlien dans le menu (ou Ctrl+K).
 * S'il s'agit d'une URL externe, copier-coller l'URL dans le champ URL
-* S'il s'agit d'un lien interne, sélectionner Document/Cible et sélectionner le titre correspondant.
+* S'il s'agit d'un lien interne (pour faire un renvoi), sélectionner Document/Cible et sélectionner le titre correspondant.
 
 == 2. Métadonnées
 

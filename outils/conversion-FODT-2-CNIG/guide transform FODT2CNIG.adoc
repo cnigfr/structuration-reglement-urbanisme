@@ -45,8 +45,37 @@ Pour cela :
 en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran). Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
 Note : les images doivent être enregistrées dans un dossier "ressources" situé au même emplacement que le fichier Libre Office et avoir un nom unique.
 
+Puis, insérer l'image dans le texte à l'endroit souhaité (glisser-déposer).
+
+Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. Dans Nom, indiquez le nom du fichier que vous venez d'enregistrer. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image (propriété Alt en HTML).
 
 == 1. Mise en page
+
+Il convient maintenant de faire une mise en page sommaire. Il ne s'agit pas de recréer exactement la même mise en page que le PDF. En effet,
+l'outil de conversion ne prend pas en charge qu'un nombre limité d'option.
+Les options prises en charge sont les suivantes :
+* Titres
+* Images
+* gras
+* souligné
+* italique
+* hyperliens
+* tableaux
+
+=== Titres
+
+Pour définir un titre, cliquez sur le texte du titre et modifier le style :
+dans la liste déroulante, sélectionner le niveau de titre qui convient. Par exemple, le style Titre 1, Titre 2, etc.
+
+=== hyperliens 
+
+Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner Insérsion/Hyperlien dans le menu (ou Ctrl+K).
+* S'il s'agit d'une URL externe, copier-coller l'URL dans le champ URL
+* S'il s'agit d'un lien interne, sélectionner Document/Cible et sélectionner le titre correspondant.
+
+== 2. Métadonnées
+
+
 
 
 

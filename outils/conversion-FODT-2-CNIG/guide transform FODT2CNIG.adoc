@@ -58,7 +58,7 @@ Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, eff
 == 1. Mise en page
 
 Il convient maintenant de faire une mise en page sommaire. Il ne s'agit pas de recréer exactement la même mise en page que le PDF. En effet,
-l'outil de conversion ne prend pas en charge qu'un nombre limité d'option.
+l'outil de conversion ne prend en charge qu'un nombre limité d'option.
 Les options prises en charge sont les suivantes :
 * Titres
 * Images

@@ -158,4 +158,8 @@ Insertion/Champs/Autres champs. Sélectionner la variable "idPrescEnd" et rensei
 
 == Exemple
 
-Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier.
+Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier "Exemple PLU Jaleyrac.fodt".
+
+== Enregistrement
+
+Une fois le fichier terminé, vous pouvez l'enregistrer (en conservant le format fodt), le zipper avec le dossier ressources contenant les images et l'envoyer à stephane.garcia@ign.fr.

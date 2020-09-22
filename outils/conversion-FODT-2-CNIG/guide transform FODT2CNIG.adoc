@@ -50,7 +50,7 @@ Il est souhaitable de supprimer ces sauts de lignes indésirables.
 Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
 Pour cela :
 
-* Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur (si ce n'est pas possible, essayez de retrouver l'image d'origine
+Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur (si ce n'est pas possible, essayez de retrouver l'image d'origine
 en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran). Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
 Note : les images doivent être enregistrées dans un dossier "ressources" situé au même emplacement que le fichier Libre Office et avoir un nom unique.
 

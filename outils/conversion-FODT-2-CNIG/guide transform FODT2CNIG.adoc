@@ -112,7 +112,15 @@ LIBELLE de la classe ZONE_URBA du standard CNIG PLU ou la valeur « porteeGenera
 La valeur peut contenir plusieurs zonages séparés par des virgules. Ex :	UG,1AU.
 
 Attention : tous les titres doivent être renseignés ceux qui ne concernent pas une zone particulière doivent avoir la valeur "porteeGenerale".
-	
+
+L'identification de la commune est également nécessaire pour le bon fonctionnement de l'outil.
+Pour cela, cliquez à la fin du titre concerné (après la variable "idZone" que vous venez d'ajouter) et ajouter une variable :
+
+Insertion/Champs/Autres champs. Sélectionner la variable "inseeCommune" et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE séparés par une virgule. Ex: "69382,69383".
+
+Remarque : il n'est pas nécessaire de définir une variable par Titre. En effet, si la valeur est la même pour tous les sou-titres d'un titre, alors
+ne la définir que pour le titre de plus haut niveau.
+
 === Dans les paragraphes
 
 Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, un secteur de zone UGa de la zone UG.

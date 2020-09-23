@@ -20,10 +20,152 @@ Cela nous permettra de voir si le nouveau format est bien adapté aux différent
 Ce guide est destiné à toute personne ou collectivité souhaitant participer à l'élaboration du nouveau format de structuration des règlements d'urbanisme
 et tester la transformation de son PLU au nouveau format.
 
-== Support
+== Message important
 
-Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guide, merci de créer une nouvelle "issue" dans GitHub.
+Vu la complexité et la diversité des PLU, le présent guide n'a pas vocation à répondre à tous les cas possibles. Nous essayons néanmoins
+de créer un standard qui soit suffisamment générique pour s'adapter dans la majorité des cas.
+Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guide, ou si vous avez des suggestions d'amélioration,
+merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue).
 
 == 1. Copie du PLU original
 
+La première étape consiste à copier le contenu du PDF dans le fichier "template FODT2CNIG".
+Pour cela, sélectionner l'intégralité du PDF (Ctrl+A) et copier le au format texte brut dans Libre Office.
+Attention, il est important de ne pas copier la mise en page pour les raisons suivantes :
 
+* ne pas perturber l'étape ultérieure de transformation
+* obtenir une homogénéïté des règlements
+
+Ensuite, il convient d'enlever le texte superflu.
+Ex: 
+
+* les en-têtes et pied de page qui vont être répétées à chaque page.
+* Les illustration et textes "décoratifs" et qui n'ont pas valeur réglementaire.
+
+Il est également possible que des sauts de lignes ait été rajoutés lors de la copie.
+Il est souhaitable de supprimer ces sauts de lignes indésirables.
+
+=== Copie des images
+
+Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
+Pour cela :
+
+Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur (si ce n'est pas possible, essayez de retrouver l'image d'origine
+en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran). Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
+Note : les images doivent être enregistrées dans un dossier "ressources" situé au même emplacement que le fichier Libre Office et avoir un nom unique.
+
+Puis, insérer l'image dans le texte à l'endroit souhaité (glisser-déposer).
+
+Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. Dans Nom, indiquez le nom du fichier que vous venez d'enregistrer. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image (propriété Alt en HTML).
+
+== 1. Mise en page
+
+Il convient maintenant de faire une mise en page sommaire. Il ne s'agit pas de recréer exactement la même mise en page que le PDF. En effet,
+l'outil de conversion ne prend en charge qu'un nombre limité d'option.
+Les options prises en charge sont les suivantes :
+
+* Titres
+* Images
+* gras
+* souligné
+* italique
+* hyperliens
+* tableaux
+
+=== Titres
+
+Pour définir un titre, cliquez sur le texte du titre et modifier le style :
+dans la liste déroulante, sélectionner le niveau de titre qui convient. Par exemple, le style Titre 1, Titre 2, etc.
+
+=== hyperliens 
+
+Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner Insérsion/Hyperlien dans le menu (ou Ctrl+K).
+
+* S'il s'agit d'une URL externe, copier-coller l'URL dans le champ URL
+* S'il s'agit d'un lien interne (pour faire un renvoi), sélectionner Document/Cible et sélectionner le titre correspondant.
+
+== 2. Métadonnées
+
+Le fichier template FODT2CNIG est pré-enregistré avec des métadonnées.
+
+Pour les modifier, aller dans Fichier/Propriétés/propriétés personnalisées, et renseignez les valeurs suivantes :
+
+* id : URL du règlement en ligne ou, sinon, le nom du règlement (pièce écrite du standard CNIG PLU). Ex : 44712_reglement_20041103
+* nom : nom du règlement d’urbanisme. Le nom doit être explicite et mentionner le nom de la collectivité. Ex : Règlement écrit du PLUi de Lille Métropole
+* typeDoc : Correspond au champ TYPEDOC de la classe DOC_URBA du Standard CNIG PLU. Limité aux valeurs PLU et PLUI.
+* lien : lien vers le fichier de métadonnées du document d’urbanisme. Si le fichier de métadonnées est disponible en-ligne, mettre le lien de la fiche de métadonnées, sinon, le lien vers le document d’urbanisme téléchargeable sur le GPU. Ex : http://www.geoportail-urbanisme.gouv.fr/atom/datasetfeed/DU_44183.xml
+
+== 3. Identification des zonages
+
+Lorsqu'un PLU est chargé dans le géoportail de l'urbanisme (GPU), il est accompagné d'une couche SIG ZONE_URBA définissant les frontières du
+zonage du PLU. Ces zonages corresponent dans le règlement écrit à des chapitres voir à des paragraphes spécifiques. Il convient de les identifier
+à l'aide de l'outil Libre Office.
+
+=== Dans les titres
+
+Lorsqu'un zonage est commun à toutes les parties d'un chapitre.
+Dans ce cas, cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idZone" et renseigner la Valeur de la façon suivante :
+
+Lien vers le champ LIBELLE de la classe ZONE_URBA permettant d’identifier la ou les zones correspondantes au titre.
+LIBELLE de la classe ZONE_URBA du standard CNIG PLU ou la valeur « porteeGenerale » si le titre s’applique à tous les zonages.
+La valeur peut contenir plusieurs zonages séparés par des virgules. Ex :	UG,1AU.
+
+Attention : tous les titres doivent être renseignés ceux qui ne concernent pas une zone particulière doivent avoir la valeur "porteeGenerale".
+	
+=== Dans les paragraphes
+
+Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, un secteur de zone UGa de la zone UG.
+
+Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idZoneStart" et renseigner la Valeur de la zone ou du secteur de zone concerné.
+
+Note, cette valeur doit également correspondre à un LIBELLE de la classe ZONE_URBA.
+
+Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseigner la Valeur de la zone ou du secteur de zone concerné.
+
+== 4. Identification des prescriptions
+
+Les prescriptions concernent les couches PRESCRIPTION_PCT, PRESCRIPTION_SURF et PRESCRIPTION_LIN du standard CNIG PLU.
+Pour le moment, l'identification des prescriptions ne peut pas se faire à l'aide des champs actuels (LIBELLE, TXT), c'est pourquoi,
+le standard CNIG règlement DU définit un nouveau champ pour les prescription : IDPRESC.
+Il s'agit d'identifier chaque paragraphe du règlement écrit désignant une prescription de manière unique.
+
+=== Dans les titres
+
+Lorsqu'une prescription est commune à toutes les parties d'un chapitre.
+
+Dans ce cas, cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idPresc" et renseigner l'identifiant de la prescription.
+
+L'identifiant de la prescription peut être défini au niveau de la catégorie de l'objet de la prescription ou au niveau de l'objet lui-même.
+
+Par exemple si une prescription concerne un objet géographique particulier, par exemple un monument historique spécifique, un pont, etc., un identifiant peut être donné par objet. Ex : Presc_Chateau1, Presc_Pont3...
+Si une prescription est commune à tout un type d'objet géographique (par exemple, toutes les haies), un identifiant peut être donné par type d'objet. Ex : haies-a-conserver
+
+Si le chapitre ne contient pas de prescription, alors ne pas mettre de variable idPresc.
+
+Si le chapitre concerne toutes les prescriptions, alors :
+cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idPresc" et renseigner "porteeGenerale"
+
+Note : l'identifiant ne dois pas contenir de caractère spéciaux. En particulier la virgule qui sert à séparer plusieurs identifiants.
+
+=== Dans les paragraphes
+
+Lorsqu'un paragraphe concerne une prescription spécifique différent du reste du chapitre.
+
+Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idPrescStart" et renseigner l'identifiant de la prescription (voir ci-dessus).
+
+Ensuite, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idPrescEnd" et renseigner l'identifiant de la prescription (voir ci-dessus).
+
+== Exemple
+
+Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier "Exemple PLU Jaleyrac.fodt".
+
+== Enregistrement
+
+Une fois le fichier terminé, vous pouvez l'enregistrer (en conservant le format fodt), le zipper avec le dossier ressources contenant les images et l'envoyer à stephane.garcia@ign.fr.

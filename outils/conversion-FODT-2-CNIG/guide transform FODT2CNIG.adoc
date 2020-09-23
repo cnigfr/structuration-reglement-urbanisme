@@ -95,6 +95,10 @@ Pour les modifier, aller dans Fichier/Propriétés/propriétés personnalisées,
 * typeDoc : Correspond au champ TYPEDOC de la classe DOC_URBA du Standard CNIG PLU. Limité aux valeurs PLU et PLUI.
 * lien : lien vers le fichier de métadonnées du document d’urbanisme. Si le fichier de métadonnées est disponible en-ligne, mettre le lien de la fiche de métadonnées, sinon, le lien vers le document d’urbanisme téléchargeable sur le GPU. Ex : http://www.geoportail-urbanisme.gouv.fr/atom/datasetfeed/DU_44183.xml
 
+Important : afin de voir les variables qui vont être ajoutées par la suite, il est important de changer l'affichage des champs.
+Dans Libre Office, aller dans le menu Affichage et cliquer sur Nom des champs (ou Ctrl+F9). 
+Attention : une fois cette modification effectuée, elle modifiera également l'affichage de tous vos autres document office (par exemple, les renvois ou numéros de page ne s'afficheront pas correctement). Il suffit alors de refaire la même opération pour revenir à l'affichage normal (ou Ctrl+F9).
+
 == 3. Identification des zonages
 
 Lorsqu'un PLU est chargé dans le géoportail de l'urbanisme (GPU), il est accompagné d'une couche SIG ZONE_URBA définissant les frontières du

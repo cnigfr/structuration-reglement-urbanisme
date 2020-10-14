@@ -153,6 +153,7 @@ Insertion/Champs/Autres champs. Sélectionner la variable "idPresc" et renseigne
 
 La valeur peut contenir plusieurs prescriptions séparées par des virgules. Ex : "Mur et haie à protéger,Continuité écologique linéaire".
 
+
 Note : Dans la version définitive, il s'agira d'un nouveau champ à ajouter dans les couches PRESCRIPTION_PCT, PRESCRIPTION_SURF et PRESCRIPTION_LIN. En effet, actuellement aucun champ des tables PRESCRIPTION_XXX ne permet d'être utilisé comme identifiant.
 
 Si le chapitre ne contient pas de prescription, alors ne pas mettre de variable idPresc.
@@ -161,31 +162,29 @@ Si le chapitre est commun à toutes les prescriptions, alors la variable "idPres
 
 === Dans les paragraphes
 
-Lorsqu'un paragraphe concerne une prescription spécifique différent du reste du chapitre.
-
+Lorsqu'un paragraphe concerne une prescription spécifique différent du reste du chapitre :
 Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idPrescStart" et renseigner l'identifiant de la prescription (voir ci-dessus).
+Insertion/Champs/Autres champs. Sélectionner la variable "idPrescStart" et renseigner l'identifiant de la prescription comme pour les titres (paragraphe ci-dessus).
 
 Ensuite, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idPrescEnd" et renseigner l'identifiant de la prescription (voir ci-dessus).
+Insertion/Champs/Autres champs. Sélectionner la variable "idPrescEnd" et renseigner l'identifiant de la prescription.
 
---
-Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, le secteur UGa de la zone UG.
-Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idZoneStart" et renseigner la Valeur de la zone ou du secteur de zone concerné.
-Note, cette valeur doit également correspondre à un LIBELLE de la classe ZONE_URBA.
-Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseigner la Valeur de la zone ou du secteur de zone concerné.
-Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Dans l'exemple précédent : UG.
-
-
---
-
+Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Par exemple : "porteeGenerale"
 
 == Exemple
 
-Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier "Exemple PLU Jaleyrac.fodt".
+Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier : "Exemple PLU Jaleyrac.fodt".
 
 == Enregistrement
 
 Une fois le fichier terminé, vous pouvez l'enregistrer (en conservant le format fodt), le zipper avec le dossier ressources contenant les images et l'envoyer à stephane.garcia@ign.fr.
+
+N'oubliez pas de remonter les problèmes rencontrés en créant des "issues" dans GitHub (https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue). Ce n'est pas la peine de le faire dans le corps du mail.
+
+
+== Test (facultatif)
+Pour les utilisateurs avancés :
+Vous pouvez vous-même tester si le résultat est compatible avec le schéma CNIG règlement DU.
+Pour cela, lancer dans l'ordre les processus XSL fodt2CNIG-1, 2 et 3 sur le fichier FODT ainsi créé et comparer le résultat avec le schéma XSD situé ici :  https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/reglementDU.xsd
+
+Vous pouvez alors remonter les éventuelles erreurs en créant des "issues" dans GitHub.

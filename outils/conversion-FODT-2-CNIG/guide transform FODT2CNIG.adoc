@@ -1,4 +1,4 @@
-= Guide d'utilisation de l'outil de conversion FODT vers le format CNIG règlement d'urbanisme
+= Guide d'utilisation du template LibreOffice de structuration d'un règlement d'urbanisme au format CNIG.
 
 Version béta 1
 
@@ -9,6 +9,10 @@ L'objectif à long terme de ce standard est de développer des applications pour
 
 Afin de faciliter la transformation d'un PLU dans ce nouveau format, un outil a été créé à partir de LibreOffice. Et nous le mettons à disposition afin de
 permettre à tous de pouvoir tester le format de structuration des règlements d'urbanisme du CNIG en cours de développement.
+
+== Prérequis
+
+Logiciel Libre Office Writer.
 
 == Objectif
 
@@ -30,7 +34,10 @@ merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/git
 == 1. Copie du PLU original
 
 La première étape consiste à copier le contenu du PDF dans le fichier "template FODT2CNIG".
-Pour cela, sélectionner l'intégralité du PDF (Ctrl+A) et copier le au format texte brut dans Libre Office.
+Pour cela, sélectionner l'intégralité du PDF (Ctrl+A), le copier (Ctrl+C) et le coller au format texte brut dans Libre Office (Ctrl+Alt+Maj+V).
+
+Note : dans le cas ou le fichier PDF est une image scannée, le texte n'est pas sélectionnable. Il convient de convertir l'image en texte en utilisant la reconnaissance de caractère (ou OCR) dont il existe de nombreux outils en-ligne gratuits.
+
 Attention, il est important de ne pas copier la mise en page pour les raisons suivantes :
 
 * ne pas perturber l'étape ultérieure de transformation
@@ -39,7 +46,7 @@ Attention, il est important de ne pas copier la mise en page pour les raisons su
 Ensuite, il convient d'enlever le texte superflu.
 Ex: 
 
-* les en-têtes et pied de page qui vont être répétées à chaque page.
+* les en-têtes et pieds-de-page qui vont être répétées à chaque page.
 * Les illustration et textes "décoratifs" et qui n'ont pas valeur réglementaire.
 
 Il est également possible que des sauts de lignes ait été rajoutés lors de la copie.
@@ -50,18 +57,18 @@ Il est souhaitable de supprimer ces sauts de lignes indésirables.
 Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
 Pour cela :
 
-Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur (si ce n'est pas possible, essayez de retrouver l'image d'origine
-en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran). Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
+Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur. Si ce n'est pas possible, essayez de retrouver l'image d'origine
+en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran. Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
 Note : les images doivent être enregistrées dans un dossier "ressources" situé au même emplacement que le fichier Libre Office et avoir un nom unique.
 
-Puis, insérer l'image dans le texte à l'endroit souhaité (glisser-déposer).
+Puis, insérer l'image dans le texte à l'endroit souhaité (glisser-déposer dans Libre Office).
 
 Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. Dans Nom, indiquez le nom du fichier que vous venez d'enregistrer. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image (propriété Alt en HTML).
 
 == 1. Mise en page
 
 Il convient maintenant de faire une mise en page sommaire. Il ne s'agit pas de recréer exactement la même mise en page que le PDF. En effet,
-l'outil de conversion ne prend en charge qu'un nombre limité d'option.
+l'outil de conversion ne prend en charge qu'un nombre limité d'options.
 Les options prises en charge sont les suivantes :
 
 * Titres
@@ -99,35 +106,32 @@ Important : afin de voir les variables qui vont être ajoutées par la suite, il
 Dans Libre Office, aller dans le menu Affichage et cliquer sur Nom des champs (ou Ctrl+F9). 
 Attention : une fois cette modification effectuée, elle modifiera également l'affichage de tous vos autres document office (par exemple, les renvois ou numéros de page ne s'afficheront pas correctement). Il suffit alors de refaire la même opération pour revenir à l'affichage normal (ou Ctrl+F9).
 
-== 3. Identification des zonages
+== 3. Identification des zones
 
 Lorsqu'un PLU est chargé dans le géoportail de l'urbanisme (GPU), il est accompagné d'une couche SIG ZONE_URBA définissant les frontières du
-zonage du PLU. Ces zonages corresponent dans le règlement écrit à des chapitres voir à des paragraphes spécifiques. Il convient de les identifier
+zonage du PLU. Ce zonage correspond dans le règlement écrit à des chapitres voir à des paragraphes spécifiques. Il convient de les identifier
 à l'aide de l'outil Libre Office.
 
 === Dans les titres
 
-Lorsqu'un zonage est commun à toutes les parties d'un chapitre.
+Lorsqu'un zonage est commun à toutes les parties d'un chapitre :
 Dans ce cas, cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
 Insertion/Champs/Autres champs. Sélectionner la variable "idZone" et renseigner la Valeur de la façon suivante :
 
-Lien vers le champ LIBELLE de la classe ZONE_URBA permettant d’identifier la ou les zones correspondantes au titre.
-LIBELLE de la classe ZONE_URBA du standard CNIG PLU ou la valeur « porteeGenerale » si le titre s’applique à tous les zonages.
-La valeur peut contenir plusieurs zonages séparés par des virgules. Ex :	UG,1AU.
-
-Attention : tous les titres doivent être renseignés ceux qui ne concernent pas une zone particulière doivent avoir la valeur "porteeGenerale".
+LIBELLE de la classe ZONE_URBA du standard CNIG PLU  correspondant à la zone décrite dans ce chapitre, ou la valeur « porteeGenerale » si le titre s’applique à toutes les zones.
+La valeur peut contenir plusieurs zones séparées par des virgules. Ex :	"UG,1AU" ou "A,N".
 
 L'identification de la commune est également nécessaire pour le bon fonctionnement de l'outil.
 Pour cela, cliquez à la fin du titre concerné (après la variable "idZone" que vous venez d'ajouter) et ajouter une variable :
 
 Insertion/Champs/Autres champs. Sélectionner la variable "inseeCommune" et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE séparés par une virgule. Ex: "69382,69383".
 
-Remarque : il n'est pas nécessaire de définir une variable par Titre. En effet, si la valeur est la même pour tous les sou-titres d'un titre, alors
+Remarque : il n'est pas nécessaire de définir une variable pour tous les titres. En effet, si la valeur est la même pour tous les sous-titres d'un titre, alors
 ne la définir que pour le titre de plus haut niveau.
 
 === Dans les paragraphes
 
-Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, un secteur de zone UGa de la zone UG.
+Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, le secteur UGa de la zone UG.
 
 Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
 Insertion/Champs/Autres champs. Sélectionner la variable "idZoneStart" et renseigner la Valeur de la zone ou du secteur de zone concerné.
@@ -137,32 +141,23 @@ Note, cette valeur doit également correspondre à un LIBELLE de la classe ZONE_
 Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
 Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseigner la Valeur de la zone ou du secteur de zone concerné.
 
-== 4. Identification des prescriptions
+Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Dans l'exemple précédent : UG.
 
-Les prescriptions concernent les couches PRESCRIPTION_PCT, PRESCRIPTION_SURF et PRESCRIPTION_LIN du standard CNIG PLU.
-Pour le moment, l'identification des prescriptions ne peut pas se faire à l'aide des champs actuels (LIBELLE, TXT), c'est pourquoi,
-le standard CNIG règlement DU définit un nouveau champ pour les prescription : IDPRESC.
-Il s'agit d'identifier chaque paragraphe du règlement écrit désignant une prescription de manière unique.
+== 4. Identification des prescriptions
 
 === Dans les titres
 
-Lorsqu'une prescription est commune à toutes les parties d'un chapitre.
-
+Lorsqu'une prescription est commune à toutes les parties d'un chapitre :
 Dans ce cas, cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idPresc" et renseigner l'identifiant de la prescription.
+Insertion/Champs/Autres champs. Sélectionner la variable "idPresc" et renseigner un identifiant de la prescription correspondant au libellé d'un objet d'une des couches PRESCRIPTION_PCT, PRESCRIPTION_SURF et PRESCRIPTION_LIN. Ex : "Mur et haie à protéger"
 
-L'identifiant de la prescription peut être défini au niveau de la catégorie de l'objet de la prescription ou au niveau de l'objet lui-même.
+La valeur peut contenir plusieurs prescriptions séparées par des virgules. Ex : "Mur et haie à protéger,Continuité écologique linéaire".
 
-Par exemple si une prescription concerne un objet géographique particulier, par exemple un monument historique spécifique, un pont, etc., un identifiant peut être donné par objet. Ex : Presc_Chateau1, Presc_Pont3...
-Si une prescription est commune à tout un type d'objet géographique (par exemple, toutes les haies), un identifiant peut être donné par type d'objet. Ex : haies-a-conserver
+Note : Dans la version définitive, il s'agira d'un nouveau champ à ajouter dans les couches PRESCRIPTION_PCT, PRESCRIPTION_SURF et PRESCRIPTION_LIN. En effet, actuellement aucun champ des tables PRESCRIPTION_XXX ne permet d'être utilisé comme identifiant.
 
 Si le chapitre ne contient pas de prescription, alors ne pas mettre de variable idPresc.
 
-Si le chapitre concerne toutes les prescriptions, alors :
-cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idPresc" et renseigner "porteeGenerale"
-
-Note : l'identifiant ne dois pas contenir de caractère spéciaux. En particulier la virgule qui sert à séparer plusieurs identifiants.
+Si le chapitre est commun à toutes les prescriptions, alors la variable "idPresc" doit avoir pour valeur "porteeGenerale".
 
 === Dans les paragraphes
 
@@ -173,6 +168,19 @@ Insertion/Champs/Autres champs. Sélectionner la variable "idPrescStart" et rens
 
 Ensuite, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
 Insertion/Champs/Autres champs. Sélectionner la variable "idPrescEnd" et renseigner l'identifiant de la prescription (voir ci-dessus).
+
+--
+Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, le secteur UGa de la zone UG.
+Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idZoneStart" et renseigner la Valeur de la zone ou du secteur de zone concerné.
+Note, cette valeur doit également correspondre à un LIBELLE de la classe ZONE_URBA.
+Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseigner la Valeur de la zone ou du secteur de zone concerné.
+Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Dans l'exemple précédent : UG.
+
+
+--
+
 
 == Exemple
 

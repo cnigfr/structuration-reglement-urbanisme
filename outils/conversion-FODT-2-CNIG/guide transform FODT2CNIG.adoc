@@ -13,6 +13,7 @@ permettre à tous de pouvoir tester le format de structuration des règlements d
 == Prérequis
 
 Logiciel Libre Office Writer.
+Télécharger le fichier https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/template%20FODT2CNIG%20vb%C3%A9ta1.fodt[template FODT2CNIG].
 
 == Objectif
 
@@ -33,8 +34,10 @@ merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/git
 
 == 1. Copie du PLU original
 
-La première étape consiste à copier le contenu du PDF dans le fichier "template FODT2CNIG".
-Pour cela, sélectionner l'intégralité du PDF (Ctrl+A), le copier (Ctrl+C) et le coller au format texte brut dans Libre Office (Ctrl+Alt+Maj+V).
+La première étape consiste à copier le contenu du PDF.
+
+Pour cela, sélectionner l'intégralité du PDF (Ctrl+A) et le copier (Ctrl+C).
+Ouvrir le template Libre Office "template FODT2CNIG" et coller le texte du PDF au format texte brut dans Libre Office (Ctrl+Alt+Maj+V).
 
 Note : dans le cas ou le fichier PDF est une image scannée, le texte n'est pas sélectionnable. Il convient de convertir l'image en texte en utilisant la reconnaissance de caractère (ou OCR) dont il existe de nombreux outils en-ligne gratuits.
 

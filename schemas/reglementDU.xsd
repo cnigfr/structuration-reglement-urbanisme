@@ -49,8 +49,8 @@
 		<xs:attribute name="intitule" type="xs:string"/>
 		<xs:attribute name="niveau" type="xs:string"/>
 		<xs:attribute name="numero" type="xs:string"/>
-		<xs:attribute name="libelleZone" type="xs:string" use="required"/>
-		<xs:attribute name="libellePrescription" type="xs:string" use="required"/>
+		<xs:attribute name="idZone" type="xs:string" use="required"/>
+		<xs:attribute name="idPrescription" type="xs:string" use="required"/>
 		<xs:attribute name="inseeCommune" type="xs:string" use="required"/>
 		<xs:attribute ref="xlink:href"/>
 	</xs:complexType>
@@ -59,8 +59,8 @@
 			<xs:group ref="plu:Html" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:anyURI" use="required"/>
-		<xs:attribute name="libelleZone" type="xs:string"/>
-		<xs:attribute name="libellePrescription" type="xs:string"/>
+		<xs:attribute name="idZone" type="xs:string"/>
+		<xs:attribute name="idPrescription" type="xs:string"/>
 		<xs:attribute ref="xlink:href"/>
 	</xs:complexType>
 	<!--   

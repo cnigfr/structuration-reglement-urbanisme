@@ -87,7 +87,7 @@ Les options prises en charge sont les suivantes :
 Pour définir un titre, cliquez sur le texte du titre et modifier le style :
 dans la liste déroulante, sélectionner le niveau de titre qui convient. Par exemple, le style Titre 1, Titre 2, etc.
 
-#Attention : Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office)#
+IMPORTANT:#Attention : Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office)#
 
 === hyperliens 
 

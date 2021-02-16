@@ -5,11 +5,15 @@ Version du 16/02/2021
 
 
 == Sommaire
+ * <<Introduction>>
+ * <<Etape 1. Copie du PLU original>>
+ * <<Etape 2. Copie du PLU original>>
+ * <<Etape 3. Mise en page>>
+ * <<Etape 4. Renseigner les métadonnées>>
+ * <<Etape 5. Identifier les zones>>
+ * <<Etape 6. Identifier les prescriptions>>
+ * <<Etape 7. Enregistrement>>
 
-<<1. Copie du PLU original, sect 1>>
-
-
-[[Intro]]
 == Introduction
 
 === Contexte
@@ -25,11 +29,10 @@ Ce manuel opérateur est destiné aux collectivités territoriales et leurs pres
 L’objectif de la numérisation du PLU est de créer un règlement interactif et exploitable informatiquement (au contraire d’un document au format PDF qui est figé et inexploitable informatiquement). Grâce à cette numérisation, divers projets peuvent être mis en place, notamment l’accès aux règles d’urbanisme applicables à une parcelle sur le Géoportail de l’Urbanisme. D’autres applications peuvent exploiter ces données informatisées dans le but de modéliser les contraintes d’urbanisme.
 La numérisation du règlement d’urbanisme repose uniquement sur des logiciels libres.
 
-=== Prérequis
 
-Logiciel Libre Office Writer.
-Télécharger le fichier https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/template%20FODT2CNIG%20vb%C3%A9ta1.fodt[template FODT2CNIG].
+=== Exemple
 
+Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier : "Exemple PLU Jaleyrac.fodt".
 
 
 === A qui est destiné ce guide ?
@@ -44,7 +47,12 @@ de créer un standard qui soit suffisamment générique pour s'adapter dans la m
 Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guide, ou si vous avez des suggestions d'amélioration,
 merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue).
 
-== 1. Copie du PLU original
+== Etape 1. Installer les pré-requis
+
+Logiciel Libre Office Writer.
+Télécharger le fichier https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/template%20FODT2CNIG%20vb%C3%A9ta1.fodt[template FODT2CNIG].
+
+== Etape 2. Copie du PLU original
 
 La première étape consiste à copier le contenu du PDF.
 
@@ -80,7 +88,7 @@ Puis, insérer l'image dans le texte à l'endroit souhaité (glisser-déposer da
 
 Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. Dans Nom, indiquez le nom du fichier que vous venez d'enregistrer *avec l'extension : par exemple, image1.jpg ou toto.png)*. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image (propriété Alt en HTML).
 
-== 1. Mise en page
+== Etape 3. Mise en page
 
 Il convient maintenant de faire une mise en page sommaire. Il ne s'agit pas de recréer exactement la même mise en page que le PDF. En effet,
 l'outil de conversion ne prend en charge qu'un nombre limité d'options.
@@ -108,7 +116,7 @@ Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner
 * S'il s'agit d'une URL externe, copier-coller l'URL dans le champ URL
 * S'il s'agit d'un lien interne (pour faire un renvoi), sélectionner Document/Cible et sélectionner le titre correspondant.
 
-== 2. Métadonnées
+== Etape 4. Renseigner les métadonnées
 
 Le fichier template FODT2CNIG est pré-enregistré avec des métadonnées.
 
@@ -123,7 +131,7 @@ Important : afin de voir les variables qui vont être ajoutées par la suite, il
 Dans Libre Office, aller dans le menu Affichage et cliquer sur Nom des champs (ou Ctrl+F9). 
 Attention : une fois cette modification effectuée, elle modifiera également l'affichage de tous vos autres document office (par exemple, les renvois ou numéros de page ne s'afficheront pas correctement). Il suffit alors de refaire la même opération pour revenir à l'affichage normal (ou Ctrl+F9).
 
-== 3. Identification des zones
+== Etape 5. Identifier les zones
 
 Lorsqu'un PLU est chargé dans le géoportail de l'urbanisme (GPU), il est accompagné d'une couche SIG ZONE_URBA définissant les frontières du
 zonage du PLU. Ce zonage correspond dans le règlement écrit à des chapitres voir à des paragraphes spécifiques. Il convient de les identifier
@@ -160,7 +168,7 @@ Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseig
 
 Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Dans l'exemple précédent : UG.
 
-== 4. Identification des prescriptions
+== Etape 6. Identifier les prescriptions
 
 === Dans les titres
 
@@ -188,11 +196,9 @@ Insertion/Champs/Autres champs. Sélectionner la variable "idPrescEnd" et rensei
 
 Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Par exemple : "porteeGenerale"
 
-== Exemple
 
-Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier : "Exemple PLU Jaleyrac.fodt".
 
-== Enregistrement
+== Etape 7. Enregistrement
 
 Une fois le fichier terminé, vous pouvez l'enregistrer (en conservant le format fodt), le zipper avec le dossier ressources contenant les images et l'envoyer à stephane.garcia@ign.fr.
 

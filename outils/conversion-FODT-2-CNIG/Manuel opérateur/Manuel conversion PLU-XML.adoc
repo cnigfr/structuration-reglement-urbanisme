@@ -1,24 +1,32 @@
-= Guide d'utilisation du template LibreOffice de structuration d'un règlement d'urbanisme au format CNIG.
+= Manuel opérateur pour la numérisation du règlement
+d’urbanisme
 
-Version béta 1
+Version du 16/02/2021
 
-== Introduction
+
+== Sommaire
+
+link: == [Message important]
+
+== Contexte
 
 Le CNIG développe actuellement un format de structuration des règlements d'urbanisme afin de les rendre plus facilement exploitables par des machines.
 L'objectif à long terme de ce standard est de développer des applications pour faciliter l'instruction des demandes de permis de construire par exemple.
 
-Afin de faciliter la transformation d'un PLU dans ce nouveau format, un outil a été créé à partir de LibreOffice. Et nous le mettons à disposition afin de
-permettre à tous de pouvoir tester le format de structuration des règlements d'urbanisme du CNIG en cours de développement.
+Afin de faciliter la transformation d'un PLU dans ce nouveau format, un outil a été créé à partir de LibreOffice. Il s'agit d'un premier outil simple, réservé aux PLU. Sa mise en oeuvre pour un PLUi n'est pas conseillée.
+
+== Objectif
+
+Ce manuel opérateur est destiné aux collectivités territoriales et leurs prestataires pour effectuer la numérisation de leur PLU. Il vous donnera toutes les étapes nécessaires à cette numérisation.
+L’objectif de la numérisation du PLU est de créer un règlement interactif et exploitable informatiquement (au contraire d’un document au format PDF qui est figé et inexploitable informatiquement). Grâce à cette numérisation, divers projets peuvent être mis en place, notamment l’accès aux règles d’urbanisme applicables à une parcelle sur le Géoportail de l’Urbanisme. D’autres applications peuvent exploiter ces données informatisées dans le but de modéliser les contraintes d’urbanisme.
+La numérisation du règlement d’urbanisme repose uniquement sur des logiciels libres.
 
 == Prérequis
 
 Logiciel Libre Office Writer.
 Télécharger le fichier https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/template%20FODT2CNIG%20vb%C3%A9ta1.fodt[template FODT2CNIG].
 
-== Objectif
 
-L'objectif de ce guide est de donner toutes les étapes pour transformer un PLU dans le nouveau format.
-Cela nous permettra de voir si le nouveau format est bien adapté aux différents PLU et de le corriger si nécessaire.
 
 == A qui est destiné ce guide ?
 

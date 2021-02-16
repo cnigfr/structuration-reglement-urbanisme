@@ -6,7 +6,7 @@ Version du 16/02/2021
 
 == Sommaire
  * <<Introduction>>
- * <<Etape 1. Copie du PLU original>>
+ * <<Etape 1. Installer les pré-requis>>
  * <<Etape 2. Copie du PLU original>>
  * <<Etape 3. Mise en page>>
  * <<Etape 4. Renseigner les métadonnées>>

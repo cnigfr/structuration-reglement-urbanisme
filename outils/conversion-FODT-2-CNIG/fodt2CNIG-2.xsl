@@ -22,16 +22,17 @@
 	</xsl:template>
 	<!-- structuration du document -->
 	<xsl:template match="plu:ReglementDU">
-		<plu:ReglementDU id="{@id}" nom="{@nom}" typeDoc="{@typeDoc}" lien="{@lien}" idUrba="{@idUrba}">
+		<plu:ReglementDU id="{@id}" nom="{@nom}" lien="{@lien}" idUrba="{@idUrba}" typeDoc="{@typeDoc}">
 			<xsl:for-each-group select="*" group-starting-with="plu:Titre">
 				<xsl:variable name="titreZone" select="if(@zone='') then preceding::plu:Titre[@zone!=''and @niveau &lt; current()/@niveau][1]/@zone else @zone"/>
 				<xsl:variable name="titrePresc" select="if(@presc='') then preceding::plu:Titre[@presc!=''and @niveau &lt; current()/@niveau][1]/@presc else @presc"/>
-				<plu:Titre id="{@id}" zone="{$titreZone}" prescription="{$titrePresc}" niveau="{@niveau}" intitule="{@intitule}"/>
+				<xsl:variable name="titreInsee" select="if(@insee='') then preceding::plu:Titre[@insee!=''and @niveau &lt; current()/@niveau][1]/@insee else @insee"/>
+				<plu:Titre id="{@id}" zone="{$titreZone}" prescription="{$titrePresc}" insee="{$titreInsee}" niveau="{@niveau}" intitule="{@intitule}"/>
 				<xsl:for-each-group select="current-group() except ." group-starting-with="plu:Bloc">
 				<xsl:variable name="contenuZone" select="if(.[@type='start']/@zone) then @zone else $titreZone"/>
 				<xsl:variable name="contenuPresc" select="if(.[@type='start']/@presc) then @presc else $titrePresc"/>
 					<xsl:where-populated>
-						<plu:Contenu id="{generate-id(.)}" libelleZone="{$contenuZone}" libellePrescription="{if ($contenuPresc) then $contenuPresc else 'nonConcerne'}">
+						<plu:Contenu id="{generate-id(.)}" idZone="{$contenuZone}" idPrescription="{if ($contenuPresc) then $contenuPresc else 'nonConcerne'}">
 							<xsl:for-each select="current-group()">
 								<xsl:choose>
 									<xsl:when test="self::plu:Bloc"/>

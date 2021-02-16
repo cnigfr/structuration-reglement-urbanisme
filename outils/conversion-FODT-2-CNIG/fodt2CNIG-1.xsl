@@ -16,8 +16,8 @@
 	<xsl:output indent="yes" method="xml"/>
 	<!--=============== Templates ===============-->
 	<!-- template fourre-tout -->
-		<xsl:template match="*[following::text:sequence-decls]">
-			<xsl:apply-templates/>
+	<xsl:template match="*[following::text:sequence-decls]">
+		<xsl:apply-templates/>
 	</xsl:template>
 	<xsl:template match="office:text|@*">
 		<xsl:copy>
@@ -36,9 +36,9 @@
 	<xsl:key name="titre" match="text:h" use="text()"/>
 	<!-- balises plu -->
 	<xsl:template match="text:h">
-		<plu:Titre id="{generate-id(.)}" zone="{substring(./text:variable-set[@text:name='idZone']/@text:formula,6)}" presc="{substring(./text:variable-set[@text:name='idPresc']/@text:formula,6)}" niveau="{@text:outline-level}" intitule="{text()}"/>
+		<plu:Titre id="{generate-id(.)}" intitule="{text()}" niveau="{@text:outline-level}" zone="{substring(./text:variable-set[@text:name='idZone']/@text:formula,6)}" presc="{substring(./text:variable-set[@text:name='idPresc']/@text:formula,6)}" insee="{./text:variable-set[@text:name='inseeCommune']/@office:value}"/>
 		<xsl:element name="{concat('h',@text:outline-level)}">
-			<xsl:value-of select="."/>
+			<xsl:value-of select="text()"/>
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='idZoneStart']">
@@ -85,10 +85,19 @@
 		</xsl:choose>
 	</xsl:template>
 	<!-- hyperliens -->
-		<xsl:template match="text:a">
-		<a href="{concat('#',key('titre',substring-after(substring-before(@xlink:href,'|'),'#'))/generate-id())}">
-				<xsl:apply-templates/>
-		</a>
+	<xsl:template match="text:a">
+		<xsl:choose>
+			<xsl:when test="starts-with(@xlink:href,'http')">
+				<a href="{@xlink:href}">
+					<xsl:apply-templates/>
+				</a>
+			</xsl:when>
+			<xsl:otherwise>
+				<a href="{concat('#',key('titre',substring-after(substring-before(@xlink:href,'|'),'#'))/generate-id())}">
+					<xsl:apply-templates/>
+				</a>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	<!-- listes -->
 	<xsl:template match="text:list">
@@ -102,7 +111,7 @@
 		</li>
 	</xsl:template>
 	<!-- tableaux -->
-	 <xsl:template match="table:table">
+	<xsl:template match="table:table">
 		<table rules="all" style="border:solid 1px black;">
 			<xsl:apply-templates/>
 		</table>
@@ -112,7 +121,7 @@
 			<xsl:apply-templates/>
 		</tr>
 	</xsl:template>
-		<xsl:template match="table:table-cell">
+	<xsl:template match="table:table-cell">
 		<td>
 			<xsl:value-of select="."/>
 		</td>
@@ -123,7 +132,7 @@
 			<xsl:value-of select="."/>
 		</strong>
 	</xsl:template>
-		<!-- italique -->
+	<!-- italique -->
 	<xsl:template match="text:span[@text:style-name='T1']">
 		<em>
 			<xsl:value-of select="."/>

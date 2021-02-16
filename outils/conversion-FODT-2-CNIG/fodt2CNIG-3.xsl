@@ -26,7 +26,7 @@
 		<xsl:processing-instruction name="xml-stylesheet">
 			<xsl:text>type="text/css" href="style.css"</xsl:text>
 		</xsl:processing-instruction>
-		<plu:ReglementDU xsi:schemaLocation="https://cnig.gouv.fr/reglementDU reglementDU.xsd" id="{@id}" nom="{@nom}" typeDoc="{@typeDoc}" lien="{@lien}" idUrba="{@idUrba}">
+		<plu:ReglementDU xsi:schemaLocation="https://cnig.gouv.fr/reglementDU reglementDU.xsd" id="{@id}" nom="{@nom}" lien="{@lien}" idUrba="{@idUrba}" typeDoc="{@typeDoc}">
 			<xsl:sequence select="plu:hierarchiser(*, 1)"/>
 		</plu:ReglementDU>
 	</xsl:template>
@@ -43,7 +43,7 @@
 					</xsl:where-populated>
 				</xsl:when>
 				<xsl:otherwise>
-					<plu:Titre id="{@id}" intitule="{@intitule}" libelleZone="{@zone}" libellePrescription="{if (@prescription = '') then 'nonConcerne' else @prescription}" inseeCommune="15079" niveau="{@niveau}">
+					<plu:Titre id="{@id}" intitule="{@intitule}" niveau="{@niveau}" idZone="{@zone}" idPrescription="{if (@prescription = '') then 'nonConcerne' else @prescription}" inseeCommune="{@insee}">
 						<xsl:sequence select="plu:hierarchiser(current-group() except ., ($level + 1))"/>
 					</plu:Titre>
 				</xsl:otherwise>

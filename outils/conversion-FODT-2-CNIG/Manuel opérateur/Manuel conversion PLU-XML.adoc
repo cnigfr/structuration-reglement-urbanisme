@@ -6,7 +6,7 @@ Version du 16/02/2021
 
 == Sommaire
 
-<<Section 1, sect 1>>
+<<1. Copie du PLU original, sect 1>>
 
 
 [[Intro]]
@@ -44,7 +44,6 @@ de créer un standard qui soit suffisamment générique pour s'adapter dans la m
 Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guide, ou si vous avez des suggestions d'amélioration,
 merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue).
 
-[[Section 1]]
 == 1. Copie du PLU original
 
 La première étape consiste à copier le contenu du PDF.

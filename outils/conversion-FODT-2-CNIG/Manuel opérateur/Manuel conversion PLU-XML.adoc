@@ -6,40 +6,45 @@ Version du 16/02/2021
 
 == Sommaire
 
-link: == [Message important]
+<<Section 1, sect 1>>
 
-== Contexte
+
+[[Intro]]
+== Introduction
+
+=== Contexte
 
 Le CNIG développe actuellement un format de structuration des règlements d'urbanisme afin de les rendre plus facilement exploitables par des machines.
 L'objectif à long terme de ce standard est de développer des applications pour faciliter l'instruction des demandes de permis de construire par exemple.
 
 Afin de faciliter la transformation d'un PLU dans ce nouveau format, un outil a été créé à partir de LibreOffice. Il s'agit d'un premier outil simple, réservé aux PLU. Sa mise en oeuvre pour un PLUi n'est pas conseillée.
 
-== Objectif
+=== Objectif
 
 Ce manuel opérateur est destiné aux collectivités territoriales et leurs prestataires pour effectuer la numérisation de leur PLU. Il vous donnera toutes les étapes nécessaires à cette numérisation.
 L’objectif de la numérisation du PLU est de créer un règlement interactif et exploitable informatiquement (au contraire d’un document au format PDF qui est figé et inexploitable informatiquement). Grâce à cette numérisation, divers projets peuvent être mis en place, notamment l’accès aux règles d’urbanisme applicables à une parcelle sur le Géoportail de l’Urbanisme. D’autres applications peuvent exploiter ces données informatisées dans le but de modéliser les contraintes d’urbanisme.
 La numérisation du règlement d’urbanisme repose uniquement sur des logiciels libres.
 
-== Prérequis
+=== Prérequis
 
 Logiciel Libre Office Writer.
 Télécharger le fichier https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/template%20FODT2CNIG%20vb%C3%A9ta1.fodt[template FODT2CNIG].
 
 
 
-== A qui est destiné ce guide ?
+=== A qui est destiné ce guide ?
 
 Ce guide est destiné à toute personne ou collectivité souhaitant participer à l'élaboration du nouveau format de structuration des règlements d'urbanisme
 et tester la transformation de son PLU au nouveau format.
 
-== Message important
+=== Message important
 
 Vu la complexité et la diversité des PLU, le présent guide n'a pas vocation à répondre à tous les cas possibles. Nous essayons néanmoins
 de créer un standard qui soit suffisamment générique pour s'adapter dans la majorité des cas.
 Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guide, ou si vous avez des suggestions d'amélioration,
 merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue).
 
+[[Section 1]]
 == 1. Copie du PLU original
 
 La première étape consiste à copier le contenu du PDF.

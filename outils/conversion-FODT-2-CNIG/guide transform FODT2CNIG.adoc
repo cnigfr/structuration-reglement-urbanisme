@@ -66,7 +66,7 @@ Note : les images doivent être enregistrées dans un dossier "ressources" situ�
 
 Puis, insérer l'image dans le texte à l'endroit souhaité (glisser-déposer dans Libre Office).
 
-Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. Dans Nom, indiquez le nom du fichier que vous venez d'enregistrer. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image (propriété Alt en HTML).
+Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. Dans Nom, indiquez le nom du fichier que vous venez d'enregistrer *avec l'extension : par exemple, image1.jpg ou toto.png)*. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image (propriété Alt en HTML).
 
 == 1. Mise en page
 
@@ -86,6 +86,8 @@ Les options prises en charge sont les suivantes :
 
 Pour définir un titre, cliquez sur le texte du titre et modifier le style :
 dans la liste déroulante, sélectionner le niveau de titre qui convient. Par exemple, le style Titre 1, Titre 2, etc.
+
+*Attention : Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, Si, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.*
 
 === hyperliens 
 

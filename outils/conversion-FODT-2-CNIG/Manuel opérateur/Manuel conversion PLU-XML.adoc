@@ -32,7 +32,7 @@ La numérisation du règlement d’urbanisme repose uniquement sur des logiciels
 
 === Exemple
 
-Vous trouverez un exemple de PLU réalisé sous libreOffice dans ce dossier : "Exemple PLU Jaleyrac.fodt".
+Vous trouverez un exemple de PLU réalisé sous libreOffice <<https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/exemple%20PLU_Jaleyrac.fodt,ici>>
 
 
 === A qui est destiné ce guide ?

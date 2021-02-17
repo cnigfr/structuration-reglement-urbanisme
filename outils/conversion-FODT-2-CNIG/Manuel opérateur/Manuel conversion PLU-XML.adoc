@@ -14,6 +14,8 @@ Version du 16/02/2021
  * <<Etape 6. Identifier les prescriptions>>
  * <<Etape 7. Enregistrement>>
 
+:toc:
+
 == Introduction
 
 === Contexte
@@ -32,20 +34,60 @@ La numérisation du règlement d’urbanisme repose uniquement sur des logiciels
 
 === Exemple
 
-Vous trouverez un exemple de PLU réalisé sous libreOffice <<https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/exemple%20PLU_Jaleyrac.fodt,ici>>
+Vous trouverez un exemple de PLU réalisé sous libreOffice https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/exemple%20PLU_Jaleyrac.fodt[ici]
 
 
-=== A qui est destiné ce guide ?
+== Définitions
 
-Ce guide est destiné à toute personne ou collectivité souhaitant participer à l'élaboration du nouveau format de structuration des règlements d'urbanisme
-et tester la transformation de son PLU au nouveau format.
+Champ : Un champ est une fonction qui permet d’ajouter du contenu dynamique au
+règlement écrit à structurer. Nous utilisons les champs de variable dans Writer de
+LibreOffice pour définir les différentes zones et prescriptions auxquelles s’applique
+une partie du règlement.
+On les trouve dans Writer de LibreOffice en effectuant Insertion/Champ/Autre
+champ/Variables et comme attributs de données géographiques dans le DU
+dématérialisé suivant le standard CNIG.
+Métadonnée : Les fiches de métadonnées sont un outil essentiel pour le catalogage
+des différents documents présents sur le Géoportail de l'Urbanisme, c’est une liste
+de données qui permet d’identifier le document vis à vis des autres documents sur
+GPU et d’y associer une zone géographique. C’est en quelque sorte la carte
+d’identité du document, permettant de le cataloguer et d’y donner accès.
+PLU : Plan Local d’Urbanisme.
+Nous ne transformerons que la partie réglementaire textuelle donc nous n'aurons
+besoin que de la pièce Règlement écrit. Nous aurons aussi besoin des pièces
+graphiques (zonages et prescriptions) sous forme vectorielle (par exemple au format
+shapefile), qui sont conformes au standard CNIG PLU.
+PLUi : PLU intercommunal. De même que pour le PLU, nous ne transformons que la
+pièce Règlement écrit, et nous aurons besoin des mêmes pièces graphiques.
+Prescription : Une prescription se présente dans le standard CNIG PLU sous la
+forme d'une information surfacique, linéaire ou ponctuelle qui apparaît sur les
+documents graphiques du PLU. Une prescription qui se superpose à une zone du
+document d'urbanisme exerce en général une contrainte supplémentaire au
+règlement de la zone. Les prescriptions ont également des champs.
+Pour identifier les différentes prescriptions, on utilise les pièces graphiques sous
+forme vectorielle, dans la table des attributs de la table PRESCRIPTION, l’ensemble
+des prescriptions sont renseignées dans la colonne "libellé" des différentes couches
+(prescription de surfaciques, linéaires et ponctuelles).
+Zone : Les zones d’un PLU(i) ou le zonage correspondent aux différentes zones
+d’urbanisation, et des règles différentes s’appliquent à ses différentes zones.
+Pour identifier les différentes zones, on utilise les pièces graphiques sous
+forme vectorielle, dans la table des attributs, l’ensemble des zones sont renseignées
+dans la colonne "libellé" de la couche des zonages.
+2
+Style : Les styles de Writer (LibreOffice) définissent les
+caractéristiques de mise en forme des éléments qui composent
+le document LibreOffice
+Nous nous en servons pour définir la hiérarchie du document.
+(Titre 1 englobe tous les Titres 2 jusqu’au Titre 1 suivant, etc...).
+Pour le contenu du paragraphe, on utilise le style “Corps du
+texte”. Ci-contre, nous pouvons voir la table des styles qui
+contient les styles qui vont nous intéresser : les styles Titre
+numérotés, et le style corps du texte.
+Titre : Un titre est défini par un style. On les utilise pour
+hiérarchiser le document, on utilise uniquement les titres
+numérotés définis par défaut dans LibreOffice. Le Titre 1, par
+exemple, correspond au titre d’un chapitre du règlement écrit
+(ex : “Chapitre 1 : Dispositions communes à toutes les zones).
 
-=== Message important
-
-Vu la complexité et la diversité des PLU, le présent guide n'a pas vocation à répondre à tous les cas possibles. Nous essayons néanmoins
-de créer un standard qui soit suffisamment générique pour s'adapter dans la majorité des cas.
-Si vous constatez des problèmes à l'utilisation de l'outil ou du présent guide, ou si vous avez des suggestions d'amélioration,
-merci de créer une nouvelle "issue" dans GitHub (https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue).
 
 == Etape 1. Installer les pré-requis
 

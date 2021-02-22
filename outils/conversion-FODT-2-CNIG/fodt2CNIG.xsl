@@ -5,7 +5,7 @@
 <!--  Version : 1.0 pour LibreOffice   -->
 <!--     Author: Stéphane Garcia       -->
 <!--...................................-->
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mf="http://example.com/mf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:tmp="temp" xmlns="http://www.w3.org/1999/xhtml" xmlns:plu="https://cnig.gouv.fr/reglementDU" exclude-result-prefixes="xsi xs mf office meta draw table">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mf="http://example.com/mf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:tmp="temp" xmlns="http://www.w3.org/1999/xhtml" xmlns:plu="https://cnig.gouv.fr/reglementDU" exclude-result-prefixes="xsi xs mf office meta draw table tmp">
 	<!-- supprime les blancs-->
 	<xsl:strip-space elements="*"/>
 	<!-- indente le XML résultat-->
@@ -215,13 +215,14 @@
 	</xsl:template>
 	<!-- hiérarchisation des titre et remplissage avec les balises Contenu non vides -->
 	<xsl:template match="tmp:Titre" mode="etape3">
-		<xsl:element name="plu:Titre">
+	<plu:Titre id="{@tmp:id}" intitule="{@tmp:intitule}" niveau="{@tmp:niveau}" idZone="{@tmp:zone}" idPrescription="{@tmp:prescription}" inseeCommune="{@tmp:insee}">
+		<!--xsl:element name="plu:Titre">
 			<xsl:attribute name="id" select="@tmp:id"/>
 			<xsl:attribute name="intitule" select="@tmp:intitule"/>
 			<xsl:attribute name="niveau" select="@tmp:niveau"/>
 			<xsl:attribute name="idZone" select="@tmp:idZone"/>
 			<xsl:attribute name="idPrescription" select="@tmp:idPrescription"/>
-			<xsl:attribute name="inseeCommune" select="@tmp:inseeCommune"/>
+			<xsl:attribute name="inseeCommune" select="@tmp:inseeCommune"/-->
 			<xsl:choose>
 				<xsl:when test="not(following-sibling::tmp:Titre[1])">
 					<xsl:copy-of select="following-sibling::plu:Contenu[descendant::*]"/>
@@ -231,6 +232,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:apply-templates select="key('child-by-parent', @tmp:id)" mode="etape3"/>
-		</xsl:element>
+		<!--/xsl:element-->
+		</plu:Titre>
 	</xsl:template>
 </xsl:stylesheet>

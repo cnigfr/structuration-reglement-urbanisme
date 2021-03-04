@@ -66,13 +66,16 @@ image::images/styles.png[align=center]
 
 == Etape 1. Installer les pré-requis
 
-Logiciel Libre Office Writer.
+* Lecteur pdf : Vous devez avoir un lecteur de fichier PDF sur votre ordinateur (Adobe Acrobat Reader, Foxit Reader...)
+
+* Logiciel Libre Office Writer.
 Installer la dernière version de LibreOffice Writer disponible sur le site de https://www.libreoffice.org/download/download[LibreOffice].
 
 Si vous avez une ancienne version, il est conseillé de la mettre à jour.
 
 Note : L'outil n'a pas été testé sur des versions antérieures à LibreOffice 5.3.
 
+* QGIS
 Il peut être nécessaire d'installer QGIS afin de visualiser les prescriptions et de récupérer l'information des types/sous-type dans les fichiers du GPU.
 Dans ce cas, vous pouvez télécharger et installer https://www.qgis.org/fr/site/forusers/download.html[QGIS] (l'installateur indépendant suffit).
 
@@ -82,54 +85,63 @@ Avant de commencer, il est nécessaire d'installer le filtre LibreOffice disponi
 Après avoir téléchargé le fichier "CNIG reglePLU v1.0.jar", suivez les étapes suivantes :
 
 . Ouvez LibreOffice Writer
-. Aller dans le Menu Outils > (Macros) > Paramétrage des filtres XML
-. Cliquer sur Ouvrir un Package et sélectionner le fichier "CNIG reglePLU v1.0.jar" sur votre disque dur
-. Fermer
+.. Aller dans le Menu Outils > (Macros) > Paramétrage des filtres XML
+... Cliquer sur Ouvrir un Package et sélectionner le fichier "CNIG reglePLU v1.0.jar" sur votre disque dur
+..... Fermer
 
 Normalement, le filtre doit maintenant s'afficher dans la liste des filtres XML :
 
 image::images/filtre.png[align=center]
 
+=== Fichier modèle LibreOffice
+La saisie du PLU doit se faire non pas dans un fichier LibreOffice vierge, mais dans le template disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/template%20reglePLU.odt[ici]
+
 == Etape 2. Copie du PLU original
 
-La première étape consiste à copier le contenu du PDF.
+Si possible, demandez préalablement le règlement écrit sous forme éditable au prestataire et/ou au service urbanisme.
+Il y a deux cas possible :
 
-Pour cela, sélectionner l'intégralité du PDF (Ctrl+A) et le copier (Ctrl+C).
-Ouvrir le template Libre Office "template FODT2CNIG" et coller le texte du PDF au format texte brut dans Libre Office (Ctrl+Alt+Maj+V).
+* Soit le règlement du PLU(i) est un document scanné page par page, dont le contenu ne peut pas être sélectionné :
+Recopiez entièrement le règlement dans le fichier template FODT2CNIG.
+Vous pouvez utiliser l’outil de reconnaissance de caractère (ou OCR), cela convertira l’image en texte. Il existe de nombreux outils en ligne gratuits. Un
+exemple d’outil en ligne : https://www.onlineocr.net/fr/
+* Soit le règlement du PLU(i) est disponible en fichier PDF, dont le contenu
+peut être sélectionné :
+. Sélectionner l’intégralité du PDF (Ctrl+A) et le copier (Ctrl+C).
+.. Ouvrez le fichier template "template%20reglePLU.odt" sous LibreOffice
+... Coller le texte du PDF au format texte brut (La mise en page ne doit surtout pas être copiée) dans le fichier FODT2CNIG de Libre Office (Edition → Collage spécial → Coller le texte non-formaté)
+En effet, la mise en page originale va empêcher la conversion au format CNIG.
+.... Supprimer les éléments du règlement qui sont inutiles ou qui n’ont pas de valeur réglementaire :
 
-Note : dans le cas ou le fichier PDF est une image scannée, le texte n'est pas sélectionnable. Il convient de convertir l'image en texte en utilisant la reconnaissance de caractère (ou OCR) dont il existe de nombreux outils en-ligne gratuits.
+* Les en-têtes et pieds-de-page qui vont être répétés à chaque page.
+* Les illustrations et textes "décoratifs" et qui n’ont pas valeur réglementaire.
+* Il est également possible que des sauts de lignes aient été rajoutés lors de la copie. Il est souhaitable de supprimer ces sauts de lignes indésirables.
 
-Attention, il est important de ne pas copier la mise en page pour les raisons suivantes :
+WARNING: Bien vérifier que tout soit copié dans l’ordre, selon la mise en page initiale il peut y avoir des bugs ! Notamment lorsque le texte est en deux colonnes dans le fichier au format PDF du PLU
+Exemple : Quand une partie du règlement écrit est rédigée en deux blocs (partie de droite dans l'image ci-dessous), il peut y avoir des bugs au niveau des titres/sous-titres, ou encore au niveau du changement de bloc; les informations reportées dans le document LibreOffice sont alors en désordre (partie de gauche dans l'image ci-dessous).
 
-* ne pas perturber l'étape ultérieure de transformation
-* obtenir une homogénéïté des règlements
-
-Ensuite, il convient d'enlever le texte superflu.
-Ex: 
-
-* les en-têtes et pieds-de-page qui vont être répétées à chaque page.
-* Les illustration et textes "décoratifs" et qui n'ont pas valeur réglementaire.
-
-Il est également possible que des sauts de lignes ait été rajoutés lors de la copie.
-Il est souhaitable de supprimer ces sauts de lignes indésirables.
+image::images/ex1.png[align=center]
 
 === Copie des images
 
 Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
 Pour cela :
+. Créez un dossier nommé "ressources" dans lequel seront stockées toutes les images. Ce dossier doit être situé dans le même dossier que votre fichier LibreOffice.
+.. Dans le PDF, sélectionner chaque image que vous souhaitez exporter et l'enregistrer sur le disque dur. Si ce n'est pas possible directement depuis le PDF, essayez de retrouver l'image d'origine en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran. Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
+Il est conseillé d'enregistrer vos images avec un nom simple et compréhensible (par exemple image1 ou limite_propriete) afin de pouvoir les retrouver par la suite.
 
-Dans le PDF, sélectionner l'image et l'enregistrer sur le disque dur. Si ce n'est pas possible, essayez de retrouver l'image d'origine
-en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran. Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
-Note : les images doivent être enregistrées dans un dossier "ressources" situé au même emplacement que le fichier Libre Office et avoir un nom unique.
+... Puis, insérer l'image dans LibreOffice à l'endroit souhaité (glisser-déposer dans Libre Office)
+.... Enfin, modifier les propriétés de l'image afin de lui donner le même nom que le fichier image. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. 
+Dans l'onglet Options, le champ Nom, indiquez le nom du fichier que vous venez d'enregistrer *avec l'extension : par exemple, image1.jpg ou procedure.png)*. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image lorsque l'on passera la souris dessus (propriété Alt en HTML).
 
-Puis, insérer l'image dans le texte à l'endroit souhaité (glisser-déposer dans Libre Office).
+WARNING: Ne pas oublier l'extension, sinon l'image ne s'affichera pas dans le XML.
 
-Ensuite, il faut nommer l'image avec le même nom que le fichier. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. Dans Nom, indiquez le nom du fichier que vous venez d'enregistrer *avec l'extension : par exemple, image1.jpg ou toto.png)*. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image (propriété Alt en HTML).
+image::images/image.png[align=center]
 
 == Etape 3. Mise en page
 
 Il convient maintenant de faire une mise en page sommaire. Il ne s'agit pas de recréer exactement la même mise en page que le PDF. En effet,
-l'outil de conversion ne prend en charge qu'un nombre limité d'options.
+le format CNIG reglePLU ne prend en charge qu'un nombre limité d'options.
 Les options prises en charge sont les suivantes :
 
 * Titres
@@ -140,12 +152,39 @@ Les options prises en charge sont les suivantes :
 * hyperliens
 * tableaux
 
+WARNING: Toutes les autres options de mise en page possible dans LibreOffice sont à exclure (ex : couleur de la police, colonnes, insertion de formes...).
+
 === Titres
 
-Pour définir un titre, cliquez sur le texte du titre et modifier le style :
-dans la liste déroulante, sélectionner le niveau de titre qui convient. Par exemple, le style Titre 1, Titre 2, etc.
+Pour définir un titre, vous pouvez soit
+* cliquez sur le texte du titre et sélectionner le style approprié dans la liste déroulante des styles rapides en haut à gauche de l'écran :
+image::images/majS.png[align=center]
 
-*Attention : Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, Si, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.*
+* aller dans le menu "Styles" puis Gérer les styles (ou Alt+F11) afin d'afficher le panneau latéral des styles. Il vous suffira ensuite simplement de cliquer sur une ligne et de sélectionner un style dans le panneau latéral.
+
+Voici un exemple d’ordre de gestion des styles :
+[cols=2]
+|===
+|Partie
+|Style choisi
+|Chapitre
+|Titre 1
+|Zone
+|Titre 2
+|Paragraphe 1.1 ou 1)
+|Titre 3
+|Sous paragraphe 1.1.1 ou Article XX-i
+(ex: Article UC-3 correspondant à la
+zone UC)
+|Titre 4
+|Sous partie du sous paragraphe ou de l’article
+|Titre 5
+|===
+
+Le choix du style des titres va du général au particulier.
+
+
+WARNING: Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, Si, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.*
 
 === hyperliens 
 

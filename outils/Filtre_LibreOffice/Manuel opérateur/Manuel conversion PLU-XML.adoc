@@ -9,10 +9,11 @@ Version du 04/03/2021
  * <<Etape 1. Installer les pré-requis>>
  * <<Etape 2. Copie du PLU original>>
  * <<Etape 3. Mise en page>>
- * <<Etape 4. Renseigner les métadonnées>>
+ * <<Etape 4. Renseigner les métadonnées du règlement écrit>>
  * <<Etape 5. Identifier les zones>>
  * <<Etape 6. Identifier les prescriptions>>
- * <<Etape 7. Enregistrement>>
+ * <<Etape 7. Export au format CNIG
+ * <<Etape 8. Vérification>>
 
 :toc:
 
@@ -54,7 +55,7 @@ Nous ne transformerons que le texte réglementaire donc nous n'aurons besoin que
 *Prescription* : Une prescription se présente dans le standard CNIG PLU sous la forme d'une information surfacique, linéaire ou ponctuelle qui apparaît sur les documents graphiques du PLU. Une prescription qui se superpose à une zone du document d'urbanisme exerce en général une contrainte supplémentaire au règlement de la zone.
 Pour identifier les différentes prescriptions, on peut utiliser les pièces graphiques sous forme vectorielle, dans la table des attributs de la table PRESCRIPTION, l’ensemble des prescriptions sont renseignées dans la colonne "libellé" des différentes couches (prescription de surfaciques, linéaires et ponctuelles).
 
-*Zone* : Les zones d’un PLU(i) ou le zonage correspondent aux différentes zones d’urbanisation, et des règles différentes s’appliquent à ses différentes zones. Pour identifier les différentes zones, on utilise les pièces graphiques sous forme vectorielle, dans la table des attributs, l’ensemble des zones sont renseignées dans la colonne "libellé" de la couche des zonages.
+*Zone/Zonage* : Les zones d’un PLU(i) ou le zonage correspondent aux différentes zones d’urbanisation, et des règles différentes s’appliquent à ses différentes zones. Pour identifier les différentes zones, on utilise les pièces graphiques sous forme vectorielle, dans la table des attributs, l’ensemble des zones sont renseignées dans la colonne "libellé" de la couche des zonages.
 
 *Style* : Les styles de LibreOffice Writer définissent les caractéristiques de mise en forme des éléments qui composent le document LibreOffice. Nous nous en servons pour définir la hiérarchie du document. 
 Pour le contenu du paragraphe, on utilise le style “Corps du texte”. Ci-dessous, nous pouvons voir la table des styles qui contient les styles qui vont nous intéresser : les styles Titre numérotés, et le style corps du texte.
@@ -95,6 +96,12 @@ image::images/filtre.png[align=center]
 
 === Fichier modèle LibreOffice
 La saisie du PLU doit se faire non pas dans un fichier LibreOffice vierge, mais dans le template disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/template%20reglePLU.odt[ici]
+
+=== IMPORTANT : Affichage des champs dans LibreOffice
+Afin de voir les variables qui vont être ajoutées par la suite, il est important de changer l'affichage des champs.
+* Dans Libre Office, aller dans le menu Affichage et cliquer sur Nom des champs (ou Ctrl+F9). 
+
+WARNING: une fois cette modification effectuée, elle modifiera l'affichage de tous vos autres documents LibreOffice (par exemple, les renvois ou numéros de page ne s'afficheront pas de la même façon). *Pour revenir à l'affichage des champs par défaut, il vous suffira de refaire la même opération : menu Affichage et cliquer sur Nom des champs (ou Ctrl+F9)*.
 
 == Etape 2. Copie du PLU original
 
@@ -201,7 +208,7 @@ Pour appliquer le style :
 * Sélectionner le texte à mettre en valeur
 * Cliquer sur un style dans le panneau latéral.
 
-WARNING: Rappel : ne pas utiliser les bouton de style rapide *"G"*, _"I"_, et __"S"__
+WARNING: Rappel : ne pas utiliser les bouton de style rapide *"G"*, _"I"_, et +++"S"+++
 
 === hyperliens 
 
@@ -211,102 +218,158 @@ Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner
 * S'il s'agit d'un lien interne (pour faire un renvoi), sélectionner Document > Cible et sélectionner le titre correspondant.
 
 === Tableaux
-Lors de la copie du règlement sur le fichier FODT, les bordures des tableaux ne sont
-pas reportées. Il faut donc insérer des tableaux à partir de l’onglet Tableau, et
-intégrer le texte dans les cellules comme dans le PDF original.
+Lors de la copie du règlement sur le fichier FODT, les tableaux ne sont pas copiés (seulement leur contenu). Il faut donc les recréer en insérant des tableaux manuellement (Menu Tableau > Insérer un tableau), et intégrer le texte dans les cellules comme dans le PDF original.
 
-== Etape 4. Renseigner les métadonnées
+== Etape 4. Renseigner les métadonnées du règlement écrit
 
-Le fichier template FODT2CNIG est pré-enregistré avec des métadonnées.
+Le fichier template reglePLU est pré-enregistré avec des métadonnées.
 
-Pour les modifier, aller dans Fichier/Propriétés/propriétés personnalisées, et renseignez les valeurs suivantes :
+Pour les modifier, aller dans le menu Fichier>Propriétés et sélectionner l'onglet propriétés personnalisées :
+image::images/metadata.png[align=center]
 
-* id : URL du règlement en ligne ou, sinon, le nom du règlement (pièce écrite du standard CNIG PLU). Ex : 44712_reglement_20041103
-* nom : nom du règlement d’urbanisme. Le nom doit être explicite et mentionner le nom de la collectivité. Ex : Règlement écrit du PLUi de Lille Métropole
-* typeDoc : Correspond au champ TYPEDOC de la classe DOC_URBA du Standard CNIG PLU. Limité aux valeurs PLU et PLUI.
-* lien : lien vers le fichier de métadonnées du document d’urbanisme. Si le fichier de métadonnées est disponible en-ligne, mettre le lien de la fiche de métadonnées, sinon, le lien vers le document d’urbanisme téléchargeable sur le GPU. Ex : http://www.geoportail-urbanisme.gouv.fr/atom/datasetfeed/DU_44183.xml
-
-Important : afin de voir les variables qui vont être ajoutées par la suite, il est important de changer l'affichage des champs.
-Dans Libre Office, aller dans le menu Affichage et cliquer sur Nom des champs (ou Ctrl+F9). 
-Attention : une fois cette modification effectuée, elle modifiera également l'affichage de tous vos autres document office (par exemple, les renvois ou numéros de page ne s'afficheront pas correctement). Il suffit alors de refaire la même opération pour revenir à l'affichage normal (ou Ctrl+F9).
+* “id“ correspond à l’identifiant unique du règlement d’urbanisme, il est formé de la façon suivante : (code INSEE de la collectivité)_reglement_(date
+d’approbation ou de dernière modification). La date est sous la forme AAAAMMJJ.
+Exemple : Pour le PLU de Jaleyrac, le “id” est : 15079_reglement_20190128
+* “idUrba” correspond à l’identifiant unique du document d’urbanisme. Il permet de faire le lien avec le champ ID_URBA du standard CNIG PLU, il est formé
+de la façon suivante : (code INSEE de la collectivité)_PLU_(date d’approbation ou de dernière modification). La date est sous la forme AAAAMMJJ.
+Exemple : Pour le PLU de Jaleyrac, le “idUrba” est : 15079_PLU_20190128
+* “lien” correspond à l’URL des métadonnées. Si il y est publié, utilisez le lien vers le Géoportail de l’Urbanisme au format XML. Sinon, écrivez le lien sous
+sa forme normalisée. Il est formé de la façon suivante : https://www.geoportail-urbanisme.gouv.fr/metadata/details/?id=fr-<code
+INSEE de la collectivité>-PLU<date d’approbation ou de dernière modification>.
+La date est sous la forme AAAAMMJJ.
+Exemple :
+https://www.geoportail-urbanisme.gouv.fr/metadata/details/?id=fr-000015079-PLU20190128
+* “nom” correspond au nom explicite du document.
+Exemple : Règlement écrit du PLU de Jaleyrac.
+* “typeDoc” correspond au type de document, il n’y a que deux valeurs possibles : "PLU" ou "PLUI".
 
 == Etape 5. Identifier les zones
 
-Lorsqu'un PLU est chargé dans le géoportail de l'urbanisme (GPU), il est accompagné d'une couche SIG ZONE_URBA définissant les frontières du
-zonage du PLU. Ce zonage correspond dans le règlement écrit à des chapitres voir à des paragraphes spécifiques. Il convient de les identifier
-à l'aide de l'outil Libre Office.
+Un PLU(i) est toujours accompagné d’un plan de zonage qui identifie de manière géographique les différentes règles et prescriptions. Nous allons voir dans
+cette partie comment associer ces règles et prescriptions à un secteur géographique.
 
-=== Dans les titres
+=== Identification des zones dans les titres
 
-Lorsqu'un zonage est commun à toutes les parties d'un chapitre :
-Dans ce cas, cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idZone" et renseigner la Valeur de la façon suivante :
+Lorsqu'une zone est commune à toutes les parties d'un chapitre :
+Dans ce cas, cliquez à la fin du titre concerné (par exemple, si votre titre s'appelle "VI. ZONE UA", cliquez juste après le caractère A) et ajouter une variable :
+Insertion/Champs/Autres champs :
+image::images/varZone.png[align=center]
 
-LIBELLE de la classe ZONE_URBA du standard CNIG PLU  correspondant à la zone décrite dans ce chapitre, ou la valeur « porteeGenerale » si le titre s’applique à toutes les zones.
-La valeur peut contenir plusieurs zones séparées par des virgules. Ex :	"UG,1AU" ou "A,N".
+Sélectionner le type “définir une variable”, sélectionnez la variable "idZone" et
+renseigner la Valeur de la façon suivante :
+* Si le titre en question concerne toute la commune/intercommunalité, mettre la
+valeur « porteeGenerale ».
+* Sinon, le nom de la zone identifiée dans le paragraphe (ex : U, A, N, Ua, UAb, etc.). Si le paragraphe concerne plusieurs zones, alors mettre tous les noms des zones concernées séparées par une virgule (sans espace) : "Ua,Ub".
 
-L'identification de la commune est également nécessaire pour le bon fonctionnement de l'outil.
-Pour cela, cliquez à la fin du titre concerné (après la variable "idZone" que vous venez d'ajouter) et ajouter une variable :
+Exemple :
 
-Insertion/Champs/Autres champs. Sélectionner la variable "inseeCommune" et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE séparés par une virgule. Ex: "69382,69383".
+Le titre “Caractéristiques urbaine, architecturale, environnementale et paysagère” concerne les zones UG et 1AU. Le résultat de cette manipulation doit
+apparaître de cette façon :
+image::images/titre.png[align=center]
 
-Remarque : il n'est pas nécessaire de définir une variable pour tous les titres. En effet, si la valeur est la même pour tous les sous-titres d'un titre, alors
-ne la définir que pour le titre de plus haut niveau.
+=== Identification de la commune
 
-=== Dans les paragraphes
+
+De la même manière, l’identification de la commune est également nécessaire (pour les PLUi par exemple). Pour cela, cliquez à la fin du titre concerné et ajoutez une variable → Insertion/Champs/Autres champs.
+Sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE
+sont séparés par une virgule (sans espace). Ex: "07110,07117”
+
+Remarque: si aucune variable n'est définie pour un titre, alors celui-ci portera les mêmes informations que le titre parent. Il est donc indispensable que tous les titres de niveau 1 aient une zone ou "porteeGenerale".
+
+Corollaire: *Il n’est pas nécessaire de définir une variable pour tous les titres*. En effet, si la valeur est la même pour tous les sous-titres d’un titre, alors ne la définir que pour le titre de plus haut niveau hiérarchique.
+
+==== Cohérence avec le GPU
+Ce champ doit servir de lien avec le LIBELLÉ de la classe ZONE_URBA du standard CNIG PLU. Il est donc nécessaire que les noms des zones dans ce fichier correspondent au libellé des zones dans la couche ZONE_URBA du GPU. 
+
+Pour le vérifier, téléchargez l'archive de votre PLU depuis le https://www.geoportail-urbanisme.gouv.fr/[GPU]. Tapez le nom de votre commune dans le moteur de recherche, puis cliquer sur "télécharger l'archive complète" :
+image::images/gpu.png[align=center]
+
+
+Les données géographiques se situent dans le dossier “Donnees_geographiques” de l'archive.
+
+
+Ouvrez la couche “ZONE_URBA” sur un logiciel SIG comme QGIS par exemple et afficher les données attributaires de la couche. Vérifiez enfin le champ LIBELLE. Les noms des zones doivent être écrits comme dans ce champ.
+
+
+image::images/qgis1.png[align=center]
+
+
+=== Identification des zones dans les paragraphes
 
 Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, le secteur UGa de la zone UG.
 
-Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe) et ajouter une variable :
 Insertion/Champs/Autres champs. Sélectionner la variable "idZoneStart" et renseigner la Valeur de la zone ou du secteur de zone concerné.
 
 Note, cette valeur doit également correspondre à un LIBELLE de la classe ZONE_URBA.
 
-Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
+Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe) et ajouter une variable :
 Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseigner la Valeur de la zone ou du secteur de zone concerné.
 
 Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Dans l'exemple précédent : UG.
 
+L'exemple ci-dessous montre une utilisation des variables “idZoneStart” et “idZoneEnd”.
+Elles sont clairement situées dans le texte, et elles ne doivent pas correspondre à un titre entier (“Dans le secteur UBc” n’est pas un titre il est juste écrit en gras).
+
+image::images/idStart.png[align=center]
+
 == Etape 6. Identifier les prescriptions
 
-=== Dans les titres
+Pour insérer une prescription, procéder de la même manière que pour une zone (cf. <<Etape 5. Identifier les zones>>).
 
-Lorsqu'une prescription est commune à toutes les parties d'un chapitre :
-Dans ce cas, cliquez à la fin du titre concerné (juste après le dernier caractère du titre, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idPresc" et renseigner un identifiant de la prescription correspondant au libellé d'un objet d'une des couches PRESCRIPTION_PCT, PRESCRIPTION_SURF et PRESCRIPTION_LIN. Ex : "Mur et haie à protéger"
+Pour les prescriptions définies au niveau d'un titre, utiliser le champ "idPresc".
+Pour les prescriptions définies au niveau d'un paragraphe, utiliser les champs "idPrescStart" et "idPrescEnd"
 
-La valeur peut contenir plusieurs prescriptions séparées par des virgules. Ex : "Mur et haie à protéger,Continuité écologique linéaire".
+Les valeurs autorisées pour le champ idPresc sont : "porteeGenerale" si le chapitre concerne toutes les prescriptions ou, si le chapitre est spécifique à un type de prescription : <type>-<sous-type>. Ex : "07-03". Il est possible également de définir plusieurs types de prescription associées à un paragraphe séparées par une virgule (par ex "07-03,07-04")
 
+Les Types / Sous-types sont définis au chapitre 3.3 du standard CNIG PLU v2017d disponible http://cnig.gouv.fr/?page_id=2732[ici].
 
-Note : Dans la version définitive, il s'agira d'un nouveau champ à ajouter dans les couches PRESCRIPTION_PCT, PRESCRIPTION_SURF et PRESCRIPTION_LIN. En effet, actuellement aucun champ des tables PRESCRIPTION_XXX ne permet d'être utilisé comme identifiant.
+Les valeurs autorisées pour idPrescStart et idPrescEnd sont uniquement sous la forme <type>-<sous-type> (ou plusieurs valeurs séparées par une virgule).
 
-Si le chapitre ne contient pas de prescription, alors ne pas mettre de variable idPresc.
+Exemple d'identification d'une prescription dans un titre :
 
-Si le chapitre est commun à toutes les prescriptions, alors la variable "idPresc" doit avoir pour valeur "porteeGenerale".
+image::images/idPresc.png[align=center]
 
-=== Dans les paragraphes
+Exemple d'identification d'une prescription dans un paragraphe :
 
-Lorsqu'un paragraphe concerne une prescription spécifique différent du reste du chapitre :
-Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idPrescStart" et renseigner l'identifiant de la prescription comme pour les titres (paragraphe ci-dessus).
+image::images/prescPar.png[align=center]
 
-Ensuite, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe, dans la même ligne) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idPrescEnd" et renseigner l'identifiant de la prescription.
+== Etape 7. Export au format CNIG
 
-Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Par exemple : "porteeGenerale"
+Une fois le fichier terminé, vous devez l'exporter au format CNIG reglePLU.
 
+* Pour cela, aller dans le menu Fichier > Exporter...
+* Sélectionner le format CNIG reglePLU (installé dans le chapitre <<Etape 1. Installer les pré-requis>>)
+image::images/export.png[align=center]
 
+* Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
+* Cliquer sur enregistrer
 
-== Etape 7. Enregistrement
+== Etape 8. Vérification
+* La première vérification visuelle peut se faire simplement à l'aide d'un navigateur.
+Ouvrez le fichier que vous avez exporté dans un navigateur (clic droit > ouvrir avec et sélectionner Firefox ou Edge etc.)
+Le fichier doit s'afficher avec une mise en page sommaire.
+Vérifier que ressortent bien les éléments que vous avez stylisés dans LibreOffice (Titres, gras, souligné, etc.)
 
-Une fois le fichier terminé, vous pouvez l'enregistrer (en conservant le format fodt), le zipper avec le dossier ressources contenant les images et l'envoyer à stephane.garcia@ign.fr.
+Remarque : les noms des champs ne doivent pas apparaître dans votre navigateur.
 
-N'oubliez pas de remonter les problèmes rencontrés en créant des "issues" dans GitHub (https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue). Ce n'est pas la peine de le faire dans le corps du mail.
+Ex d'affichage dans un navigateur :
+image::images/exPLU.png[align=center]
 
+* La dernière vérification concerne le format XSD.
 
-== Test (facultatif)
-Pour les utilisateurs avancés :
-Vous pouvez vous-même tester si le résultat est compatible avec le schéma CNIG règlement DU.
-Pour cela, lancer dans l'ordre les processus XSL fodt2CNIG-1, 2 et 3 sur le fichier FODT ainsi créé et comparer le résultat avec le schéma XSD situé ici :  https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/reglementDU.xsd
+* Allez sur un site web de validation XSD, par exemple, sur ce site : https://www.liquid-technologies.com/online-xsd-validator[https://www.liquid-technologies.com/online-xsd-validator]
 
-Vous pouvez alors remonter les éventuelles erreurs en créant des "issues" dans GitHub.
+* Ouvrez le fichier XML de votre réglement PLU avec un éditeur de texte simple (de type wordPad ou notePad ou le bloc-notes de windows) et copier l'intégralité du fichier dans la première partie de la page web.
+
+* Affichez le fichier XSD dans gitHub en cliquant https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/reglementDU.xsd[ici] et copier l'intégralité du texte commençant par <?xml version="1.0" encoding="UTF-8"?>
+
+* Le coller dans la deuxième partie du site web.
+
+* Cliquer sur "validate"
+
+Exemple après copie sur le site de validation :
+
+image::images/validation.png[align=center]
+
+Normalement, le résultat devrait être "document valid".

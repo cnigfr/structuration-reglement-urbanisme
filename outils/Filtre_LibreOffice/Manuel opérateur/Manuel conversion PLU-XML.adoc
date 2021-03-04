@@ -57,19 +57,38 @@ Pour identifier les différentes prescriptions, on peut utiliser les pièces gra
 *Zone* : Les zones d’un PLU(i) ou le zonage correspondent aux différentes zones d’urbanisation, et des règles différentes s’appliquent à ses différentes zones. Pour identifier les différentes zones, on utilise les pièces graphiques sous forme vectorielle, dans la table des attributs, l’ensemble des zones sont renseignées dans la colonne "libellé" de la couche des zonages.
 
 *Style* : Les styles de LibreOffice Writer définissent les caractéristiques de mise en forme des éléments qui composent le document LibreOffice. Nous nous en servons pour définir la hiérarchie du document. 
-Pour le contenu du paragraphe, on utilise le style “Corps du texte”. Ci-contre, nous pouvons voir la table des styles qui contient les styles qui vont nous intéresser : les styles Titre numérotés, et le style corps du texte.
+Pour le contenu du paragraphe, on utilise le style “Corps du texte”. Ci-dessous, nous pouvons voir la table des styles qui contient les styles qui vont nous intéresser : les styles Titre numérotés, et le style corps du texte.
 
-image::images/styles.png[]
+image::images/styles.png[align=center]
 
-Titre : Un titre est défini par un style. On les utilise pour hiérarchiser le document, on utilise uniquement les titres numérotés définis par défaut dans LibreOffice. Le Titre 1, par exemple, correspond au titre d’un chapitre du règlement écrit (ex : “Chapitre 1 : Dispositions communes à toutes les zones).
+*Titre* : Un titre est défini par un style. On les utilise pour hiérarchiser le document, on utilise uniquement les titres numérotés définis par défaut dans LibreOffice. Le Titre 1, par exemple, correspond au titre d’un chapitre du règlement écrit (ex : “Chapitre 1 : Dispositions communes à toutes les zones).
 
 
 == Etape 1. Installer les pré-requis
 
 Logiciel Libre Office Writer.
-Télécharger le fichier https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/conversion-FODT-2-CNIG/template%20FODT2CNIG%20vb%C3%A9ta1.fodt[template FODT2CNIG].
+Installer la dernière version de LibreOffice Writer disponible sur le site de https://www.libreoffice.org/download/download[LibreOffice].
 
- Nous aurons aussi besoin des pièces graphiques (zonages et prescriptions) sous forme vectorielle (par exemple au format shapefile), qui sont conformes au standard CNIG PLU.
+Si vous avez une ancienne version, il est conseillé de la mettre à jour.
+
+Note : L'outil n'a pas été testé sur des versions antérieures à LibreOffice 5.3.
+
+Il peut être nécessaire d'installer QGIS afin de visualiser les prescriptions et de récupérer l'information des types/sous-type dans les fichiers du GPU.
+Dans ce cas, vous pouvez télécharger et installer https://www.qgis.org/fr/site/forusers/download.html[QGIS] (l'installateur indépendant suffit).
+
+=== Extension Libre Office
+Avant de commencer, il est nécessaire d'installer le filtre LibreOffice disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/CNIG%20reglePLU%20v1.0.jar[ici].
+
+Après avoir téléchargé le fichier "CNIG reglePLU v1.0.jar", suivez les étapes suivantes :
+
+. Ouvez LibreOffice Writer
+. Aller dans le Menu Outils > (Macros) > Paramétrage des filtres XML
+. Cliquer sur Ouvrir un Package et sélectionner le fichier "CNIG reglePLU v1.0.jar" sur votre disque dur
+. Fermer
+
+Normalement, le filtre doit maintenant s'afficher dans la liste des filtres XML :
+
+image::images/filtre.png[align=center]
 
 == Etape 2. Copie du PLU original
 

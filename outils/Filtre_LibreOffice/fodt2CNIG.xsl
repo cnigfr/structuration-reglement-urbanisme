@@ -87,21 +87,6 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	<!-- souligné -->
-	<xsl:template match="text:p[* and not(./text:variable-set)]" mode="etape1">
-		<xsl:choose>
-			<xsl:when test="@text:style-name='P2'">
-				<div style="text-decoration:underline">
-					<xsl:apply-templates mode="etape1"/>
-				</div>
-			</xsl:when>
-			<xsl:otherwise>
-				<div>
-					<xsl:apply-templates mode="etape1"/>
-				</div>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
 	<!-- hyperliens -->
 	<xsl:template match="text:a" mode="etape1">
 		<xsl:choose>
@@ -150,11 +135,31 @@
 			<xsl:value-of select="."/>
 		</strong>
 	</xsl:template>
+	<!-- souligné -->
+	<xsl:template match="text:span[@text:style-name='A_5f_souligné']" mode="etape1">
+		<div style="text-decoration:underline">
+			<xsl:value-of select="."/>
+		</div>
+	</xsl:template>
 	<!-- italique -->
-	<xsl:template match="text:span[@text:style-name='T1']" mode="etape1">
+	<xsl:template match="text:span[@text:style-name='Emphasis']" mode="etape1">
 		<em>
 			<xsl:value-of select="."/>
 		</em>
+	</xsl:template>
+	<!-- italique souligné -->
+	<xsl:template match="text:span[@text:style-name='A_5f_italique_5f_souligné']" mode="etape1">
+		<div style="text-decoration:underline">
+			<em>
+				<xsl:value-of select="."/>
+			</em>
+		</div>
+	</xsl:template>
+	<!-- gras italique -->
+	<xsl:template match="text:span[@text:style-name='A_5f_gras_5f_italique']" mode="etape1">
+		<strong><em>
+			<xsl:value-of select="."/>
+		</em></strong>
 	</xsl:template>
 	<!-- images -->
 	<xsl:template match="draw:frame" mode="etape1">

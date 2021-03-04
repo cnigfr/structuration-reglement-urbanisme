@@ -85,9 +85,9 @@ Avant de commencer, il est nécessaire d'installer le filtre LibreOffice disponi
 Après avoir téléchargé le fichier "CNIG reglePLU v1.0.jar", suivez les étapes suivantes :
 
 . Ouvez LibreOffice Writer
-.. Aller dans le Menu Outils > (Macros) > Paramétrage des filtres XML
-... Cliquer sur Ouvrir un Package et sélectionner le fichier "CNIG reglePLU v1.0.jar" sur votre disque dur
-..... Fermer
+. Aller dans le Menu Outils > (Macros) > Paramétrage des filtres XML
+. Cliquer sur Ouvrir un Package et sélectionner le fichier "CNIG reglePLU v1.0.jar" sur votre disque dur
+. Fermer
 
 Normalement, le filtre doit maintenant s'afficher dans la liste des filtres XML :
 
@@ -108,10 +108,10 @@ exemple d’outil en ligne : https://www.onlineocr.net/fr/
 * Soit le règlement du PLU(i) est disponible en fichier PDF, dont le contenu
 peut être sélectionné :
 . Sélectionner l’intégralité du PDF (Ctrl+A) et le copier (Ctrl+C).
-.. Ouvrez le fichier template "template%20reglePLU.odt" sous LibreOffice
-... Coller le texte du PDF au format texte brut (La mise en page ne doit surtout pas être copiée) dans le fichier FODT2CNIG de Libre Office (Edition → Collage spécial → Coller le texte non-formaté)
+. Ouvrez le fichier template "template%20reglePLU.odt" sous LibreOffice
+. Coller le texte du PDF au format texte brut (La mise en page ne doit surtout pas être copiée) dans le fichier FODT2CNIG de Libre Office (Edition → Collage spécial → Coller le texte non-formaté)
 En effet, la mise en page originale va empêcher la conversion au format CNIG.
-.... Supprimer les éléments du règlement qui sont inutiles ou qui n’ont pas de valeur réglementaire :
+. Supprimer les éléments du règlement qui sont inutiles ou qui n’ont pas de valeur réglementaire :
 
 * Les en-têtes et pieds-de-page qui vont être répétés à chaque page.
 * Les illustrations et textes "décoratifs" et qui n’ont pas valeur réglementaire.
@@ -127,11 +127,11 @@ image::images/ex1.png[align=center]
 Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
 Pour cela :
 . Créez un dossier nommé "ressources" dans lequel seront stockées toutes les images. Ce dossier doit être situé dans le même dossier que votre fichier LibreOffice.
-.. Dans le PDF, sélectionner chaque image que vous souhaitez exporter et l'enregistrer sur le disque dur. Si ce n'est pas possible directement depuis le PDF, essayez de retrouver l'image d'origine en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran. Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
+. Dans le PDF, sélectionner chaque image que vous souhaitez exporter et l'enregistrer sur le disque dur. Si ce n'est pas possible directement depuis le PDF, essayez de retrouver l'image d'origine en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran. Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
 Il est conseillé d'enregistrer vos images avec un nom simple et compréhensible (par exemple image1 ou limite_propriete) afin de pouvoir les retrouver par la suite.
 
-... Puis, insérer l'image dans LibreOffice à l'endroit souhaité (glisser-déposer dans Libre Office)
-.... Enfin, modifier les propriétés de l'image afin de lui donner le même nom que le fichier image. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. 
+. Puis, insérer l'image dans LibreOffice à l'endroit souhaité (glisser-déposer dans Libre Office)
+. Enfin, modifier les propriétés de l'image afin de lui donner le même nom que le fichier image. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. 
 Dans l'onglet Options, le champ Nom, indiquez le nom du fichier que vous venez d'enregistrer *avec l'extension : par exemple, image1.jpg ou procedure.png)*. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image lorsque l'on passera la souris dessus (propriété Alt en HTML).
 
 WARNING: Ne pas oublier l'extension, sinon l'image ne s'affichera pas dans le XML.
@@ -173,9 +173,7 @@ Voici un exemple d’ordre de gestion des styles :
 |Titre 2
 |Paragraphe 1.1 ou 1)
 |Titre 3
-|Sous paragraphe 1.1.1 ou Article XX-i
-(ex: Article UC-3 correspondant à la
-zone UC)
+|Sous paragraphe 1.1.1 ou Article XX-i (ex: Article UC-3 correspondant à la zone UC)
 |Titre 4
 |Sous partie du sous paragraphe ou de l’article
 |Titre 5
@@ -186,12 +184,36 @@ Le choix du style des titres va du général au particulier.
 
 WARNING: Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, Si, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.*
 
+=== Gras / souligné / italique
+Pour mettre une partie de texte en gras / italique ou souligné, il faut utiliser les styles également.
+Etant donné que ce sont des styles de caractère, ils n'aparaîssent pas dans la liste déroulante des styles en haut à gauche de l'écran.
+Pour les afficher, il faut donc aller dans le menu "Styles" puis Gérer les styles (ou Alt+F11), puis cliquer sur l'icône Style de caractère :
+
+image::images/style2.png[align=center]
+Utiliser uniquement les styles suivants :
+* A_gras_italique pour les textes en gras ET italique
+* A_italique_souligné pour les textes en italique ET souligné
+* A_souligné pour les textes soulignés
+* Accentuation pour les textes en italique
+* Accentuation forte pour les textes en gras
+
+Pour appliquer le style :
+* Sélectionner le texte à mettre en valeur
+* Cliquer sur un style dans le panneau latéral.
+
+WARNING: Rappel : ne pas utiliser les bouton de style rapide *"G"*, _"I"_, et __"S"__
+
 === hyperliens 
 
-Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner Insérsion/Hyperlien dans le menu (ou Ctrl+K).
+Dans Libre Office, sélectionner le texte contenant l'hyperlien et sélectionner Insérsion > Hyperlien dans le menu (ou Ctrl+K).
 
 * S'il s'agit d'une URL externe, copier-coller l'URL dans le champ URL
-* S'il s'agit d'un lien interne (pour faire un renvoi), sélectionner Document/Cible et sélectionner le titre correspondant.
+* S'il s'agit d'un lien interne (pour faire un renvoi), sélectionner Document > Cible et sélectionner le titre correspondant.
+
+=== Tableaux
+Lors de la copie du règlement sur le fichier FODT, les bordures des tableaux ne sont
+pas reportées. Il faut donc insérer des tableaux à partir de l’onglet Tableau, et
+intégrer le texte dans les cellules comme dans le PDF original.
 
 == Etape 4. Renseigner les métadonnées
 

@@ -12,7 +12,7 @@ Version du 04/03/2021
  * <<Etape 4. Renseigner les métadonnées du règlement écrit>>
  * <<Etape 5. Identifier les zones>>
  * <<Etape 6. Identifier les prescriptions>>
- * <<Etape 7. Export au format CNIG
+ * <<Etape 7. Export au format CNIG>>
  * <<Etape 8. Vérification>>
 
 :toc:
@@ -55,8 +55,6 @@ Nous ne transformerons que le texte réglementaire donc nous n'aurons besoin que
 *Prescription* : Une prescription se présente dans le standard CNIG PLU sous la forme d'une information surfacique, linéaire ou ponctuelle qui apparaît sur les documents graphiques du PLU. Une prescription qui se superpose à une zone du document d'urbanisme exerce en général une contrainte supplémentaire au règlement de la zone.
 Pour identifier les différentes prescriptions, on peut utiliser les pièces graphiques sous forme vectorielle, dans la table des attributs de la table PRESCRIPTION, l’ensemble des prescriptions sont renseignées dans la colonne "libellé" des différentes couches (prescription de surfaciques, linéaires et ponctuelles).
 
-*Zone/Zonage* : Les zones d’un PLU(i) ou le zonage correspondent aux différentes zones d’urbanisation, et des règles différentes s’appliquent à ses différentes zones. Pour identifier les différentes zones, on utilise les pièces graphiques sous forme vectorielle, dans la table des attributs, l’ensemble des zones sont renseignées dans la colonne "libellé" de la couche des zonages.
-
 *Style* : Les styles de LibreOffice Writer définissent les caractéristiques de mise en forme des éléments qui composent le document LibreOffice. Nous nous en servons pour définir la hiérarchie du document. 
 Pour le contenu du paragraphe, on utilise le style “Corps du texte”. Ci-dessous, nous pouvons voir la table des styles qui contient les styles qui vont nous intéresser : les styles Titre numérotés, et le style corps du texte.
 
@@ -64,10 +62,11 @@ image::images/styles.png[align=center]
 
 *Titre* : Un titre est défini par un style. On les utilise pour hiérarchiser le document, on utilise uniquement les titres numérotés définis par défaut dans LibreOffice. Le Titre 1, par exemple, correspond au titre d’un chapitre du règlement écrit (ex : “Chapitre 1 : Dispositions communes à toutes les zones).
 
+*Zone/Zonage* : Les zones d’un PLU(i) ou le zonage correspondent aux différentes zones d’urbanisation, et des règles différentes s’appliquent à ses différentes zones. Pour identifier les différentes zones, on utilise les pièces graphiques sous forme vectorielle, dans la table des attributs, l’ensemble des zones sont renseignées dans la colonne "libellé" de la couche des zonages.
 
 == Etape 1. Installer les pré-requis
 
-* Lecteur pdf : Vous devez avoir un lecteur de fichier PDF sur votre ordinateur (Adobe Acrobat Reader, Foxit Reader...)
+* Lecteur PDF : Vous devez avoir un lecteur de fichier PDF sur votre ordinateur (Adobe Acrobat Reader, Foxit Reader...)
 
 * Logiciel Libre Office Writer.
 Installer la dernière version de LibreOffice Writer disponible sur le site de https://www.libreoffice.org/download/download[LibreOffice].
@@ -133,10 +132,10 @@ image::images/ex1.png[align=center]
 
 Il faut maintenant réintégrer les images souhaitées dans le texte car elle n'auront pas été copiées.
 Pour cela :
+
 . Créez un dossier nommé "ressources" dans lequel seront stockées toutes les images. Ce dossier doit être situé dans le même dossier que votre fichier LibreOffice.
 . Dans le PDF, sélectionner chaque image que vous souhaitez exporter et l'enregistrer sur le disque dur. Si ce n'est pas possible directement depuis le PDF, essayez de retrouver l'image d'origine en contactant la personne qui a réalisé le PDF, sinon effectuer une capture d'écran. Attention, la capture d'écran doit être réalisée avec un affichage supérieur ou égal à 100%, sinon l'image ne sera pas d'assez bonne qualité.
 Il est conseillé d'enregistrer vos images avec un nom simple et compréhensible (par exemple image1 ou limite_propriete) afin de pouvoir les retrouver par la suite.
-
 . Puis, insérer l'image dans LibreOffice à l'endroit souhaité (glisser-déposer dans Libre Office)
 . Enfin, modifier les propriétés de l'image afin de lui donner le même nom que le fichier image. Pour cela, effectuer un clic droit sur l'image dans Libre Office et cliquer sur Propriétés. 
 Dans l'onglet Options, le champ Nom, indiquez le nom du fichier que vous venez d'enregistrer *avec l'extension : par exemple, image1.jpg ou procedure.png)*. Vous pouvez également renseigner le champ Alternative qui servira a afficher un libellé sur l'image lorsque l'on passera la souris dessus (propriété Alt en HTML).
@@ -153,9 +152,7 @@ Les options prises en charge sont les suivantes :
 
 * Titres
 * Images
-* gras
-* souligné
-* italique
+* gras / souligné / italique
 * hyperliens
 * tableaux
 
@@ -164,6 +161,7 @@ WARNING: Toutes les autres options de mise en page possible dans LibreOffice son
 === Titres
 
 Pour définir un titre, vous pouvez soit
+
 * cliquez sur le texte du titre et sélectionner le style approprié dans la liste déroulante des styles rapides en haut à gauche de l'écran :
 image::images/majS.png[align=center]
 
@@ -189,12 +187,12 @@ Voici un exemple d’ordre de gestion des styles :
 Le choix du style des titres va du général au particulier.
 
 
-WARNING: Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, Si, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.*
+WARNING: Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, Si, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.
 
 === Gras / souligné / italique
 Pour mettre une partie de texte en gras / italique ou souligné, il faut utiliser les styles également.
 Etant donné que ce sont des styles de caractère, ils n'aparaîssent pas dans la liste déroulante des styles en haut à gauche de l'écran.
-Pour les afficher, il faut donc aller dans le menu "Styles" puis Gérer les styles (ou Alt+F11), puis cliquer sur l'icône Style de caractère :
+Pour les afficher, il faut donc aller dans le menu "Styles" puis Gérer les styles (ou Alt+F11), puis cliquer sur l'icône Style de caractère (entourré en rouge dans l'image ci-dessous) :
 
 image::images/style2.png[align=center]
 Utiliser uniquement les styles suivants :
@@ -243,10 +241,36 @@ https://www.geoportail-urbanisme.gouv.fr/metadata/details/?id=fr-000015079-PLU20
 Exemple : Règlement écrit du PLU de Jaleyrac.
 * “typeDoc” correspond au type de document, il n’y a que deux valeurs possibles : "PLU" ou "PLUI".
 
-== Etape 5. Identifier les zones
+== Etape 5. Ajouter les champs personnalisés
 
 Un PLU(i) est toujours accompagné d’un plan de zonage qui identifie de manière géographique les différentes règles et prescriptions. Nous allons voir dans
-cette partie comment associer ces règles et prescriptions à un secteur géographique.
+Cette étape vise à enrichir le texte sous LibreOffice à l'aide de champs personnalisés qui vont permettre d'identifier les parties du texte relatives à une commune, une zone ou bien une prescription.
+
+
+=== Identification des champs dans les titres
+
+==== Ajout d'un champ personnalisé
+Pour insérer un champ dans un titre :
+. Cliquez à la fin du titre concerné (par exemple, si votre titre s'appelle "VI. ZONE UA", cliquez juste après le caractère A) et ajoutez un champ : Menu Insertion > Champs > Autres champs.
+
+Les variables qui peuvent être insérés au niveau d'un titre sont :
+* inseeCommune
+* idZone
+* idPresc
+
+Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
+
+Règle: si aucun champ n'est défini pour un titre, alors celui-ci portera les mêmes informations que le titre parent. Il est donc indispensable que tous les titres de niveau 1 soient correctement renseignés.
+
+Corollaire: *Il n’est pas nécessaire de définir un champ pour tous les titres*. En effet, si la valeur est la même pour tous les chapitres suivants, alors il suffit de le définir pour ce titre (les titres enfants hériteront des champs lors de l'export au format CNIG reglePLU).
+
+==== Identification de la commune
+
+Il s'agit du code INSEE de la commune concernée par un titre (il est possible que dans un règlement, un chapitre traite d'une ou plusieurs communes particulières). 
+Pour cela, <<Ajout d'un champ personnalisé,ajouter un champ personnalisé>> puis sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE
+sont séparés par une virgule (sans espace). Ex: "07110,07117”
+
+
 
 === Identification des zones dans les titres
 
@@ -266,17 +290,6 @@ Exemple :
 Le titre “Caractéristiques urbaine, architecturale, environnementale et paysagère” concerne les zones UG et 1AU. Le résultat de cette manipulation doit
 apparaître de cette façon :
 image::images/titre.png[align=center]
-
-=== Identification de la commune
-
-
-De la même manière, l’identification de la commune est également nécessaire (pour les PLUi par exemple). Pour cela, cliquez à la fin du titre concerné et ajoutez une variable → Insertion/Champs/Autres champs.
-Sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE
-sont séparés par une virgule (sans espace). Ex: "07110,07117”
-
-Remarque: si aucune variable n'est définie pour un titre, alors celui-ci portera les mêmes informations que le titre parent. Il est donc indispensable que tous les titres de niveau 1 aient une zone ou "porteeGenerale".
-
-Corollaire: *Il n’est pas nécessaire de définir une variable pour tous les titres*. En effet, si la valeur est la même pour tous les sous-titres d’un titre, alors ne la définir que pour le titre de plus haut niveau hiérarchique.
 
 ==== Cohérence avec le GPU
 Ce champ doit servir de lien avec le LIBELLÉ de la classe ZONE_URBA du standard CNIG PLU. Il est donc nécessaire que les noms des zones dans ce fichier correspondent au libellé des zones dans la couche ZONE_URBA du GPU. 
@@ -306,6 +319,8 @@ Note, cette valeur doit également correspondre à un LIBELLE de la classe ZONE_
 Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe) et ajouter une variable :
 Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseigner la Valeur de la zone ou du secteur de zone concerné.
 
+WARNING: les valeurs idPrescStart et idPrescEnd entourant une portion de texte doivent être identiques.
+
 Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Dans l'exemple précédent : UG.
 
 L'exemple ci-dessous montre une utilisation des variables “idZoneStart” et “idZoneEnd”.
@@ -320,11 +335,13 @@ Pour insérer une prescription, procéder de la même manière que pour une zone
 Pour les prescriptions définies au niveau d'un titre, utiliser le champ "idPresc".
 Pour les prescriptions définies au niveau d'un paragraphe, utiliser les champs "idPrescStart" et "idPrescEnd"
 
-Les valeurs autorisées pour le champ idPresc sont : "porteeGenerale" si le chapitre concerne toutes les prescriptions ou, si le chapitre est spécifique à un type de prescription : <type>-<sous-type>. Ex : "07-03". Il est possible également de définir plusieurs types de prescription associées à un paragraphe séparées par une virgule (par ex "07-03,07-04")
+Les valeurs autorisées pour le champ idPresc sont : "00-00" si le chapitre concerne toutes les prescriptions ou, si le chapitre est spécifique à un type de prescription : <type>-<sous-type>. Ex : "07-03". Il est possible également de définir plusieurs types de prescription associées à un paragraphe séparées par une virgule (par ex "07-03,07-04")
 
 Les Types / Sous-types sont définis au chapitre 3.3 du standard CNIG PLU v2017d disponible http://cnig.gouv.fr/?page_id=2732[ici].
 
-Les valeurs autorisées pour idPrescStart et idPrescEnd sont uniquement sous la forme <type>-<sous-type> (ou plusieurs valeurs séparées par une virgule).
+Les valeurs autorisées pour idPrescStart et idPrescEnd sont les mêmes que pour idPresc.
+
+WARNING: les valeurs idPrescStart et idPrescEnd entourant une portion de texte doivent être identiques.
 
 Exemple d'identification d'une prescription dans un titre :
 
@@ -358,15 +375,11 @@ image::images/exPLU.png[align=center]
 
 * La dernière vérification concerne le format XSD.
 
-* Allez sur un site web de validation XSD, par exemple, sur ce site : https://www.liquid-technologies.com/online-xsd-validator[https://www.liquid-technologies.com/online-xsd-validator]
-
-* Ouvrez le fichier XML de votre réglement PLU avec un éditeur de texte simple (de type wordPad ou notePad ou le bloc-notes de windows) et copier l'intégralité du fichier dans la première partie de la page web.
-
-* Affichez le fichier XSD dans gitHub en cliquant https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/reglementDU.xsd[ici] et copier l'intégralité du texte commençant par <?xml version="1.0" encoding="UTF-8"?>
-
-* Le coller dans la deuxième partie du site web.
-
-* Cliquer sur "validate"
+. Allez sur un site web de validation XSD, par exemple, sur ce site : https://www.liquid-technologies.com/online-xsd-validator[https://www.liquid-technologies.com/online-xsd-validator]
+. Ouvrez le fichier XML de votre réglement PLU avec un éditeur de texte simple (de type wordPad ou notePad ou le bloc-notes de windows) et copier l'intégralité du fichier dans la première partie de la page web.
+. Affichez le fichier XSD dans gitHub en cliquant https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/reglementDU.xsd[ici] et copier l'intégralité du texte commençant par <?xml version="1.0" encoding="UTF-8"?>
+. Le coller dans la deuxième partie du site web.
+. Cliquer sur "validate"
 
 Exemple après copie sur le site de validation :
 

@@ -10,10 +10,10 @@ Version du 04/03/2021
  * <<Etape 2. Copie du PLU original>>
  * <<Etape 3. Mise en page>>
  * <<Etape 4. Renseigner les métadonnées du règlement écrit>>
- * <<Etape 5. Identifier les zones>>
- * <<Etape 6. Identifier les prescriptions>>
- * <<Etape 7. Export au format CNIG>>
- * <<Etape 8. Vérification>>
+  ** <<Etape 4.1 Identification des champs dans les titres>>
+  ** <<Etape 4.2 Identification des champs dans les paragraphes>>
+ * <<Etape 5. Export au format CNIG>>
+ * <<Etape 6. Vérification>>
 
 :toc:
 
@@ -164,7 +164,6 @@ Pour définir un titre, vous pouvez soit
 
 * cliquez sur le texte du titre et sélectionner le style approprié dans la liste déroulante des styles rapides en haut à gauche de l'écran :
 image::images/majS.png[align=center]
-
 * aller dans le menu "Styles" puis Gérer les styles (ou Alt+F11) afin d'afficher le panneau latéral des styles. Il vous suffira ensuite simplement de cliquer sur une ligne et de sélectionner un style dans le panneau latéral.
 
 Voici un exemple d’ordre de gestion des styles :
@@ -196,6 +195,7 @@ Pour les afficher, il faut donc aller dans le menu "Styles" puis Gérer les styl
 
 image::images/style2.png[align=center]
 Utiliser uniquement les styles suivants :
+
 * A_gras_italique pour les textes en gras ET italique
 * A_italique_souligné pour les textes en italique ET souligné
 * A_souligné pour les textes soulignés
@@ -203,6 +203,7 @@ Utiliser uniquement les styles suivants :
 * Accentuation forte pour les textes en gras
 
 Pour appliquer le style :
+
 * Sélectionner le texte à mettre en valeur
 * Cliquer sur un style dans le panneau latéral.
 
@@ -241,16 +242,17 @@ https://www.geoportail-urbanisme.gouv.fr/metadata/details/?id=fr-000015079-PLU20
 Exemple : Règlement écrit du PLU de Jaleyrac.
 * “typeDoc” correspond au type de document, il n’y a que deux valeurs possibles : "PLU" ou "PLUI".
 
-== Etape 5. Ajouter les champs personnalisés
+== Etape 4. Ajouter les champs personnalisés
 
 Un PLU(i) est toujours accompagné d’un plan de zonage qui identifie de manière géographique les différentes règles et prescriptions. Nous allons voir dans
 Cette étape vise à enrichir le texte sous LibreOffice à l'aide de champs personnalisés qui vont permettre d'identifier les parties du texte relatives à une commune, une zone ou bien une prescription.
 
 
-=== Identification des champs dans les titres
+=== Etape 4.1 Identification des champs dans les titres
 
-==== Ajout d'un champ personnalisé
+==== Ajout d'un champ personnalisé dans le titre
 Pour insérer un champ dans un titre :
+
 . Cliquez à la fin du titre concerné (par exemple, si votre titre s'appelle "VI. ZONE UA", cliquez juste après le caractère A) et ajoutez un champ : Menu Insertion > Champs > Autres champs.
 
 Les variables qui peuvent être insérés au niveau d'un titre sont :
@@ -267,91 +269,105 @@ Corollaire: *Il n’est pas nécessaire de définir un champ pour tous les titre
 ==== Identification de la commune
 
 Il s'agit du code INSEE de la commune concernée par un titre (il est possible que dans un règlement, un chapitre traite d'une ou plusieurs communes particulières). 
-Pour cela, <<Ajout d'un champ personnalisé,ajouter un champ personnalisé>> puis sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE
-sont séparés par une virgule (sans espace). Ex: "07110,07117”
+Pour cela, ajouter un champ personnalisé (voir chapitre <<Ajout d'un champ personnalisé dans le titre>>) puis sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE sont séparés par une virgule (sans espace). Ex: "07110,07117”
 
-
-
-=== Identification des zones dans les titres
+==== Identification des zones dans les titres
 
 Lorsqu'une zone est commune à toutes les parties d'un chapitre :
-Dans ce cas, cliquez à la fin du titre concerné (par exemple, si votre titre s'appelle "VI. ZONE UA", cliquez juste après le caractère A) et ajouter une variable :
-Insertion/Champs/Autres champs :
-image::images/varZone.png[align=center]
+Dans ce cas, ajouter un champ personnalisé (voir chapitre <<Ajout d'un champ personnalisé dans le titre>>) puis sélectionner la variable "idZone" et renseigner la Valeur de la façon suivante :
 
-Sélectionner le type “définir une variable”, sélectionnez la variable "idZone" et
-renseigner la Valeur de la façon suivante :
-* Si le titre en question concerne toute la commune/intercommunalité, mettre la
-valeur « porteeGenerale ».
-* Sinon, le nom de la zone identifiée dans le paragraphe (ex : U, A, N, Ua, UAb, etc.). Si le paragraphe concerne plusieurs zones, alors mettre tous les noms des zones concernées séparées par une virgule (sans espace) : "Ua,Ub".
+* Si le titre en question concerne toute la commune/intercommunalité, mettre la valeur « porteeGenerale ».
+* Sinon, mettre le nom de la zone identifiée dans le paragraphe (ex : U, A, N, Ua, UAb, etc.). Si le paragraphe concerne plusieurs zones, alors mettre tous les noms des zones concernées séparées par une virgule (sans espace) : "Ua,Ub".
 
-Exemple :
+Exemples :
+image::images/exTitre1.png[align=center]
+image::images/exTitre3.png[align=center]
 
-Le titre “Caractéristiques urbaine, architecturale, environnementale et paysagère” concerne les zones UG et 1AU. Le résultat de cette manipulation doit
-apparaître de cette façon :
-image::images/titre.png[align=center]
+=== Identification des prescriptions dans les titres
 
-==== Cohérence avec le GPU
-Ce champ doit servir de lien avec le LIBELLÉ de la classe ZONE_URBA du standard CNIG PLU. Il est donc nécessaire que les noms des zones dans ce fichier correspondent au libellé des zones dans la couche ZONE_URBA du GPU. 
+Pour insérer une prescription commune à toutes les parties d'un chapitre :
+Dans ce cas, ajouter un champ personnalisé (voir chapitre <<Ajout d'un champ personnalisé dans le titre>>) puis sélectionner la variable "idPresc" et renseigner la Valeur de la façon suivante :
 
-Pour le vérifier, téléchargez l'archive de votre PLU depuis le https://www.geoportail-urbanisme.gouv.fr/[GPU]. Tapez le nom de votre commune dans le moteur de recherche, puis cliquer sur "télécharger l'archive complète" :
-image::images/gpu.png[align=center]
-
-
-Les données géographiques se situent dans le dossier “Donnees_geographiques” de l'archive.
-
-
-Ouvrez la couche “ZONE_URBA” sur un logiciel SIG comme QGIS par exemple et afficher les données attributaires de la couche. Vérifiez enfin le champ LIBELLE. Les noms des zones doivent être écrits comme dans ce champ.
-
-
-image::images/qgis1.png[align=center]
-
-
-=== Identification des zones dans les paragraphes
-
-Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, le secteur UGa de la zone UG.
-
-Dans ce cas, cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idZoneStart" et renseigner la Valeur de la zone ou du secteur de zone concerné.
-
-Note, cette valeur doit également correspondre à un LIBELLE de la classe ZONE_URBA.
-
-Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe) et ajouter une variable :
-Insertion/Champs/Autres champs. Sélectionner la variable "idZoneEnd" et renseigner la Valeur de la zone ou du secteur de zone concerné.
-
-WARNING: les valeurs idPrescStart et idPrescEnd entourant une portion de texte doivent être identiques.
-
-Remarque : si aucune variable n'est définie à un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient. Dans l'exemple précédent : UG.
-
-L'exemple ci-dessous montre une utilisation des variables “idZoneStart” et “idZoneEnd”.
-Elles sont clairement situées dans le texte, et elles ne doivent pas correspondre à un titre entier (“Dans le secteur UBc” n’est pas un titre il est juste écrit en gras).
-
-image::images/idStart.png[align=center]
-
-== Etape 6. Identifier les prescriptions
-
-Pour insérer une prescription, procéder de la même manière que pour une zone (cf. <<Etape 5. Identifier les zones>>).
-
-Pour les prescriptions définies au niveau d'un titre, utiliser le champ "idPresc".
-Pour les prescriptions définies au niveau d'un paragraphe, utiliser les champs "idPrescStart" et "idPrescEnd"
-
-Les valeurs autorisées pour le champ idPresc sont : "00-00" si le chapitre concerne toutes les prescriptions ou, si le chapitre est spécifique à un type de prescription : <type>-<sous-type>. Ex : "07-03". Il est possible également de définir plusieurs types de prescription associées à un paragraphe séparées par une virgule (par ex "07-03,07-04")
+* Si le titre en question ne concerne aucune prescription, ne pas ajouter de champ ou mettre la valeur "nonConcerne"
+* Si le titre en question est commun à toutes les prescriptions, mettre la valeur « 00-00 ».
+* Si le chapitre est spécifique à un type de prescription : <type>-<sous-type>. Ex : "07-03". Il est possible également de définir plusieurs types de prescription associées à un paragraphe séparées par une virgule (par ex "07-03,07-04")
 
 Les Types / Sous-types sont définis au chapitre 3.3 du standard CNIG PLU v2017d disponible http://cnig.gouv.fr/?page_id=2732[ici].
 
-Les valeurs autorisées pour idPrescStart et idPrescEnd sont les mêmes que pour idPresc.
+Par exemple, ce chapitre "Prescription Général" concerne toutes les prescriptions, donc les champs vont être définis comme ceci :
+image::images/exTitre3.png[align=center]
 
-WARNING: les valeurs idPrescStart et idPrescEnd entourant une portion de texte doivent être identiques.
+=== Etape 4.2 Identification des champs dans les paragraphes
 
-Exemple d'identification d'une prescription dans un titre :
+==== Ajout d'un champ personnalisé
+Pour insérer un champ dans un paragraphe :
 
-image::images/idPresc.png[align=center]
+. Cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe) et ajouter une variable : Menu Insertion > Champs > Autres champs.
+. Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe) et ajouter une variable : Menu Insertion > Champs > Autres champs.
+
+WARNING: les valeurs des variables ...Start et ...End entourant une portion de texte doivent être identiques que ce soit pour les zones ou les prescription.
+WARNING: les variables ...Start et ...End ne doivent pas englober un titre. Pour cela il faut utiliser les champs dans les titre (cf. Etape 4.1 Identification des champs dans les titres>>).
+
+Remarque : si aucune variable n'est définie pour un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient.
+
+Les variables qui peuvent être insérés au niveau du paragraphe sont :
+
+* idZoneStart et idZoneEnd pour les zones
+* idPrescStart et idPrescEnc pour les prescriptions
+Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
+
+==== Identification des zones dans les paragraphes
+
+Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapitre, par exemple, le secteur UGa de la zone UG.
+
+Pour identifier les zones, utiliser la variable "idZoneStart" avant le paragraphe et "idZoneEnd" pour marquer la fin du paragraphe.
+
+Les valeurs autorisées sont les mêmes que pour l'identification de la zone au niveau du titre (cf. chapitre <<Identification des zones dans les titres>>)
+
+L'exemple ci-dessous montre une utilisation des variables “idZoneStart” et “idZoneEnd”.
+
+image::images/idStart.png[align=center]
+
+==== Identification des prescription dans les paragraphes
+
+Lorsqu'un paragraphe concerne un type de prescription spécifique différent du reste du chapitre, par exemple, un bâti à protéger.
+
+Pour identifier les presriptions, utiliser la variable "idPrescStart" avant le paragraphe et "idPrescEnd" pour marquer la fin du paragraphe.
+
+Les valeurs autorisées sont les mêmes que pour l'identification de la prescription au niveau du titre (cf. chapitre <<Identification des prescriptions dans les titres>>)
 
 Exemple d'identification d'une prescription dans un paragraphe :
 
 image::images/prescPar.png[align=center]
 
-== Etape 7. Export au format CNIG
+
+=== Cohérence avec le GPU
+Les valeurs renseignées dans les variables des champs personnalisés pour les zones et les prescriptions doivent être cohérentes avec les informations géographiques présentes dans le GPU.
+
+Ces valeurs peuvent être trouvées dans l'archive de votre PLU sur le https://www.geoportail-urbanisme.gouv.fr/[GPU]. Tapez le nom de votre commune dans le moteur de recherche, puis cliquer sur "télécharger l'archive complète" :
+image::images/gpu.png[align=center]
+
+
+Les données géographiques se situent dans le dossier “Donnees_geographiques” de l'archive.
+
+==== Noms des zones
+
+Les valeurs entrées dans idZone, idZoneStart ou idZoneEnd doivent servir de lien avec le LIBELLÉ de la classe ZONE_URBA du standard CNIG PLU. Il est donc nécessaire que les noms des zones dans ce fichier correspondent au libellé des zones dans la couche ZONE_URBA du GPU. 
+
+Pour vérifier ces valeurs, ouvrez la couche “ZONE_URBA” sur un logiciel SIG comme QGIS par exemple et afficher les données attributaires de la couche. Vérifiez enfin le champ LIBELLE. Les noms des zones doivent être écrits comme dans ce champ.
+
+image::images/qgis1.png[align=center]
+
+==== Types / Sous-type des prescriptions
+
+Les valeurs entrées dans idPresc, idPrescStart ou idPrescEnd doivent servir de lien avec les champs TYPEPSC et STYPESC des classes PRESCRIPTION_PCT, PRESCRIPTION_LIN et PRESCRIPTION_SURF du standard CNIG PLU. Il est donc nécessaire que les types des prescriptions dans ce fichier correspondent aux valeurs dans le GPU. 
+
+Pour vérifier ces valeurs, ouvrez les couches PRESCRIPTION_PCT, PRESCRIPTION_LIN et PRESCRIPTION_SURF sur un logiciel SIG comme QGIS par exemple et afficher les données attributaires de ces couches. Vérifiez enfin les champs TYPEPSC et STYPEPSC. Les valeurs des prescriptions doivent être écrites sous la forme <TYPEPSC-STYPEPSC>.
+
+image::images/qgis2.png[align=center]
+
+
+== Etape 5. Export au format CNIG
 
 Une fois le fichier terminé, vous devez l'exporter au format CNIG reglePLU.
 
@@ -362,7 +378,7 @@ image::images/export.png[align=center]
 * Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
 * Cliquer sur enregistrer
 
-== Etape 8. Vérification
+== Etape 6. Vérification
 * La première vérification visuelle peut se faire simplement à l'aide d'un navigateur.
 Ouvrez le fichier que vous avez exporté dans un navigateur (clic droit > ouvrir avec et sélectionner Firefox ou Edge etc.)
 Le fichier doit s'afficher avec une mise en page sommaire.

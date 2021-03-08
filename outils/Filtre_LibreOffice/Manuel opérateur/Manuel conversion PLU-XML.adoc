@@ -311,7 +311,7 @@ image::images/exTitre3.png[align=center]
 
 === Champ d'identification des prescriptions dans les titres (idPresc)
 
-Si le titre en question ne concerne aucune prescription, ne pas ajouter de champ personnalisé.
+* Si le titre en question ne concerne aucune prescription, ne pas ajouter de champ personnalisé.
 
 Lorsqu'un chapitre concerne des prescriptions :
 

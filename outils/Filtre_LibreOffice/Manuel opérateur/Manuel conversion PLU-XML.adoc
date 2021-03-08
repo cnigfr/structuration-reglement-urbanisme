@@ -271,14 +271,13 @@ Pour insérer un champ dans un titre :
 
 . Cliquez à la fin du titre concerné (par exemple, si votre titre s'appelle "VI. ZONE UA", cliquez juste après le caractère A)
 . ajoutez un champ : Menu Insertion > Champs > Autres champs.
+. Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
 
 Les variables qui peuvent être insérés au niveau d'un titre sont :
 
 * inseeCommune
 * idZone
 * idPresc
-
-. Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
 
 Règle: si aucun champ n'est défini pour un titre, alors celui-ci portera les mêmes informations que le titre parent. Il est donc indispensable que tous les titres de niveau 1 soient correctement définis.
 
@@ -288,14 +287,17 @@ Corollaire: *Il n’est pas nécessaire de définir un champ pour tous les titre
 
 Il s'agit du code INSEE de la commune concernée par un titre (il est possible que dans un règlement, un chapitre traite d'une ou plusieurs communes particulières). 
 
-* Pour cela, ajouter un champ personnalisé (voir chapitre <<Ajouter un champ personnalisé dans le titre>>) puis sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE sont séparés par une virgule (sans espace). Ex: "07110,07117”
+. ajouter un champ personnalisé (voir chapitre <<Ajouter un champ personnalisé dans le titre>>) 
+. sélectionner la variable " inseeCommune "
+. renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE sont séparés par une virgule (sans espace). Ex: "07110,07117”
 
 ==== Champ d'identification des zones dans les titres (idZone)
 
 Lorsqu'une zone est commune à toutes les parties d'un chapitre :
 
-* Dans ce cas, ajouter un champ personnalisé (voir chapitre <<Ajouter un champ personnalisé dans le titre>>) puis sélectionner la variable "idZone" et renseigner la Valeur de la façon suivante :
-
+. ajouter un champ personnalisé (voir chapitre <<Ajouter un champ personnalisé dans le titre>>)
+. sélectionner la variable "idZone" 
+. renseigner la Valeur de la façon suivante :
 * Si le titre en question concerne toute la commune/intercommunalité, mettre la valeur « porteeGenerale ».
 * Sinon, mettre le nom de la zone identifiée dans le paragraphe (ex : U, A, N, Ua, UAb, etc.). Si le paragraphe concerne plusieurs zones, alors mettre tous les noms des zones concernées séparées par une virgule (sans espace) : "Ua,Ub".
 
@@ -331,13 +333,12 @@ Pour insérer un champ dans un paragraphe :
 
 . Cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe) et ajouter une variable : Menu Insertion > Champs > Autres champs.
 . Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe) et ajouter une variable : Menu Insertion > Champs > Autres champs.
+. Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
 
 Les variables qui peuvent être insérés au niveau du paragraphe sont :
 
 * idZoneStart et idZoneEnd pour les zones
 * idPrescStart et idPrescEnc pour les prescriptions
-
-. Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
 
 WARNING: les valeurs des variables ...Start et ...End entourant une portion de texte doivent être identiques que ce soit pour les zones ou les prescription.
 

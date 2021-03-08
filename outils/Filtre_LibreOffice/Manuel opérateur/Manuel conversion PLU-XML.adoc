@@ -301,11 +301,11 @@ Lorsqu'une zone est commune à toutes les parties d'un chapitre :
 * Si le titre en question concerne toute la commune/intercommunalité, mettre la valeur « porteeGenerale ».
 * Sinon, mettre le nom de la zone identifiée dans le paragraphe (ex : U, A, N, Ua, UAb, etc.). Si le paragraphe concerne plusieurs zones, alors mettre tous les noms des zones concernées séparées par une virgule (sans espace) : "Ua,Ub".
 
-Exemples 1 chapitre concernant toutes les zones sur la commune 15079 :
+Exemple 1 : chapitre concernant toutes les zones sur la commune 15079 :
 
 image::images/exTitre1.png[align=center]
 
-Exemples 2 chapitre concernant uniquement la zone A :
+Exemple 2 : chapitre concernant uniquement la zone A :
 
 image::images/exTitre3.png[align=center]
 
@@ -315,10 +315,11 @@ Si le titre en question ne concerne aucune prescription, ne pas ajouter de champ
 
 Lorsqu'un chapitre concerne des prescriptions :
 
-* Dans ce cas, ajouter un champ personnalisé (voir chapitre <<Ajouter un champ personnalisé dans le titre>>) puis sélectionner la variable "idPresc" et renseigner la Valeur de la façon suivante :
-
-** Si le titre en question est commun à toutes les prescriptions, mettre la valeur « 00-00 ».
-** Si le chapitre est spécifique à un type de prescription : <type>-<sous-type>. Ex : "07-03". Il est possible également de définir plusieurs types de prescription associées à un paragraphe séparées par une virgule (par ex "07-03,07-04")
+. ajouter un champ personnalisé (voir chapitre <<Ajouter un champ personnalisé dans le titre>>)
+. sélectionner la variable "idPresc"
+. renseigner la Valeur de la façon suivante :
+* Si le titre en question est commun à toutes les prescriptions, mettre la valeur « 00-00 ».
+* Si le chapitre est spécifique à un type de prescription : <type>-<sous-type>. Ex : "07-03". Il est possible également de définir plusieurs types de prescription associées à un paragraphe séparées par une virgule (par ex "07-03,07-04")
 
 Les Types / Sous-types sont définis au chapitre 3.3 du http://cnig.gouv.fr/?page_id=2732[standard CNIG PLU v2017d].
 

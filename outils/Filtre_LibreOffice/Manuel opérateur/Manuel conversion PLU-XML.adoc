@@ -82,6 +82,8 @@ Note : L'outil n'a pas été testé sur des versions antérieures à LibreOffice
 Il peut être nécessaire d'installer QGIS afin de visualiser les prescriptions et de récupérer les données attributaires des prescriptions du GPU.
 Dans ce cas, vous pouvez télécharger et installer https://www.qgis.org/fr/site/forusers/download.html[QGIS] (l'installateur indépendant suffit).
 
+* *Un éditeur de texte simple* pour vérifier le format du fichier. Par exemple, WordPad, le Bloc-notes Windows ou NotePad++.
+
 === Extension Libre Office
 Avant de commencer, il est nécessaire d'installer le filtre LibreOffice disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/CNIG%20reglePLU%20v1.0.jar[ici].
 
@@ -353,47 +355,64 @@ Lorsqu'un paragraphe concerne un zonage spécifique différent du reste du chapi
 
 * Pour identifier les zones, utiliser les variables "idZoneStart" pour marquer le début du paragraphe et "idZoneEnd" pour marquer la fin du paragraphe.
 
-* Les valeurs autorisées sont les mêmes que pour l'identification de la zone au niveau du titre (cf. chapitre <<Identification des zones dans les titres>>)
+* Les valeurs autorisées sont les mêmes que pour l'identification de la zone au niveau du titre (cf. chapitre <<Champ d'identification des zones dans les titres (idZone)>>)
 
-L'exemple ci-dessous montre une utilisation des variables “idZoneStart” et “idZoneEnd”.
+L'exemple ci-dessous montre une utilisation des variables “idZoneStart” et “idZoneEnd” pour identifier les parties du chapitre concernant uniquement les zone UGa et UGb.
 
 image::images/idStart.png[align=center]
 
-==== Identification des prescription dans les paragraphes
+==== Identification des prescriptions dans les paragraphes
 
 Lorsqu'un paragraphe concerne un type de prescription spécifique différent du reste du chapitre, par exemple, un bâti à protéger.
 
 * Pour identifier les presriptions, utiliser la variable "idPrescStart" pour marquer le début du paragraphe et "idPrescEnd" pour marquer la fin du paragraphe.
 
-* Les valeurs autorisées sont les mêmes que pour l'identification de la prescription au niveau du titre (cf. chapitre <<Identification des prescriptions dans les titres>>)
+* Les valeurs autorisées sont les mêmes que pour l'identification de la prescription au niveau du titre (cf. chapitre <<Champ d'identification des prescriptions dans les titres (idPresc)>>)
 
-Exemple d'identification d'une prescription dans un paragraphe :
+L'exemple suivant montre comment identifier une partie du chapitre consacrée à un type de prescription ici, 07-04, à savoir des éléments de paysage à conserver pour motifs écologiques :
 
 image::images/prescPar.png[align=center]
 
 === Cohérence avec le GPU
 Les valeurs renseignées dans les variables des champs personnalisés pour les zones et les prescriptions doivent être cohérentes avec les informations géographiques présentes dans le GPU.
 
-Ces valeurs peuvent être trouvées dans l'archive de votre PLU sur le https://www.geoportail-urbanisme.gouv.fr/[GPU]. Tapez le nom de votre commune dans le moteur de recherche, puis cliquer sur "télécharger l'archive complète" :
+* *Si vous maîtrisez le nom des zones dans votre réglement et que vous êtes capables de déterminer le type/sous-type des prescriptions figurant dans le règlement écrit selon la nomenclature du chapitre 3.3 du http://cnig.gouv.fr/?page_id=2732[standard CNIG PLU v2017d], alors vous pouvez ignorer ce chapitre*
+
+Ces valeurs peuvent être trouvées dans l'archive de votre PLU sur le https://www.geoportail-urbanisme.gouv.fr/[GPU]. 
+Pour récupérer l'archive :
+
+. Connectez-vous sur le https://www.geoportail-urbanisme.gouv.fr/[GPU]
+. Tapez le nom de votre commune dans le moteur de recherche
+. cliquez sur "télécharger l'archive complète" :
 
 image::images/gpu.png[align=center]
 
 
 Les données géographiques se situent dans le dossier “Donnees_geographiques” de l'archive.
 
-==== Noms des zones
+==== Vérifier le nom des zones
 
-Les valeurs entrées dans idZone, idZoneStart ou idZoneEnd doivent servir de lien avec le LIBELLÉ de la classe ZONE_URBA du standard CNIG PLU. Il est donc nécessaire que les noms des zones dans ce fichier correspondent au libellé des zones dans la couche ZONE_URBA du GPU. 
+Les valeurs entrées dans idZone, idZoneStart ou idZoneEnd doivent servir de lien avec le LIBELLE de la classe ZONE_URBA du standard CNIG PLU. Il est donc nécessaire que les noms des zones dans ce fichier correspondent au libellé des zones dans la couche ZONE_URBA du GPU. 
 
-* Pour vérifier ces valeurs, ouvrez la couche “ZONE_URBA” sur un logiciel SIG comme QGIS par exemple et afficher les données attributaires de la couche. Vérifiez enfin le champ LIBELLE. Les noms des zones doivent être écrits comme dans ce champ.
+Pour vérifier ces valeurs :
+
+. ouvrez la couche “ZONE_URBA” sur un logiciel SIG comme QGIS par exemple
+. afficher les données attributaires de la couche
+. Vérifiez enfin le champ LIBELLE. Les noms des zones doivent être écrits comme dans ce champ.
 
 image::images/qgis1.png[align=center]
 
-==== Types / Sous-type des prescriptions
+==== Vérifier le type / Sous-type des prescriptions
 
 Les valeurs entrées dans idPresc, idPrescStart ou idPrescEnd doivent servir de lien avec les champs TYPEPSC et STYPESC des classes PRESCRIPTION_PCT, PRESCRIPTION_LIN et PRESCRIPTION_SURF du standard CNIG PLU. Il est donc nécessaire que les types des prescriptions dans ce fichier correspondent aux valeurs dans le GPU. 
 
-* Pour vérifier ces valeurs, ouvrez les couches PRESCRIPTION_PCT, PRESCRIPTION_LIN et PRESCRIPTION_SURF sur un logiciel SIG comme QGIS par exemple et afficher les données attributaires de ces couches. Vérifiez enfin les champs TYPEPSC et STYPEPSC. Les valeurs des prescriptions doivent être écrites sous la forme <TYPEPSC-STYPEPSC>.
+Pour vérifier ces valeurs
+
+. ouvrez les couches PRESCRIPTION_PCT, PRESCRIPTION_LIN et PRESCRIPTION_SURF sur un logiciel SIG comme QGIS par exemple 
+. afficher les données attributaires de ces couches
+. Vérifiez enfin les champs TYPEPSC et STYPEPSC. 
+
+Rappel : Les valeurs des prescriptions dans les champs idPresc, idPrescStart et idPrescEnd doivent être écrites sous la forme <TYPEPSC>-<STYPEPSC>.
 
 image::images/qgis2.png[align=center]
 
@@ -402,19 +421,24 @@ image::images/qgis2.png[align=center]
 
 Une fois le fichier terminé, vous devez l'exporter au format CNIG reglePLU.
 
-* Pour cela, aller dans le menu Fichier > Exporter...
-* Sélectionner le format CNIG reglePLU (installé dans le chapitre <<Etape 1. Installer les pré-requis>>)
+Pour cela, 
+
+. aller dans le menu Fichier > Exporter...
+. sélectionner le format CNIG reglePLU (installé dans le chapitre <<Etape 1. Installer les pré-requis>>)
 
 image::images/export.png[align=center]
 
-* Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
-* Cliquer sur enregistrer
+. Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
+. Cliquer sur enregistrer
 
 == Etape 7. Vérification
 * La première vérification visuelle peut se faire simplement à l'aide d'un navigateur.
-Ouvrez le fichier que vous avez exporté dans un navigateur (clic droit > ouvrir avec et sélectionner Firefox ou Edge etc.)
-Le fichier doit s'afficher avec une mise en page sommaire.
-Vérifier que ressortent bien les éléments que vous avez stylisés dans LibreOffice (Titres, gras, souligné, etc.)
+
+Pour cela,
+
+. Ouvrez le fichier que vous avez exporté dans un navigateur (clic droit > ouvrir avec et sélectionner Firefox ou Edge etc.).
+. Le fichier doit s'afficher comme une page web.
+. Vérifier que les éléments que vous avez stylisés dans LibreOffice (Titres, gras, souligné, etc.) aparaîssent bien avec des styles différents que le reste du texte.
 
 Remarque : les noms des champs ne doivent pas apparaître dans votre navigateur.
 
@@ -424,14 +448,16 @@ image::images/exPLU.png[align=center]
 
 * La dernière vérification concerne le format XSD.
 
-1. Allez sur un site web de validation XSD, par exemple, sur ce site : https://www.liquid-technologies.com/online-xsd-validator[https://www.liquid-technologies.com/online-xsd-validator]
-2. Ouvrez le fichier XML de votre réglement PLU avec un éditeur de texte simple (de type wordPad ou notePad ou le bloc-notes de windows) et copier l'intégralité du fichier dans la première partie de la page web.
-3. Affichez le fichier XSD dans gitHub en cliquant https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/reglementDU.xsd[ici] et copier l'intégralité du texte commençant par <?xml version="1.0" encoding="UTF-8"?>
-4. Le coller dans la deuxième partie du site web.
-5. Cliquer sur "validate"
+Pour cela,
+
+. Allez sur un site web de validation XSD, par exemple : https://www.liquid-technologies.com/online-xsd-validator[https://www.liquid-technologies.com/online-xsd-validator]
+. Ouvrez le fichier XML de votre réglement PLU avec un éditeur de texte simple (de type wordPad ou notePad ou le bloc-notes de windows) et copier l'intégralité du fichier dans la première partie de la page web (partie XML à valider).
+. Affichez le fichier XSD dans gitHub en cliquant https://raw.githubusercontent.com/cnigfr/structuration-reglement-urbanisme/master/schemas/reglementDU.xsd[ici] et copier l'intégralité du texte (Ctrl+A, Ctrl+C)
+. Le coller dans la deuxième partie du site web (XSD).
+. Cliquer sur "validate"
+
+Normalement, le résultat devrait être "document valid".
 
 Exemple après copie sur le site de validation :
 
 image::images/validation.png[align=center]
-
-Normalement, le résultat devrait être "document valid".

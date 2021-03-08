@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="style.css"?>
-<plu:ReglementDU xmlns="http://www.w3.org/1999/xhtml"
+<plu:ReglementDU xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink"
                  xmlns:plu="https://cnig.gouv.fr/reglementDU"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xsi:schemaLocation="https://cnig.gouv.fr/reglementDU reglementDU.xsd"
+                 xsi:schemaLocation="https://cnig.gouv.fr/reglementDU https://raw.githubusercontent.com/cnigfr/structuration-reglement-urbanisme/master/schemas/reglementDU.xsd"
                  id="https://www.geoportail-urbanisme.gouv.fr/document/by-id/cd22628fc5f7f6f8fa21ea49ceb4cc8d"
                  nom="Règlement du PLU Jaleyrac"
                  lien="https://www.geoportail-urbanisme.gouv.fr/document/by-id/cd22628fc5f7f6f8fa21ea49ceb4cc8d"
                  idUrba="15079_PLU_20190128"
                  typeDoc="PLU">
-   <plu:Titre id="d1e1053"
-              intitule="Plan Local d’Urbanisme"
-              niveau="1"
+   <plu:Titre id="d5e1056" intitule="Plan Local d’Urbanisme" niveau="1"
               idZone="porteeGenerale"
-              idPrescription="nonConcerne"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e3" idZone="porteeGenerale" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e3" idZone="porteeGenerale" idPrescription="nonConcerne">
          <h1>Plan Local d’Urbanisme</h1>
       </plu:Contenu>
    </plu:Titre>
-   <plu:Titre id="d1e1057"
-              intitule="Règlement écrit"
-              niveau="1"
-              idZone="porteeGenerale"
-              idPrescription="nonConcerne"
+   <plu:Titre id="d5e1060" intitule="Règlement écrit" niveau="1" idZone="porteeGenerale"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e5" idZone="porteeGenerale" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e6" idZone="porteeGenerale" idPrescription="nonConcerne">
          <h1>Règlement écrit</h1>
          <div>Janvier 2019 – M15-09</div>
          <div>
@@ -35,13 +28,10 @@
          </div>
       </plu:Contenu>
    </plu:Titre>
-   <plu:Titre id="d1e1067"
-              intitule="RèGLEs GÉNÉRALEs"
-              niveau="1"
-              idZone="porteeGenerale"
-              idPrescription="nonConcerne"
+   <plu:Titre id="d5e1070" intitule="RèGLEs GÉNÉRALEs" niveau="1" idZone="porteeGenerale"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e11" idZone="porteeGenerale" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e14" idZone="porteeGenerale" idPrescription="nonConcerne">
          <h1>RèGLEs GÉNÉRALEs</h1>
          <div>Le présent règlement s’applique à l’ensemble du territoire communal. Dans le règlement écrit, toutes les représentations graphiques de la règle ont une portée illustrative. Les documents graphiques ont valeur réglementaire. Les dispositions graphiques portées sur les plans en annexes complètent le présent règlement écrit.</div>
          <div>Lorsqu’un immeuble bâti n’est pas conforme aux règles édictées par le règlement de la zone, le permis de construire ne peut être accordé que pour des travaux qui ont pour objet d’améliorer la conformité de cet immeuble avec les dites règles ou qui sont sans effet à leur égard. La collectivité souhaite appliquer le droit de préemption urbain à l’ensemble des zones U et AU du plan de zonage.</div>
@@ -49,32 +39,30 @@
          <div>Les travaux non soumis à un permis de construire, sur les éléments de patrimoine bâti identifiés dans le règlement graphique en application de l’article L151-19 du code de l’urbanisme, doivent être précédés d’une déclaration préalable. La démolition de ces mêmes éléments de patrimoine bâti est subordonnée à la délivrance d’un permis de démolir.</div>
       </plu:Contenu>
    </plu:Titre>
-   <plu:Titre id="d1e1081"
-              intitule="I. ZoNE URbAINE GÉNÉRALE (UG)"
-              niveau="1"
+   <plu:Titre id="d5e1084" intitule="I. ZoNE URbAINE GÉNÉRALE (UG)" niveau="1"
               idZone="UG,1AU"
-              idPrescription="nonConcerne"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e18" idZone="UG,1AU" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e26" idZone="UG,1AU" idPrescription="nonConcerne">
          <h1>I. ZoNE URbAINE GÉNÉRALE (UG)</h1>
          <div>La zone Urbaine Générale (UG) couvre des secteurs de la commune dans lesquels une mixité des fonctions urbaines existe ou est souhaitée. Elle comprend différents types de secteurs.</div>
       </plu:Contenu>
-      <plu:Titre id="d1e1090"
+      <plu:Titre id="d5e1093"
                  intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
                  niveau="2"
                  idZone="UG"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e21" idZone="UG" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e31" idZone="UG" idPrescription="nonConcerne">
             <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1094"
+         <plu:Titre id="d5e1097"
                     intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
                     niveau="3"
                     idZone="UG"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e23" idZone="UG" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e34" idZone="UG" idPrescription="nonConcerne">
                <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
                <div>Sont interdits : </div>
                <table rules="all" style="border:solid 1px black;">
@@ -98,13 +86,13 @@
                <div/>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1130"
+         <plu:Titre id="d5e1133"
                     intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
                     niveau="3"
                     idZone="UG"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e41" idZone="UG" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e62" idZone="UG" idPrescription="nonConcerne">
                <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
                <div>Sont autorisées, à condition de ne pas excéder une emprise au sol de 300 m² : </div>
                <ul>
@@ -114,31 +102,29 @@
             </plu:Contenu>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1142"
+      <plu:Titre id="d5e1145"
                  intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
                  niveau="2"
                  idZone="UG,1AU"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e47" idZone="UG,1AU" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e72" idZone="UG,1AU" idPrescription="nonConcerne">
             <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1146"
+         <plu:Titre id="d5e1149"
                     intitule="1. empRise au sol, hauteuR et implantation des constRuctions"
                     niveau="3"
                     idZone="UG,1AU"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e49" idZone="UG,1AU" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e75" idZone="UG,1AU" idPrescription="nonConcerne">
                <h3>1. empRise au sol, hauteuR et implantation des constRuctions</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e1148"
-                       intitule="hauteur maximale des constructions "
-                       niveau="4"
+            <plu:Titre id="d5e1151" intitule="hauteur maximale des constructions " niveau="4"
                        idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e51" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e78" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>hauteur maximale des constructions </h4>
                   <div>La hauteur maximale des constructions ne peut dépasser la hauteur des bâtiments environnants, c’est à dire R+1 plus combles. En cas de construction dans la pente la hauteur maximale est comptée depuis le terrain naturel le plus haut. La hauteur des annexes ne peut dépasser celle du bâtiment principal.</div>
                   <div>
@@ -156,24 +142,22 @@
                   </ul>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1170"
-                       intitule="Implantation des constructions"
-                       niveau="4"
+            <plu:Titre id="d5e1174" intitule="Implantation des constructions" niveau="4"
                        idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e64" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e97" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>Implantation des constructions</h4>
                   <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
                   <div>Par rapport aux voies et emprises publiques Les implantations doivent être parallèles à une limite du domaine public.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e67" idZone="UGa" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e103" idZone="UGa" idPrescription="nonConcerne">
                   <div>En secteur UGa , les nouvelles constructions doivent s’implanter à l’alignement avec le domaine public.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e71" idZone="UGb" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e108" idZone="UGb" idPrescription="nonConcerne">
                   <div>En secteur UGb , les nouvelles constructions doivent s’implanter soit à l’alignement avec le domaine public, soit avec un retrait maximum de 5 m.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e73" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e111" idZone="UG,1AU" idPrescription="nonConcerne">
                   <div>Les constructions annexes inférieures à 15 m² et les extensions ne sont pas concernées par cette règle.</div>
                   <div>
                      <p class="center">
@@ -197,35 +181,30 @@
                   </ul>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1224"
-                       intitule="Volumes des constructions"
-                       niveau="4"
-                       idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1229" intitule="Volumes des constructions" niveau="4" idZone="UG,1AU"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e92" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e140" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>Volumes des constructions</h4>
                   <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»). Les formes de type tripode, ou tétrapode sont interdite.</div>
                </plu:Contenu>
             </plu:Titre>
          </plu:Titre>
-         <plu:Titre id="d1e1229"
+         <plu:Titre id="d5e1234"
                     intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
                     niveau="3"
                     idZone="UG,1AU"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e95" idZone="UG,1AU" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e145" idZone="UG,1AU" idPrescription="nonConcerne">
                <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
                <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
             </plu:Contenu>
-            <plu:Titre id="d1e1233"
-                       intitule="caractéristiques architecturales "
-                       niveau="4"
+            <plu:Titre id="d5e1238" intitule="caractéristiques architecturales " niveau="4"
                        idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e98" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e150" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>caractéristiques architecturales </h4>
                   <div>
                      <em>Les façades</em>
@@ -238,11 +217,11 @@
                   </ul>
                   <div>Le faîtage des constructions implantées en bordure de voie doit être parallèle à l’alignement des façades principales. Les murs pignon sur rue ne sont autorisés que s’il est démontré que la configuration de la parcelle rend impossible une autre disposition.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e108" idZone="UGa" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e167" idZone="UGa" idPrescription="nonConcerne">
                   <div>En secteur UGa , les éléments techniques tels que souches de cheminées, matériels de ventilation et de climatisation, caissons de volets roulants, etc. doivent faire l’objet d’une intégration soignée.</div>
                   <div>Dans le secteur UGa , l’isolation par l’extérieur pourra être refusée (en particulier sur les façades principales) pour des raisons patrimoniales.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e111" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e172" idZone="UG,1AU" idPrescription="nonConcerne">
                   <div>
                      <em>Les toitures</em>
                   </div>
@@ -258,20 +237,20 @@
                   <div>Elles peuvent être végétalisée.</div>
                   <div>Les panneaux solaires sont autorisés en toiture à condition qu’ils s’insèrent harmonieusement au bâti.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e125" idZone="UGa" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e196" idZone="UGa" idPrescription="nonConcerne">
                   <div>En outre, en secteur UGa la couleur des panneaux et des cadres doit être la plus proche possible du noir.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e127" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e199" idZone="UG,1AU" idPrescription="nonConcerne">
                   <div>Dans le bâti ancien, la pente de toit existante doit être conservée.</div>
                   <div>En extension du bâti ancien, une pente de toit différente peut être autorisée si l’harmonie globale de la construction est préservée.</div>
                   <div>
                      <em>Les menuiseries</em>
                   </div>
                </plu:Contenu>
-               <plu:Contenu id="d1e132" idZone="UGa" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e207" idZone="UGa" idPrescription="nonConcerne">
                   <div>En secteur UGa la couleur blanche est interdite.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e134" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e210" idZone="UG,1AU" idPrescription="nonConcerne">
                   <div>
                      <em>Les clôtures</em>
                   </div>
@@ -285,36 +264,35 @@
                   <div>Elles ne peuvent excéder une hauteur maximale 1,80 m.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1327"
+            <plu:Titre id="d5e1332"
                        intitule="obligations en matière de performances énergétiques et environnementales"
                        niveau="4"
                        idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e149" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e232" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>obligations en matière de performances énergétiques et environnementales</h4>
                   <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1331"
+            <plu:Titre id="d5e1336"
                        intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
                        niveau="4"
                        idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e153" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e238" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
                   <div>L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
                   <div>L’installation de panneaux solaires au sol est interdite.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1338"
-                       intitule="surfaces non imperméabilisées ou éco-aménageables "
+            <plu:Titre id="d5e1343" intitule="surfaces non imperméabilisées ou éco-aménageables "
                        niveau="4"
                        idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e157" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e245" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>surfaces non imperméabilisées ou éco-aménageables </h4>
                   <div>Les surfaces imperméabilisées ne peuvent dépasser 350 m². Par unité foncière, il est imposé la plantation d’un arbre pour : </div>
                   <ul>
@@ -322,13 +300,13 @@
                   </ul>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1346"
+            <plu:Titre id="d5e1351"
                        intitule="Espaces libres et de plantations, d’aires de jeux et de loisir "
                        niveau="4"
                        idZone="UG,1AU"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e162" idZone="UG,1AU" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e253" idZone="UG,1AU" idPrescription="nonConcerne">
                   <h4>Espaces libres et de plantations, d’aires de jeux et de loisir </h4>
                   <div>Les plantations monospécifiques sont interdites.</div>
                   <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
@@ -336,85 +314,74 @@
             </plu:Titre>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1352"
-                 intitule="c. EqUIpEmENts Et RÉsEAUX"
-                 niveau="2"
-                 idZone="UG,1AU"
-                 idPrescription="nonConcerne"
+      <plu:Titre id="d5e1357" intitule="c. EqUIpEmENts Et RÉsEAUX" niveau="2" idZone="UG,1AU"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e167" idZone="UG,1AU" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e261" idZone="UG,1AU" idPrescription="nonConcerne">
             <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1356"
-                    intitule="1. desseRte paR les voies publiQues ou pRivées"
+         <plu:Titre id="d5e1361" intitule="1. desseRte paR les voies publiQues ou pRivées"
                     niveau="3"
                     idZone="UG,1AU"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e169" idZone="UG,1AU" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e264" idZone="UG,1AU" idPrescription="nonConcerne">
                <h3>1. desseRte paR les voies publiQues ou pRivées</h3>
                <div>Au delà de 10 m de long, les voies en impasse sont interdites. Des dérogations peuvent être accordées sous réserve qu’un bouclage soit prévu par un cheminement doux.</div>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1361"
-                    intitule="2. Réseaux de communications électRoniQues"
-                    niveau="3"
+         <plu:Titre id="d5e1366" intitule="2. Réseaux de communications électRoniQues" niveau="3"
                     idZone="UG,1AU"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e172" idZone="UG,1AU" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e269" idZone="UG,1AU" idPrescription="nonConcerne">
                <h3>2. Réseaux de communications électRoniQues</h3>
                <div>Ils doivent être réalisés en souterrain ou s’intégrer au bâti, sous réserve de ne pas faire obstacle à la fourniture du service universel pour les réseaux de télécommunication.</div>
             </plu:Contenu>
          </plu:Titre>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e1365"
-              intitule="II. ZoNE URbAINE D’ÉqUIpEmENts stRUctURANts (UE)"
+   <plu:Titre id="d5e1370" intitule="II. ZoNE URbAINE D’ÉqUIpEmENts stRUctURANts (UE)"
               niveau="1"
               idZone="UE"
-              idPrescription="nonConcerne"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e175" idZone="UE" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e274" idZone="UE" idPrescription="nonConcerne">
          <h1>II. ZoNE URbAINE D’ÉqUIpEmENts stRUctURANts (UE)</h1>
          <div>La zone UE couvre des secteurs destinés à accueillir des équipement et infrastructures publics et d’intérêt général.</div>
       </plu:Contenu>
-      <plu:Titre id="d1e1373"
+      <plu:Titre id="d5e1378"
                  intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
                  niveau="2"
                  idZone="UE"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e179" idZone="UE" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e280" idZone="UE" idPrescription="nonConcerne">
             <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
             <div>Sont interdites toutes les occupations et utilisations du sol à l’exception de celles liées aux équipements d’intérêt collectif et services publics.</div>
          </plu:Contenu>
       </plu:Titre>
-      <plu:Titre id="d1e1377"
+      <plu:Titre id="d5e1382"
                  intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
                  niveau="2"
                  idZone="UE"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e182" idZone="UE" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e285" idZone="UE" idPrescription="nonConcerne">
             <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1379"
-                    intitule="1. hauteuR et implantation des constRuctions"
-                    niveau="3"
+         <plu:Titre id="d5e1384" intitule="1. hauteuR et implantation des constRuctions" niveau="3"
                     idZone="UE"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e184" idZone="UE" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e288" idZone="UE" idPrescription="nonConcerne">
                <h3>1. hauteuR et implantation des constRuctions</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e1381"
-                       intitule="hauteur maximale des constructions"
-                       niveau="4"
+            <plu:Titre id="d5e1386" intitule="hauteur maximale des constructions" niveau="4"
                        idZone="UE"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e186" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e291" idZone="UE" idPrescription="nonConcerne">
                   <h4>hauteur maximale des constructions</h4>
                   <div>La hauteur maximale des constructions ne peut excéder 10 mètres au faîtage. </div>
                   <div>La hauteur des annexes ne pourra excéder celle du bâtiment principal.</div>
@@ -428,48 +395,41 @@
                   </ul>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1400"
-                       intitule="Implantation des constructions"
-                       niveau="4"
-                       idZone="UE"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1405" intitule="Implantation des constructions" niveau="4" idZone="UE"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e197" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e309" idZone="UE" idPrescription="nonConcerne">
                   <h4>Implantation des constructions</h4>
                   <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1404"
-                       intitule="Volumes des constructions"
-                       niveau="4"
-                       idZone="UE"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1409" intitule="Volumes des constructions" niveau="4" idZone="UE"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e200" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e314" idZone="UE" idPrescription="nonConcerne">
                   <h4>Volumes des constructions</h4>
                   <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»).</div>
                </plu:Contenu>
             </plu:Titre>
          </plu:Titre>
-         <plu:Titre id="d1e1408"
+         <plu:Titre id="d5e1413"
                     intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
                     niveau="3"
                     idZone="UE"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e204" idZone="UE" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e320" idZone="UE" idPrescription="nonConcerne">
                <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
                <div>Il est demandé une recherche de rythme au niveau des formes, des structures apparentes, des traitements des façades et des couvertures.</div>
                <div>Les petits volumes doivent être traités avec simplicité.</div>
                <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
             </plu:Contenu>
-            <plu:Titre id="d1e1418"
-                       intitule="caractéristiques architecturales et paysagères"
+            <plu:Titre id="d5e1423" intitule="caractéristiques architecturales et paysagères"
                        niveau="4"
                        idZone="UE"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e209" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e329" idZone="UE" idPrescription="nonConcerne">
                   <h4>caractéristiques architecturales et paysagères</h4>
                   <div>
                      <em>Les façades</em>
@@ -509,35 +469,34 @@
                   <div>Les installations et équipements pour lesquels une réglementation ou une assurance impose des hauteurs de clôture supérieure peuvent déroger. Dans ce cas, un soin particulier d’intégration paysagère de la clôture est demandé.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1481"
+            <plu:Titre id="d5e1486"
                        intitule="obligations en matière de performances énergétiques et environnementales"
                        niveau="4"
                        idZone="UE"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e243" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e388" idZone="UE" idPrescription="nonConcerne">
                   <h4>obligations en matière de performances énergétiques et environnementales</h4>
                   <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un <em>albedo</em> élevé.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1489"
+            <plu:Titre id="d5e1494"
                        intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
                        niveau="4"
                        idZone="UE"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e249" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e396" idZone="UE" idPrescription="nonConcerne">
                   <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
                   <div>Les abords des constructions et aménagements doivent être agrémentés de plantations. L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1493"
-                       intitule="surfaces non imperméabilisées ou éco-aménageables"
+            <plu:Titre id="d5e1498" intitule="surfaces non imperméabilisées ou éco-aménageables"
                        niveau="4"
                        idZone="UE"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e253" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e402" idZone="UE" idPrescription="nonConcerne">
                   <h4>surfaces non imperméabilisées ou éco-aménageables</h4>
                   <div>Pour toute création ou extension d’équipement accueillant du public, il est imposé la plantation : </div>
                   <ul>
@@ -546,25 +505,21 @@
                   </ul>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1505"
+            <plu:Titre id="d5e1510"
                        intitule="Espaces libres et de plantations, d’aires de jeux et de loisir"
                        niveau="4"
                        idZone="UE"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e259" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e412" idZone="UE" idPrescription="nonConcerne">
                   <h4>Espaces libres et de plantations, d’aires de jeux et de loisir</h4>
                   <div>Les plantations monospécifiques sont interdites.</div>
                   <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1511"
-                       intitule="stationnement"
-                       niveau="4"
-                       idZone="UE"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1516" intitule="stationnement" niveau="4" idZone="UE" idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e263" idZone="UE" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e419" idZone="UE" idPrescription="nonConcerne">
                   <h4>stationnement</h4>
                   <div>
                      <em>Nombre de places de stationnement</em>
@@ -580,32 +535,30 @@
          </plu:Titre>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e1526"
-              intitule="III. ZoNE URbAINE D’ActIVItÉs (UX)"
-              niveau="1"
+   <plu:Titre id="d5e1531" intitule="III. ZoNE URbAINE D’ActIVItÉs (UX)" niveau="1"
               idZone="UX"
-              idPrescription="nonConcerne"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e273" idZone="UX" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e435" idZone="UX" idPrescription="nonConcerne">
          <h1>III. ZoNE URbAINE D’ActIVItÉs (UX)</h1>
          <div>La zone UX couvre des secteurs destinés à accueillir des activités de production industrielle, artisanale, de stockage et de logistique, en raison - d’une part - de la spécificité de leurs besoins en termes de foncier et d’infrastructures de transport, et - d’autre part - des nuisances qu’elles génèrent.</div>
       </plu:Contenu>
-      <plu:Titre id="d1e1533"
+      <plu:Titre id="d5e1538"
                  intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
                  niveau="2"
                  idZone="UX"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e276" idZone="UX" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e440" idZone="UX" idPrescription="nonConcerne">
             <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1535"
+         <plu:Titre id="d5e1540"
                     intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
                     niveau="3"
                     idZone="UX"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e278" idZone="UX" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e443" idZone="UX" idPrescription="nonConcerne">
                <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
                <div>Sont interdits : </div>
                <ul>
@@ -616,34 +569,33 @@
                </ul>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1552"
+         <plu:Titre id="d5e1557"
                     intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
                     niveau="3"
                     idZone="UX"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e287" idZone="UX" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e458" idZone="UX" idPrescription="nonConcerne">
                <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
                <div>Les logements peuvent être autorisés à la double condition qu’ils soient destinés aux personnes dont la présence permanente est nécessaire pour assurer la direction, la surveillance ou le gardiennage des établissements dont l’activité est autorisée sur la zone et d’être intégrés au bâtiment d’activité principal.</div>
             </plu:Contenu>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1558"
+      <plu:Titre id="d5e1563"
                  intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
                  niveau="2"
                  idZone="UX"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e290" idZone="UX" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e463" idZone="UX" idPrescription="nonConcerne">
             <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1560"
-                    intitule="1. implantation et hauteuRs des constRuctions"
+         <plu:Titre id="d5e1565" intitule="1. implantation et hauteuRs des constRuctions"
                     niveau="3"
                     idZone="UX"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e292" idZone="UX" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e466" idZone="UX" idPrescription="nonConcerne">
                <h3>1. implantation et hauteuRs des constRuctions</h3>
                <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais doivent être les plus réduits possibles. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales. Les constructions situées sur une même unité foncière doivent être implantées soit accolées aux constructions existantes, soit à une distance maximale de 30 mètres.</div>
                <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder :</div>
@@ -654,25 +606,24 @@
                <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire devra argumenter le parti architectural souhaité. Une hauteur supérieure pourra être admise pour l’installation d’éoliennes.</div>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1575"
+         <plu:Titre id="d5e1580"
                     intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
                     niveau="3"
                     idZone="UX"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e301" idZone="UX" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e481" idZone="UX" idPrescription="nonConcerne">
                <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
                <div>Il est demandé une recherche de rythme au niveau des formes, des structures apparentes, des traitements des façades et des couvertures.</div>
                <div>Les petits volumes doivent être traités avec simplicité.</div>
                <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
             </plu:Contenu>
-            <plu:Titre id="d1e1584"
-                       intitule="caractéristiques architecturales et paysagères"
+            <plu:Titre id="d5e1589" intitule="caractéristiques architecturales et paysagères"
                        niveau="4"
                        idZone="UX"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e306" idZone="UX" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e490" idZone="UX" idPrescription="nonConcerne">
                   <h4>caractéristiques architecturales et paysagères</h4>
                   <div>
                      <em>Les façades</em>
@@ -696,24 +647,24 @@
                   <div>En bordure de voies de desserte interne, elles ne peuvent excéder une hauteur maximale de 2 m. Dans le cas de l’implantation d’une haie vive, l’utilisation du grillage est autorisée à l’intérieur, et la hauteur maximale autorisée est de 3 m.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1616"
+            <plu:Titre id="d5e1621"
                        intitule="obligations en matière de performances énergétiques et environnementales"
                        niveau="4"
                        idZone="UX"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e325" idZone="UX" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e522" idZone="UX" idPrescription="nonConcerne">
                   <h4>obligations en matière de performances énergétiques et environnementales</h4>
                   <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1620"
+            <plu:Titre id="d5e1625"
                        intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
                        niveau="4"
                        idZone="UX"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e329" idZone="UX" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e528" idZone="UX" idPrescription="nonConcerne">
                   <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
                   <div>L’installation de panneaux solaires au sol est interdite.</div>
                   <div>Les abords des constructions et aménagements doivent être agrémentés de plantations combinant les strates arbustive et arborées pour créer des filtres visuels depuis l’extérieur de la zone qui permettent une vue fragmentée des volumes bâtis.</div>
@@ -723,65 +674,54 @@
             </plu:Titre>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1630"
-                 intitule="c. EqUIpEmENts Et RÉsEAUX"
-                 niveau="2"
-                 idZone="UX"
-                 idPrescription="nonConcerne"
+      <plu:Titre id="d5e1635" intitule="c. EqUIpEmENts Et RÉsEAUX" niveau="2" idZone="UX"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e335" idZone="UX" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e539" idZone="UX" idPrescription="nonConcerne">
             <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1632"
-                    intitule="1. Réseaux de communications électRoniQues"
-                    niveau="3"
+         <plu:Titre id="d5e1637" intitule="1. Réseaux de communications électRoniQues" niveau="3"
                     idZone="UX"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e337" idZone="UX" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e542" idZone="UX" idPrescription="nonConcerne">
                <h3>1. Réseaux de communications électRoniQues</h3>
                <div>Ils doivent être réalisés en souterrain ou s’intégrer au bâti, sous réserve de ne pas faire obstacle à la fourniture du service universel pour les réseaux de télécommunication.</div>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1637"
-                    intitule="2. gestion des eaux pluviales"
-                    niveau="3"
-                    idZone="UX"
-                    idPrescription="nonConcerne"
+         <plu:Titre id="d5e1642" intitule="2. gestion des eaux pluviales" niveau="3" idZone="UX"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e341" idZone="UX" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e548" idZone="UX" idPrescription="nonConcerne">
                <h3>2. gestion des eaux pluviales</h3>
                <div>Les eaux pluviales issues des constructions et des revêtements des accès doivent être résorbées sur la parcelle.</div>
             </plu:Contenu>
          </plu:Titre>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e1641"
-              intitule="IV. ZoNE à URbANIsER (1AU)"
-              niveau="1"
-              idZone="1AU"
-              idPrescription="nonConcerne"
+   <plu:Titre id="d5e1646" intitule="IV. ZoNE à URbANIsER (1AU)" niveau="1" idZone="1AU"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e344" idZone="1AU" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e553" idZone="1AU" idPrescription="nonConcerne">
          <h1>IV. ZoNE à URbANIsER (1AU)</h1>
          <div>La zone 1AU couvre des secteurs non équipés et à urbaniser dans lesquels une mixité des fonctions urbaines est souhaitée.</div>
       </plu:Contenu>
-      <plu:Titre id="d1e1648"
+      <plu:Titre id="d5e1653"
                  intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
                  niveau="2"
                  idZone="1AU"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e347" idZone="1AU" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e558" idZone="1AU" idPrescription="nonConcerne">
             <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1651"
+         <plu:Titre id="d5e1656"
                     intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
                     niveau="3"
                     idZone="1AU"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e349" idZone="1AU" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e561" idZone="1AU" idPrescription="nonConcerne">
                <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
                <div>Sont interdits : </div>
                <ul>
@@ -792,13 +732,13 @@
                </ul>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1668"
+         <plu:Titre id="d5e1673"
                     intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
                     niveau="3"
                     idZone="1AU"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e358" idZone="1AU" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e576" idZone="1AU" idPrescription="nonConcerne">
                <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
                <div>Sont autorisées, à condition de ne pas excéder une emprise au sol de 300 m² : </div>
                <ul>
@@ -808,66 +748,58 @@
             </plu:Contenu>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1680"
+      <plu:Titre id="d5e1685"
                  intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
                  niveau="2"
                  idZone="1AU"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e364" idZone="1AU" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e586" idZone="1AU" idPrescription="nonConcerne">
             <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
-            <div>S’appliquent ici les dispositions correspondantes édictées pour la zone urbaine générale (<a href="#d1e1081">UG</a>). </div>
+            <div>S’appliquent ici les dispositions correspondantes édictées pour la zone urbaine générale (<a href="#d5e1084">UG</a>). </div>
          </plu:Contenu>
       </plu:Titre>
-      <plu:Titre id="d1e1687"
-                 intitule="c. EqUIpEmENts Et RÉsEAUX"
-                 niveau="2"
-                 idZone="1AU"
-                 idPrescription="nonConcerne"
+      <plu:Titre id="d5e1692" intitule="c. EqUIpEmENts Et RÉsEAUX" niveau="2" idZone="1AU"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e371" idZone="1AU" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e594" idZone="1AU" idPrescription="nonConcerne">
             <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
-            <div>S’appliquent ici les dispositions correspondantes édictées pour la zone urbaine générale (<a href="#d1e1081">UG</a>). </div>
+            <div>S’appliquent ici les dispositions correspondantes édictées pour la zone urbaine générale (<a href="#d5e1084">UG</a>). </div>
          </plu:Contenu>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e1694"
-              intitule="V. ZoNE à URbANIsER fERmÉE (2AU)"
-              niveau="1"
+   <plu:Titre id="d5e1699" intitule="V. ZoNE à URbANIsER fERmÉE (2AU)" niveau="1"
               idZone="2AU"
-              idPrescription="nonConcerne"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e379" idZone="2AU" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e603" idZone="2AU" idPrescription="nonConcerne">
          <h1>V. ZoNE à URbANIsER fERmÉE (2AU)</h1>
          <div>La zone 2AU couvre des secteurs non équipés et à urbaniser ultérieurement dans lesquels une mixité des fonctions urbaines est souhaitée. L’ouverture à l’urbanisation des secteurs concernés nécessite une révision ou une modification du PLU. </div>
       </plu:Contenu>
    </plu:Titre>
-   <plu:Titre id="d1e1701"
-              intitule="VI. ZoNE AGRIcoLE (A)"
-              niveau="1"
-              idZone="A"
-              idPrescription="nonConcerne"
+   <plu:Titre id="d5e1706" intitule="VI. ZoNE AGRIcoLE (A)" niveau="1" idZone="A"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e382" idZone="A" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e608" idZone="A" idPrescription="nonConcerne">
          <h1>VI. ZoNE AGRIcoLE (A)</h1>
          <div>La zone A a pour vocation de préserver les terres agricoles et d’accueillir les constructions et installations nécessaires aux activités agricoles, pastorales forestières.</div>
       </plu:Contenu>
-      <plu:Titre id="d1e1709"
+      <plu:Titre id="d5e1714"
                  intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
                  niveau="2"
                  idZone="A"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e385" idZone="A" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e613" idZone="A" idPrescription="nonConcerne">
             <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1711"
+         <plu:Titre id="d5e1716"
                     intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
                     niveau="3"
                     idZone="A"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e387" idZone="A" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e616" idZone="A" idPrescription="nonConcerne">
                <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
                <div>Sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
                <ul>
@@ -880,13 +812,13 @@
                </ul>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1735"
+         <plu:Titre id="d5e1740"
                     intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
                     niveau="3"
                     idZone="A"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e398" idZone="A" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e635" idZone="A" idPrescription="nonConcerne">
                <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
                <div>Les constructions destinées aux activités agro-touristiques à condition de constituer une activité accessoire à l’activité agricole et d’être situées à proximité des bâtiments d’exploitation agricole. </div>
                <div>Les aménagements légers destinés à mettre en valeur les espaces naturels ou permettre leur découverte (équipements pédagogiques, abris et objets mobiliers destinés à l’information du public, cheminements piétonniers ni bitumés ni cimentés, etc.) sont autorisés à condition qu’ils ne dénaturent pas leurs caractères paysagers ou environnementaux. </div>
@@ -895,42 +827,38 @@
             </plu:Contenu>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1745"
+      <plu:Titre id="d5e1750"
                  intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
                  niveau="2"
                  idZone="A"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e404" idZone="A" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e646" idZone="A" idPrescription="nonConcerne">
             <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1747"
+         <plu:Titre id="d5e1752"
                     intitule="1. empRise au sol, hauteuR et implantation des constRuctions"
                     niveau="3"
                     idZone="A"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e407" idZone="A" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e650" idZone="A" idPrescription="nonConcerne">
                <h3>1. empRise au sol, hauteuR et implantation des constRuctions</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e1749"
-                       intitule="Emprise au sol maximale des constructions "
-                       niveau="4"
+            <plu:Titre id="d5e1754" intitule="Emprise au sol maximale des constructions " niveau="4"
                        idZone="A"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e409" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e653" idZone="A" idPrescription="nonConcerne">
                   <h4>Emprise au sol maximale des constructions </h4>
                   <div>L’emprise au sol des extensions et annexes des habitations existantes ne peut pas dépasser respectivement 50 m² et 20 m².</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1754"
-                       intitule="hauteur maximale des constructions "
-                       niveau="4"
+            <plu:Titre id="d5e1759" intitule="hauteur maximale des constructions " niveau="4"
                        idZone="A"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e412" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e658" idZone="A" idPrescription="nonConcerne">
                   <h4>hauteur maximale des constructions </h4>
                   <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder : </div>
                   <ul>
@@ -942,48 +870,39 @@
                   <div>La hauteur des annexes et extensions ne peut excéder celle du bâtiment principal.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1772"
-                       intitule="Implantation des constructions "
-                       niveau="4"
-                       idZone="A"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1777" intitule="Implantation des constructions " niveau="4" idZone="A"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e422" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e675" idZone="A" idPrescription="nonConcerne">
                   <h4>Implantation des constructions </h4>
                   <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum. La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
                   <div>Les nouvelles maisons d’habitations doivent s’implanter au maximum à 100 m d’un bâtiment d’exploitation.</div>
                   <div>L’implantation des annexes de devra pas être localisée à plus de 30 m de la maison d’habitation.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1780"
-                       intitule="Volumes des constructions "
-                       niveau="4"
-                       idZone="A"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1785" intitule="Volumes des constructions " niveau="4" idZone="A"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e427" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e684" idZone="A" idPrescription="nonConcerne">
                   <h4>Volumes des constructions </h4>
                   <div>Les nouvelles constructions doivent présenter un volume simple et massif (rectangle, «L», «U»).</div>
                </plu:Contenu>
             </plu:Titre>
          </plu:Titre>
-         <plu:Titre id="d1e1785"
+         <plu:Titre id="d5e1790"
                     intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
                     niveau="3"
                     idZone="A"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e430" idZone="A" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e689" idZone="A" idPrescription="nonConcerne">
                <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
                <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement.</div>
             </plu:Contenu>
-            <plu:Titre id="d1e1789"
-                       intitule="caractéristiques architecturales "
-                       niveau="4"
-                       idZone="A"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1794" intitule="caractéristiques architecturales " niveau="4" idZone="A"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e434" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e695" idZone="A" idPrescription="nonConcerne">
                   <h4>caractéristiques architecturales </h4>
                   <div>
                      <em>Pour les maisons d’habitation et annexes</em>
@@ -1036,36 +955,36 @@
                   <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière. Des dérogations peuvent être accordées sur les clôtures en limite séparative entre deux maisons.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1884"
+            <plu:Titre id="d5e1889"
                        intitule="obligations en matière de performances énergétiques et environnementales"
                        niveau="4"
                        idZone="A"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e490" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e784" idZone="A" idPrescription="nonConcerne">
                   <h4>obligations en matière de performances énergétiques et environnementales</h4>
                   <div>L’emploi de revêtement de sols pour les espaces extérieurs des maisons d’habitation ou de leurs annexes doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1888"
+            <plu:Titre id="d5e1893"
                        intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
                        niveau="4"
                        idZone="A"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e493" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e789" idZone="A" idPrescription="nonConcerne">
                   <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
                   <div>Les dépôts ou matériaux visibles de l’espace public doivent être masqués par un accompagnement végétal.</div>
                   <div>Les bâches non biodégradables sont interdites. Les bâches biodégradables doivent être végétalisées</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1895"
+            <plu:Titre id="d5e1900"
                        intitule="Espaces libres et de plantations, d’aires de jeux et de loisir "
                        niveau="4"
                        idZone="A"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e498" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e797" idZone="A" idPrescription="nonConcerne">
                   <h4>Espaces libres et de plantations, d’aires de jeux et de loisir </h4>
                   <div>Les plantations monospécifiques sont interdites.</div>
                   <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
@@ -1073,31 +992,21 @@
             </plu:Titre>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1902"
-                 intitule="c. EqUIpEmENts Et RÉsEAUX"
-                 niveau="2"
-                 idZone="A"
-                 idPrescription="nonConcerne"
+      <plu:Titre id="d5e1907" intitule="c. EqUIpEmENts Et RÉsEAUX" niveau="2" idZone="A"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e502" idZone="A" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e804" idZone="A" idPrescription="nonConcerne">
             <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1904"
-                    intitule="1. accès et voiRie"
-                    niveau="3"
-                    idZone="A"
-                    idPrescription="nonConcerne"
+         <plu:Titre id="d5e1909" intitule="1. accès et voiRie" niveau="3" idZone="A"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e504" idZone="A" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e807" idZone="A" idPrescription="nonConcerne">
                <h3>1. accès et voiRie</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e1906"
-                       intitule="accès et voiRie"
-                       niveau="4"
-                       idZone="A"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1911" intitule="accès et voiRie" niveau="4" idZone="A" idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e506" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e810" idZone="A" idPrescription="nonConcerne">
                   <h4>accès et voiRie</h4>
                   <div>Pour être constructible, un terrain doit avoir accès à une voie publique ou à une voie privée.</div>
                   <div>La largeur des accès sur la voie publique doit être proportionnée à la taille et au besoin des constructions. Elle est limitée à 5 mètres.</div>
@@ -1106,33 +1015,24 @@
                </plu:Contenu>
             </plu:Titre>
          </plu:Titre>
-         <plu:Titre id="d1e1916"
-                    intitule="2. conditions de desseRte paR les Réseaux"
-                    niveau="3"
+         <plu:Titre id="d5e1921" intitule="2. conditions de desseRte paR les Réseaux" niveau="3"
                     idZone="A"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e513" idZone="A" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e822" idZone="A" idPrescription="nonConcerne">
                <h3>2. conditions de desseRte paR les Réseaux</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e1919"
-                       intitule="Eau potable "
-                       niveau="4"
-                       idZone="A"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1924" intitule="Eau potable " niveau="4" idZone="A" idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e515" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e825" idZone="A" idPrescription="nonConcerne">
                   <h4>Eau potable </h4>
                   <div>L’alimentation de toute construction nouvelle, dont le besoin en eau potable est reconnu, est assurée par le réseau public s’il existe ou à défaut, par un moyen conforme à la réglementation en vigueur. Il en est de même pour le changement de destination d’un bâtiment agricole.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1923"
-                       intitule="Réseau électrique "
-                       niveau="4"
-                       idZone="A"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1928" intitule="Réseau électrique " niveau="4" idZone="A"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e518" idZone="A" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e830" idZone="A" idPrescription="nonConcerne">
                   <h4>Réseau électrique </h4>
                   <div>Les nouvelles constructions ou le changement de destination d’un bâtiment agricole nécessitant une desserte par le réseaux électrique ne doivent pas conduire à une baisse de tension qui impliquerait le renforcement du réseau</div>
                </plu:Contenu>
@@ -1140,35 +1040,32 @@
          </plu:Titre>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e1927"
-              intitule="VII. ZoNE NAtURELLE (N)"
-              niveau="1"
-              idZone="N"
-              idPrescription="nonConcerne"
+   <plu:Titre id="d5e1932" intitule="VII. ZoNE NAtURELLE (N)" niveau="1" idZone="N"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e522" idZone="N" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e836" idZone="N" idPrescription="nonConcerne">
          <h1>VII. ZoNE NAtURELLE (N)</h1>
          <div>La zone N a pour vocation de préserver les espaces naturels au titre de la richesse de la biodiversité ou de leur qualité paysagère. Elle comprend deux secteurs limitant plus ou moins les possibilités de constructions, et localisés sur le plan de zonage.</div>
       </plu:Contenu>
-      <plu:Titre id="d1e1934"
+      <plu:Titre id="d5e1939"
                  intitule="A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ"
                  niveau="2"
                  idZone="N"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e525" idZone="N" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e841" idZone="N" idPrescription="nonConcerne">
             <h2>A. DEstINAtIoN DEs coNstRUctIoNs, UsAGE DEs soLs Et NAtUREs D’ActIVItÉ</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1936"
+         <plu:Titre id="d5e1941"
                     intitule="1. constRuctions, activités, usages et affectations des sols inteRdits"
                     niveau="3"
                     idZone="N"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e527" idZone="N" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e844" idZone="N" idPrescription="nonConcerne">
                <h3>1. constRuctions, activités, usages et affectations des sols inteRdits</h3>
             </plu:Contenu>
-            <plu:Contenu id="d1e528" idZone="Na" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e846" idZone="Na" idPrescription="nonConcerne">
                <div>Dans le secteur Na sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
                <ul>
                   <li>des clôtures nécessaires à l’activité pastorale ; </li>
@@ -1177,7 +1074,7 @@
                   <li>des installations et constructions liées à l’activité forestière. </li>
                </ul>
             </plu:Contenu>
-            <plu:Contenu id="d1e537" idZone="Np" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e860" idZone="Np" idPrescription="nonConcerne">
                <div>Dans le secteur Np sont interdites toutes les occupations et utilisations du sol à l’exception : </div>
                <ul>
                   <li>des installations techniques nécessaires au service public ou d’intérêt collectif à condition qu’ils soient compatibles avec une activité agricole ou forestière et qu’ils ne portent pas atteinte aux espaces naturels et aux paysages ; </li>
@@ -1185,67 +1082,59 @@
                </ul>
             </plu:Contenu>
          </plu:Titre>
-         <plu:Titre id="d1e1972"
+         <plu:Titre id="d5e1977"
                     intitule="2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions"
                     niveau="3"
                     idZone="N"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e544" idZone="N" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e870" idZone="N" idPrescription="nonConcerne">
                <h3>2. constRuctions, activités, usages et affectations des sols autoRisés sous conditions</h3>
                <div>Les aménagements légers destinés à mettre en valeur les espaces naturels ou permettre leur découverte (équipements pédagogiques, abris et objets mobiliers destinés à l’information du public, cheminements piétonniers ni bitumés ni cimentés) sont autorisés à condition qu’ils ne dénaturent pas leurs caractères paysagers ou environnementaux ;</div>
             </plu:Contenu>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e1976"
+      <plu:Titre id="d5e1981"
                  intitule="b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE"
                  niveau="2"
                  idZone="N"
-                 idPrescription="nonConcerne"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e547" idZone="N" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e875" idZone="N" idPrescription="nonConcerne">
             <h2>b. cARActÉRIstIqUEs URbAINE, ARchItEctURALE, ENVIRoNNEmENtALE Et pAysAGèRE</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e1978"
+         <plu:Titre id="d5e1983"
                     intitule="1. empRise au sol, hauteuR et implantation des constRuctions"
                     niveau="3"
                     idZone="N"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e549" idZone="N" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e878" idZone="N" idPrescription="nonConcerne">
                <h3>1. empRise au sol, hauteuR et implantation des constRuctions</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e1980"
-                       intitule="Emprise au sol maximale des constructions "
-                       niveau="4"
+            <plu:Titre id="d5e1985" intitule="Emprise au sol maximale des constructions " niveau="4"
                        idZone="N"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e552" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e882" idZone="N" idPrescription="nonConcerne">
                   <h4>Emprise au sol maximale des constructions </h4>
                   <div>L’emprise au sol des extensions et annexes des habitations existantes ne peut pas excéder respectivement 50 m² et 20 m².</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1985"
-                       intitule="hauteur des constructions "
-                       niveau="4"
-                       idZone="N"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1990" intitule="hauteur des constructions " niveau="4" idZone="N"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e555" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e887" idZone="N" idPrescription="nonConcerne">
                   <h4>hauteur des constructions </h4>
                   <div>La hauteur maximale des constructions à partir du terrain naturel ne peut excéder 10 mètres au faîtage.</div>
                   <div>Des hauteurs supérieures peuvent être accordées dans certains cas particuliers. La notice décrivant le terrain et présentant le projet qui accompagne l’autorisation de construire doit argumenter le parti architectural souhaité.</div>
                   <div>La hauteur des annexes et extensions ne peut excéder celle du bâtiment principal</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e1993"
-                       intitule="Implantation des constructions "
-                       niveau="4"
-                       idZone="N"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e1998" intitule="Implantation des constructions " niveau="4" idZone="N"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e560" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e896" idZone="N" idPrescription="nonConcerne">
                   <h4>Implantation des constructions </h4>
                   <div>Les constructions doivent respecter la pente naturelle du terrain et s’adapter à sa configuration : les remblais et déblais sont réduits au maximum.</div>
                   <div>La gestion des niveaux d’implantation des constructions par rapport au terrain naturel doit être étudiée au plus près de celui-ci afin de bien maîtriser l’intégration et l’impact sur l’écoulement des eaux pluviales.</div>
@@ -1253,13 +1142,13 @@
                </plu:Contenu>
             </plu:Titre>
          </plu:Titre>
-         <plu:Titre id="d1e2001"
+         <plu:Titre id="d5e2006"
                     intitule="2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe"
                     niveau="3"
                     idZone="N"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e566" idZone="N" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e906" idZone="N" idPrescription="nonConcerne">
                <h3>2. Qualité uRbaine, aRchitectuRale, enviRonnementale et paysagèRe</h3>
                <div>Les projets d’expression contemporaine sont autorisés à condition de participer au paysage urbain dans lequel ils s’insèrent et de prendre en compte les caractéristiques morphologiques du contexte dans lequel ils s’intègrent, tant par les matériaux utilisés que par la conception des volumes, saillies, percements et soubassement</div>
                <div>
@@ -1314,69 +1203,59 @@
                <div>Dans le cas de l’implantation d’un mur ou mur bahut, celui-ci ne doit pas excéder une hauteur de 0,60 m.</div>
                <div>L’utilisation du grillage n’est autorisée que s’il est doublé par une haie vive qui le masque depuis l’extérieur de l’emprise foncière.</div>
             </plu:Contenu>
-            <plu:Titre id="d1e2105"
+            <plu:Titre id="d5e2110"
                        intitule="traitement environnemental et paysager des espaces non bâtis et abords des constructions"
                        niveau="4"
                        idZone="N"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e626" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e1001" idZone="N" idPrescription="nonConcerne">
                   <h4>traitement environnemental et paysager des espaces non bâtis et abords des constructions</h4>
                   <div>Les dépôts ou matériaux visibles de l’espace public doivent être masqués par un accompagnement végétal.</div>
                   <div>Les abords des constructions et aménagements doivent être agrémentés de plantations.</div>
                   <div>L’utilisation de bâches non biodégradables est interdite. Les bâches biodégradables doivent être végétalisées.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e2113"
+            <plu:Titre id="d5e2118"
                        intitule="Espaces libres et de plantations, d’aires de jeux et de loisir "
                        niveau="4"
                        idZone="N"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e632" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e1011" idZone="N" idPrescription="nonConcerne">
                   <h4>Espaces libres et de plantations, d’aires de jeux et de loisir </h4>
                   <div>Les plantations monospécifique sont interdites.</div>
                   <div>Les plantations d’espèces présentes sur la liste des espèces exotiques envahissantes* (EEE) préoccupantes pour l’Union européenne (règlement d’exécution 2016/1141) sont interdites.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e2119"
+            <plu:Titre id="d5e2124"
                        intitule="obligations en matière de performances énergétiques et environnementales"
                        niveau="4"
                        idZone="N"
-                       idPrescription="nonConcerne"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e636" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e1018" idZone="N" idPrescription="nonConcerne">
                   <h4>obligations en matière de performances énergétiques et environnementales</h4>
                   <div>L’emploi de revêtement de sols pour les espaces extérieurs doit privilégier les tons clairs caractérisés par un albedo élevé.</div>
                </plu:Contenu>
             </plu:Titre>
          </plu:Titre>
       </plu:Titre>
-      <plu:Titre id="d1e2124"
-                 intitule="c. EqUIpEmENts Et RÉsEAUX"
-                 niveau="2"
-                 idZone="N"
-                 idPrescription="nonConcerne"
+      <plu:Titre id="d5e2129" intitule="c. EqUIpEmENts Et RÉsEAUX" niveau="2" idZone="N"
+                 idPrescription=""
                  inseeCommune="15079">
-         <plu:Contenu id="d1e640" idZone="N" idPrescription="nonConcerne">
+         <plu:Contenu id="d8e1024" idZone="N" idPrescription="nonConcerne">
             <h2>c. EqUIpEmENts Et RÉsEAUX</h2>
          </plu:Contenu>
-         <plu:Titre id="d1e2126"
-                    intitule="1. accès et voiRie"
-                    niveau="3"
-                    idZone="N"
-                    idPrescription="nonConcerne"
+         <plu:Titre id="d5e2131" intitule="1. accès et voiRie" niveau="3" idZone="N"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e642" idZone="N" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e1027" idZone="N" idPrescription="nonConcerne">
                <h3>1. accès et voiRie</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e2128"
-                       intitule="accès et voiRie"
-                       niveau="4"
-                       idZone="N"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e2133" intitule="accès et voiRie" niveau="4" idZone="N" idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e644" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e1030" idZone="N" idPrescription="nonConcerne">
                   <h4>accès et voiRie</h4>
                   <div>Pour être constructible, un terrain doit avoir accès à une voie publique ou à une voie privée.</div>
                   <div>La largeur des accès sur la voie publique doit être proportionnée à la taille et au besoin des constructions. Elle est limitée à 5 mètres.</div>
@@ -1385,33 +1264,24 @@
                </plu:Contenu>
             </plu:Titre>
          </plu:Titre>
-         <plu:Titre id="d1e2138"
-                    intitule="2. conditions de desseRte paR les Réseaux"
-                    niveau="3"
+         <plu:Titre id="d5e2143" intitule="2. conditions de desseRte paR les Réseaux" niveau="3"
                     idZone="N"
-                    idPrescription="nonConcerne"
+                    idPrescription=""
                     inseeCommune="15079">
-            <plu:Contenu id="d1e650" idZone="N" idPrescription="nonConcerne">
+            <plu:Contenu id="d8e1041" idZone="N" idPrescription="nonConcerne">
                <h3>2. conditions de desseRte paR les Réseaux</h3>
             </plu:Contenu>
-            <plu:Titre id="d1e2140"
-                       intitule="Eau potable "
-                       niveau="4"
-                       idZone="N"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e2145" intitule="Eau potable " niveau="4" idZone="N" idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e653" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e1045" idZone="N" idPrescription="nonConcerne">
                   <h4>Eau potable </h4>
                   <div>L’alimentation de toute construction nouvelle, dont le besoin en eau potable est reconnu, est assurée par le réseau public s’il existe ou à défaut, par un moyen conforme à la réglementation en vigueur. Il en est de même pour le changement de destination d’un bâtiment agricole.</div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e2145"
-                       intitule="Réseau électrique "
-                       niveau="4"
-                       idZone="N"
-                       idPrescription="nonConcerne"
+            <plu:Titre id="d5e2150" intitule="Réseau électrique " niveau="4" idZone="N"
+                       idPrescription=""
                        inseeCommune="15079">
-               <plu:Contenu id="d1e656" idZone="N" idPrescription="nonConcerne">
+               <plu:Contenu id="d8e1050" idZone="N" idPrescription="nonConcerne">
                   <h4>Réseau électrique </h4>
                   <div>Les nouvelles constructions ou le changement de destination d’un bâtiment agricole nécessitant une desserte par le réseaux électrique ne doivent pas conduire à une baisse de tension qui impliquerait le renforcement du réseau</div>
                </plu:Contenu>
@@ -1419,44 +1289,35 @@
          </plu:Titre>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e2149"
+   <plu:Titre id="d5e2154"
               intitule="VIII. ÉLÉmENts DE pAysAGE Et sItEs Et sEctEURs à pRotÉGER"
               niveau="1"
               idZone="porteeGenerale"
               idPrescription="porteeGenerale"
               inseeCommune="15079">
-      <plu:Contenu id="d1e659" idZone="porteeGenerale" idPrescription="porteeGenerale">
+      <plu:Contenu id="d8e1055" idZone="porteeGenerale" idPrescription="porteeGenerale">
          <h1>VIII. ÉLÉmENts DE pAysAGE Et sItEs Et sEctEURs à pRotÉGER</h1>
          <div>Les éléments identifiés au plan de zonage comme éléments de paysage (articles L151-19 et R.151-41 du code de l’urbanisme) et sites et secteurs à protéger pour des motifs d’ordre écologique articles L151- 23 et R.151-43 du code de l’urbanisme) concernent des éléments surfaciques, linéaires et ponctuels.</div>
       </plu:Contenu>
-      <plu:Titre id="d1e2158"
-                 intitule=""
-                 niveau="2"
-                 idZone="porteeGenerale"
+      <plu:Titre id="d5e2163" intitule="" niveau="2" idZone="porteeGenerale"
                  idPrescription="porteeGenerale"
                  inseeCommune="15079">
-         <plu:Contenu id="d1e662" idZone="porteeGenerale" idPrescription="porteeGenerale">
+         <plu:Contenu id="d8e1060" idZone="porteeGenerale" idPrescription="porteeGenerale">
             <h2/>
          </plu:Contenu>
-         <plu:Titre id="d1e2159"
-                    intitule=""
-                    niveau="3"
-                    idZone="porteeGenerale"
+         <plu:Titre id="d5e2164" intitule="" niveau="3" idZone="porteeGenerale"
                     idPrescription="porteeGenerale"
                     inseeCommune="15079">
-            <plu:Contenu id="d1e665" idZone="porteeGenerale" idPrescription="porteeGenerale">
+            <plu:Contenu id="d8e1063" idZone="porteeGenerale" idPrescription="porteeGenerale">
                <h3/>
             </plu:Contenu>
-            <plu:Titre id="d1e2160"
-                       intitule="Éléments de paysage"
-                       niveau="4"
-                       idZone="porteeGenerale"
+            <plu:Titre id="d5e2165" intitule="Éléments de paysage" niveau="4" idZone="porteeGenerale"
                        idPrescription="porteeGenerale"
                        inseeCommune="15079">
-               <plu:Contenu id="d1e667" idZone="porteeGenerale" idPrescription="porteeGenerale">
+               <plu:Contenu id="d8e1065" idZone="porteeGenerale" idPrescription="porteeGenerale">
                   <h4>Éléments de paysage</h4>
                </plu:Contenu>
-               <plu:Contenu id="d1e668" idZone="porteeGenerale" idPrescription="07-03">
+               <plu:Contenu id="d8e1067" idZone="porteeGenerale" idPrescription="07-03">
                   <div>Les éléments surfaciques sont les paysages d’emprunt : </div>
                   <ul>
                      <li>du domaine du château de Lavaurs, </li>
@@ -1474,10 +1335,10 @@
                   <div>La destruction des murets identifiés est interdite. Leur réparation doit être effectuée suivant les mêmes principes constructifs et avec des matériaux similaires (pierre de pays). Le jointoiement au ciment est interdit.</div>
                   <div>L’arrachage des haies identifiées est interdit. La coupe sélective d’entretien est autorisée.</div>
                </plu:Contenu>
-               <plu:Contenu id="d1e684" idZone="porteeGenerale" idPrescription="porteeGenerale">
+               <plu:Contenu id="d8e1094" idZone="porteeGenerale" idPrescription="porteeGenerale">
                   <div/>
                </plu:Contenu>
-               <plu:Contenu id="d1e686" idZone="porteeGenerale" idPrescription="07-01">
+               <plu:Contenu id="d8e1096" idZone="porteeGenerale" idPrescription="07-01">
                   <div>Les éléments ponctuels sont des éléments bâtis : maisons, granges et autres annexes agricoles, moulin, chapelle, pont, puits, fontaines, croix. Leur localisation et leur représentation photographique sont présentés pages suivantes :</div>
                   <div>1. Grange à Pradel : grange traditionnelle en maçonnerie de pierre enduite comportant une partie ancienne sur rue et une extension (première moitié du XXème siècle) sur l’arrière. Toiture à deux longs pans et une demi-croupe sur le pignon arrière (pignon droit sur rue). Couverture mixte, ardoise et fibro-ciment. Implantée en limite de voie et présentant un volume important, la présence de cette grange marque l’entrée de hameau. </div>
                   <div>
@@ -1601,16 +1462,16 @@
                   </div>
                </plu:Contenu>
             </plu:Titre>
-            <plu:Titre id="d1e2382"
+            <plu:Titre id="d5e2427"
                        intitule="sites et secteurs à protéger pour des motifs écologiques "
                        niveau="4"
                        idZone="porteeGenerale"
                        idPrescription="porteeGenerale"
                        inseeCommune="15079">
-               <plu:Contenu id="d1e774" idZone="porteeGenerale" idPrescription="porteeGenerale">
+               <plu:Contenu id="d8e1205" idZone="porteeGenerale" idPrescription="porteeGenerale">
                   <h4>sites et secteurs à protéger pour des motifs écologiques </h4>
                </plu:Contenu>
-               <plu:Contenu id="d1e775" idZone="porteeGenerale" idPrescription="07-04">
+               <plu:Contenu id="d8e1207" idZone="porteeGenerale" idPrescription="07-04">
                   <div>Les éléments surfaciques sont des zones humides (3,7 ha). Tous les projets susceptibles de modifier le régime hydrologique des zones humides sont interdits.</div>
                   <div>Les éléments linéaires sont : </div>
                   <ul>
@@ -1624,13 +1485,10 @@
          </plu:Titre>
       </plu:Titre>
    </plu:Titre>
-   <plu:Titre id="d1e2407"
-              intitule="LEXIqUE"
-              niveau="1"
-              idZone="porteeGenerale"
-              idPrescription="nonConcerne"
+   <plu:Titre id="d5e2452" intitule="LEXIqUE" niveau="1" idZone="porteeGenerale"
+              idPrescription=""
               inseeCommune="15079">
-      <plu:Contenu id="d1e786" idZone="porteeGenerale" idPrescription="nonConcerne">
+      <plu:Contenu id="d8e1224" idZone="porteeGenerale" idPrescription="nonConcerne">
          <h1>LEXIqUE</h1>
          <div>
             <strong>Albédo :</strong> pouvoir réfléchissant d’une surface. Un corps noir parfait, qui absorberait toutes les longueurs d’onde sans en réfléchir aucune, aurait un albédo nul, tandis qu’un miroir parfait, qui réfléchirait toutes les longueurs d’onde, sans en absorber une seule, aurait un albédo égal à 1.</div>

@@ -425,11 +425,9 @@ Pour cela,
 
 . aller dans le menu Fichier > Exporter...
 . sélectionner le format CNIG reglePLU (installé dans le chapitre <<Etape 1. Installer les pré-requis>>)
-
 image::images/export.png[align=center]
-
-3. Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
-4. Cliquer sur enregistrer
+. Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
+. Cliquer sur enregistrer
 
 == Etape 7. Vérification
 * La première vérification visuelle peut se faire simplement à l'aide d'un navigateur.

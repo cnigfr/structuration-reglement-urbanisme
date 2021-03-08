@@ -278,7 +278,7 @@ Les variables qui peuvent être insérés au niveau d'un titre sont :
 * idZone
 * idPresc
 
-Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
+. Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
 
 Règle: si aucun champ n'est défini pour un titre, alors celui-ci portera les mêmes informations que le titre parent. Il est donc indispensable que tous les titres de niveau 1 soient correctement définis.
 
@@ -332,17 +332,18 @@ Pour insérer un champ dans un paragraphe :
 . Cliquer au début du paragraphe concerné (juste avant le premier caractère du paragraphe) et ajouter une variable : Menu Insertion > Champs > Autres champs.
 . Puis, cliquer à la fin du paragraphe concerné (juste après le dernier caractère du paragraphe) et ajouter une variable : Menu Insertion > Champs > Autres champs.
 
+Les variables qui peuvent être insérés au niveau du paragraphe sont :
+
+* idZoneStart et idZoneEnd pour les zones
+* idPrescStart et idPrescEnc pour les prescriptions
+
+. Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
+
 WARNING: les valeurs des variables ...Start et ...End entourant une portion de texte doivent être identiques que ce soit pour les zones ou les prescription.
 
 WARNING: les variables ...Start et ...End ne doivent pas englober un titre. Dans ce cas, il faut utiliser les champs dans les titre (cf. <<Etape 5.1 Identification des champs dans les titres>>).
 
 Remarque : si aucune variable n'est définie pour un paragraphe, alors celui-ci portera les mêmes informations que le titre auquel il appartient.
-
-Les variables qui peuvent être insérés au niveau du paragraphe sont :
-
-* idZoneStart et idZoneEnd pour les zones
-* idPrescStart et idPrescEnc pour les prescriptions
-Suivez les instructions données dans les chapitres suivants pour l'utilisation de ces variables.
 
 ==== Identification des zones dans les paragraphes (idZoneStart et idZoneEnd)
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--...................................-->
 <!-- Transformation FODT > format CNIG -->
-<!--          Date: 2021-02-22         -->
+<!--          Date: 2021-03-05         -->
 <!--  Version : 1.0 pour LibreOffice   -->
-<!--     Author: Stéphane Garcia       -->
+<!--     Auteur: Stéphane Garcia       -->
 <!--...................................-->
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mf="http://example.com/mf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:tmp="temp" xmlns="http://www.w3.org/1999/xhtml" xmlns:plu="https://cnig.gouv.fr/reglementDU" exclude-result-prefixes="xsi xs mf office meta draw table tmp">
 	<!-- supprime les blancs-->
@@ -53,10 +53,16 @@
 	<!-- définition d'une clé unique pour les titres pour gérer les liens hypertexte -->
 	<xsl:key name="titre" match="text:h" use="text()"/>
 	<!-- création des balises Titre et Bloc (qui sera ensuite transformé en Contenu) -->
+	<!-- si un titre est laissé blanc, on ajoute la mention 'Titre vide' -->
 	<xsl:template match="text:h" mode="etape1">
 		<tmp:Titre tmp:id="{generate-id(.)}" tmp:intitule="{text()}" tmp:niveau="{@text:outline-level}" tmp:zone="{substring(./text:variable-set[@text:name='idZone']/@text:formula,6)}" tmp:presc="{substring(./text:variable-set[@text:name='idPresc']/@text:formula,6)}" tmp:insee="{./text:variable-set[@text:name='inseeCommune']/@office:value}"/>
-		<xsl:element name="{concat('h',@text:outline-level)}" namespace="http://www.w3.org/1999/xhtml">
-			<xsl:value-of select="text()"/>
+		<xsl:element name="{concat('h',@text:outline-level)}" namespace="http://www.w3.org/1999/xhtml">	
+			<xsl:choose>
+				<xsl:when test="text()!= ''">
+					<xsl:value-of select="text()"/>
+				</xsl:when>
+				<xsl:otherwise>Titre vide</xsl:otherwise>
+			</xsl:choose>
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="node()[./text:variable-set and ./text:variable-set/@text:name='idZoneStart']" mode="etape1">
@@ -83,6 +89,21 @@
 			<xsl:otherwise>
 				<div>
 					<xsl:value-of select="."/>
+				</div>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<!-- souligné -->
+	<xsl:template match="text:p[* and not(./text:variable-set)]" mode="etape1">
+		<xsl:choose>
+			<xsl:when test="@text:style-name='P2'">
+				<div style="text-decoration:underline">
+					<xsl:apply-templates mode="etape1"/>
+				</div>
+			</xsl:when>
+			<xsl:otherwise>
+				<div>
+					<xsl:apply-templates mode="etape1"/>
 				</div>
 			</xsl:otherwise>
 		</xsl:choose>
@@ -135,31 +156,11 @@
 			<xsl:value-of select="."/>
 		</strong>
 	</xsl:template>
-	<!-- souligné -->
-	<xsl:template match="text:span[@text:style-name='A_5f_souligné']" mode="etape1">
-		<div style="text-decoration:underline">
-			<xsl:value-of select="."/>
-		</div>
-	</xsl:template>
 	<!-- italique -->
-	<xsl:template match="text:span[@text:style-name='Emphasis']" mode="etape1">
+	<xsl:template match="text:span[@text:style-name='T1']" mode="etape1">
 		<em>
 			<xsl:value-of select="."/>
 		</em>
-	</xsl:template>
-	<!-- italique souligné -->
-	<xsl:template match="text:span[@text:style-name='A_5f_italique_5f_souligné']" mode="etape1">
-		<div style="text-decoration:underline">
-			<em>
-				<xsl:value-of select="."/>
-			</em>
-		</div>
-	</xsl:template>
-	<!-- gras italique -->
-	<xsl:template match="text:span[@text:style-name='A_5f_gras_5f_italique']" mode="etape1">
-		<strong><em>
-			<xsl:value-of select="."/>
-		</em></strong>
 	</xsl:template>
 	<!-- images -->
 	<xsl:template match="draw:frame" mode="etape1">
@@ -214,20 +215,17 @@
 	<!-- clé pour hiérarchiser les titres -->
 	<xsl:key name="child-by-parent" match="tmp:Titre" use="preceding-sibling::tmp:Titre[@tmp:niveau = current()/@tmp:niveau - 1][1]/@tmp:id"/>
 	<xsl:template match="plu:ReglementDU|@*" mode="etape3">
-		<plu:ReglementDU xsi:schemaLocation="{'https://cnig.gouv.fr/reglementDU reglementDU.xsd'}" id="{@id}" nom="{@nom}" lien="{@lien}" idUrba="{@idUrba}" typeDoc="{@typeDoc}">
+		<!--Ajout d'une feuille de style - déprécié -->
+		<!--xsl:processing-instruction name="xml-stylesheet">
+			<xsl:text>type="text/css" href="style.css"</xsl:text>
+		</xsl:processing-instruction-->
+		<plu:ReglementDU xsi:schemaLocation="{'https://cnig.gouv.fr/reglementDU https://raw.githubusercontent.com/cnigfr/structuration-reglement-urbanisme/master/schemas/reglementDU.xsd'}" id="{@id}" nom="{@nom}" lien="{@lien}" idUrba="{@idUrba}" typeDoc="{@typeDoc}">
 			<xsl:apply-templates mode="etape3" select="tmp:Titre[@tmp:niveau = 1]"/>
 		</plu:ReglementDU>
 	</xsl:template>
 	<!-- hiérarchisation des titre et remplissage avec les balises Contenu non vides -->
 	<xsl:template match="tmp:Titre" mode="etape3">
 	<plu:Titre id="{@tmp:id}" intitule="{@tmp:intitule}" niveau="{@tmp:niveau}" idZone="{@tmp:zone}" idPrescription="{@tmp:prescription}" inseeCommune="{@tmp:insee}">
-		<!--xsl:element name="plu:Titre">
-			<xsl:attribute name="id" select="@tmp:id"/>
-			<xsl:attribute name="intitule" select="@tmp:intitule"/>
-			<xsl:attribute name="niveau" select="@tmp:niveau"/>
-			<xsl:attribute name="idZone" select="@tmp:idZone"/>
-			<xsl:attribute name="idPrescription" select="@tmp:idPrescription"/>
-			<xsl:attribute name="inseeCommune" select="@tmp:inseeCommune"/-->
 			<xsl:choose>
 				<xsl:when test="not(following-sibling::tmp:Titre[1])">
 					<xsl:copy-of select="following-sibling::plu:Contenu[descendant::*]"/>
@@ -237,7 +235,6 @@
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:apply-templates select="key('child-by-parent', @tmp:id)" mode="etape3"/>
-		<!--/xsl:element-->
 		</plu:Titre>
 	</xsl:template>
 </xsl:stylesheet>

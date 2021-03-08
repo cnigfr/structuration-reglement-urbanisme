@@ -56,10 +56,7 @@ Nous ne transformerons que le texte réglementaire donc nous n'aurons besoin que
 *Prescription* : Une prescription se présente dans le standard CNIG PLU sous la forme d'une information surfacique, linéaire ou ponctuelle qui apparaît sur les documents graphiques du PLU. Une prescription qui se superpose à une zone du document d'urbanisme exerce en général une contrainte supplémentaire au règlement de la zone.
 Pour identifier les différentes prescriptions, on peut utiliser les pièces graphiques sous forme vectorielle, dans la table des attributs de la table PRESCRIPTION, l’ensemble des prescriptions sont renseignées dans la colonne "libellé" des différentes couches (prescription de surfaciques, linéaires et ponctuelles).
 
-*Style* : Les styles de LibreOffice Writer définissent les caractéristiques de mise en forme des éléments qui composent le document LibreOffice. Nous nous en servons pour définir la hiérarchie du document. 
-Pour le contenu du paragraphe, on utilise le style “Corps du texte”. Ci-dessous, nous pouvons voir la table des styles qui contient les styles qui vont nous intéresser : les styles Titre numérotés, et le style corps du texte.
-
-image::images/styles.png[align=center]
+*Style* : Les styles de LibreOffice Writer définissent les caractéristiques de mise en forme des éléments qui composent le document LibreOffice. Ils sont utilisés pour avoir un affichage du règlement dans un navigateur web. Nous utilisons dans ce guide les styles de paragraphe (Titre 1, Titre 2, etc.) mais également les styles de caractères (gras, souligné, etc.)
 
 *Titre* : Un titre est défini par un style. On les utilise pour hiérarchiser le document, on utilise uniquement les titres numérotés définis par défaut dans LibreOffice. Le Titre 1, par exemple, correspond au titre d’un chapitre du règlement écrit (ex : “Chapitre 1 : Dispositions communes à toutes les zones).
 
@@ -169,7 +166,9 @@ Pour définir un titre, vous pouvez soit
 
 image::images/majS.png[align=center]
 
-* aller dans le menu "Styles" puis Gérer les styles (ou Alt+F11) afin d'afficher le panneau latéral des styles. Il vous suffira ensuite simplement de cliquer sur une ligne et de sélectionner un style dans le panneau latéral.
+* aller dans le menu "Styles" puis Gérer les styles (ou Alt+F11) afin d'afficher le panneau latéral des styles. Il vous suffira ensuite simplement de cliquer sur une ligne et de sélectionner un style dans le panneau latéral :
+
+image::images/styles.png[align=center]
 
 Voici un exemple d’ordre de gestion des styles :
 [cols=2]
@@ -260,7 +259,7 @@ Cette étape vise à enrichir le texte sous LibreOffice à l'aide de champs pers
 ==== Ajouter un champ personnalisé dans le titre
 Pour insérer un champ dans un titre :
 
-. Cliquez à la fin du titre concerné (par exemple, si votre titre s'appelle "VI. ZONE UA", cliquez juste après le caractère A) et ajoutez un champ : Menu Insertion > Champs > Autres champs.
+* Cliquez à la fin du titre concerné (par exemple, si votre titre s'appelle "VI. ZONE UA", cliquez juste après le caractère A) et ajoutez un champ : Menu Insertion > Champs > Autres champs.
 
 Les variables qui peuvent être insérés au niveau d'un titre sont :
 
@@ -277,7 +276,7 @@ Corollaire: *Il n’est pas nécessaire de définir un champ pour tous les titre
 ==== Champ d'identification de la commune
 
 Il s'agit du code INSEE de la commune concernée par un titre (il est possible que dans un règlement, un chapitre traite d'une ou plusieurs communes particulières). 
-Pour cela, ajouter un champ personnalisé (voir chapitre <<Ajout d'un champ personnalisé dans le titre>>) puis sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE sont séparés par une virgule (sans espace). Ex: "07110,07117”
+Pour cela, ajouter un champ personnalisé (voir chapitre <<Ajouter un champ personnalisé dans le titre>>) puis sélectionner la variable " inseeCommune " et renseigner le code INSEE de la commune concernée. Si plusieurs communes sont concernées, les codes INSEE sont séparés par une virgule (sans espace). Ex: "07110,07117”
 
 ==== Champ d'identification des zones dans les titres
 
@@ -288,9 +287,11 @@ Lorsqu'une zone est commune à toutes les parties d'un chapitre :
 * Si le titre en question concerne toute la commune/intercommunalité, mettre la valeur « porteeGenerale ».
 * Sinon, mettre le nom de la zone identifiée dans le paragraphe (ex : U, A, N, Ua, UAb, etc.). Si le paragraphe concerne plusieurs zones, alors mettre tous les noms des zones concernées séparées par une virgule (sans espace) : "Ua,Ub".
 
-Exemples :
+Exemples 1 chapitre commun à toutes les zones :
 
 image::images/exTitre1.png[align=center]
+
+Exemples 2 chapitre commun à la zone A :
 
 image::images/exTitre3.png[align=center]
 
@@ -308,7 +309,7 @@ Les Types / Sous-types sont définis au chapitre 3.3 du standard CNIG PLU v2017d
 
 Par exemple, ce chapitre "Prescription Général" concerne toutes les prescriptions, donc les champs vont être définis comme ceci :
 
-image::images/exTitre3.png[align=center]
+image::images/exTitre2.png[align=center]
 
 === Etape 5.2 Identification des champs dans les paragraphes
 

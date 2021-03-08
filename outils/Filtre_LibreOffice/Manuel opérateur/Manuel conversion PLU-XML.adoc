@@ -182,8 +182,8 @@ image::images/styles.png[align=center]
 Voici un exemple d’ordre de gestion des styles :
 [cols=2]
 |===
-|Partie
-|Style choisi
+|*Partie*
+|*Style choisi*
 |Chapitre
 |Titre 1
 |Zone
@@ -376,7 +376,7 @@ image::images/prescPar.png[align=center]
 === Cohérence avec le GPU
 Les valeurs renseignées dans les variables des champs personnalisés pour les zones et les prescriptions doivent être cohérentes avec les informations géographiques présentes dans le GPU.
 
-* *Si vous maîtrisez le nom des zones dans votre réglement et que vous êtes capables de déterminer le type/sous-type des prescriptions figurant dans le règlement écrit selon la nomenclature du chapitre 3.3 du http://cnig.gouv.fr/?page_id=2732[standard CNIG PLU v2017d], alors vous pouvez ignorer ce chapitre*
+* *Si vous maîtrisez le nom des zones dans votre réglement et que vous êtes capables de déterminer le type/sous-type des prescriptions figurant dans le règlement écrit selon la nomenclature du chapitre 3.3 du http://cnig.gouv.fr/?page_id=2732[standard CNIG PLU v2017d], alors vous pouvez ignorer ce chapitre.*
 
 Ces valeurs peuvent être trouvées dans l'archive de votre PLU sur le https://www.geoportail-urbanisme.gouv.fr/[GPU]. 
 Pour récupérer l'archive :
@@ -425,7 +425,11 @@ Pour cela,
 
 . aller dans le menu Fichier > Exporter...
 . sélectionner le format CNIG reglePLU (installé dans le chapitre <<Etape 1. Installer les pré-requis>>)
+
 image::images/export.png[align=center]
+
+Puis,
+
 . Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
 . Cliquer sur enregistrer
 

@@ -125,9 +125,9 @@ Ensuite,
 . Ouvrez le fichier template https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/template%20reglePLU.odt["template%20reglePLU.odt"] sous LibreOffice
 . Coller le texte *au format texte brut* (La mise en page ne doit surtout pas être copiée) (Edition → Collage spécial → Coller le texte non-formaté). En effet, la mise en page originale va perturber la conversion au format CNIG.
 . Supprimer les éléments du règlement qui sont inutiles ou qui n’ont pas de valeur réglementaire :
-. Les en-têtes et pieds-de-page qui vont être répétés à chaque page.
-. Les illustrations et textes "décoratifs" et qui n’ont pas valeur réglementaire.
-. Il est également possible que des sauts de lignes aient été rajoutés lors de la copie. Il est souhaitable de supprimer ces sauts de lignes indésirables.
+* Les en-têtes et pieds-de-page qui vont être répétés à chaque page.
+* Les illustrations et textes "décoratifs" et qui n’ont pas valeur réglementaire.
+* Dans certains PDF, le retour à la ligne du texte est figé, ce qui peut entraîner des coupures indésirables. Il est recommandé de supprimer les retours à la ligne au milieu des phrases.
 
 WARNING: Bien vérifier que tout soit copié dans l’ordre, selon la mise en page initiale il peut y avoir des bugs ! Notamment lorsque le texte est en deux colonnes dans le fichier au format PDF du PLU
 Exemple : Quand une partie du règlement écrit est rédigée en deux blocs (partie de droite dans l'image ci-dessous), il peut y avoir des bugs au niveau des titres/sous-titres, ou encore au niveau du changement de bloc; les informations reportées dans le document LibreOffice sont alors en désordre (partie de gauche dans l'image ci-dessous).

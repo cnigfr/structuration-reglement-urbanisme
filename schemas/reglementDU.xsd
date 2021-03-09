@@ -60,8 +60,8 @@
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:anyURI" use="required"/>
 		<xs:attribute ref="xlink:href"/>
-		<xs:attribute name="idZone" type="xs:string"/>
-		<xs:attribute name="idPrescription" type="xs:string"/>
+		<xs:attribute name="idZone" type="xs:string" use="required"/>
+		<xs:attribute name="idPrescription" type="xs:string" use="required"/>
 	</xs:complexType>
 	<!--   
  /* Définition du vocabulaire */

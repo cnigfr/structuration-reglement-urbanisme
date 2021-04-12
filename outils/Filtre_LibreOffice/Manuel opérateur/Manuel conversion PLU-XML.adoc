@@ -90,7 +90,7 @@ Tout d'abord, il est nécessaire d'installer l'extension xslt2-transformer. Pour
 
 . Télécharger le fichier .oxt qui se trouve https://github.com/dtardon/xslt2-transformer/releases[ici]. 
 . Installer l’extension dans LibreOffice :
-Outils > Gestionnaire des extensions > Ajouter et sélectionner le fichier télécharger.
+Outils > Gestionnaire des extensions > Ajouter et sélectionner le fichier téléchargé.
 . Relancer LibreOffice.
 
 

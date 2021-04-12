@@ -85,7 +85,16 @@ Dans ce cas, vous pouvez télécharger et installer https://www.qgis.org/fr/site
 * *Un éditeur de texte simple* pour vérifier le format du fichier. Par exemple, WordPad, le Bloc-notes Windows ou NotePad++.
 
 === Extension Libre Office
-Avant de commencer, il est nécessaire d'installer le filtre LibreOffice disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/CNIG%20reglePLU%20v1.0.jar[ici].
+
+* Tout d'abord, il est nécessaire d'installer l'extension xslt2-transformer.
+
+. Pour cela, il faut télécharger le fichier .oxt qui se trouve https://github.com/dtardon/xslt2-transformer/releases[ici]. 
+. Puis installer l’extension dans LibreOffice :
+Outils > Gestionnaire des extensions > Ajouter et sélectionner le fichier télécharger.
+. Relancer LibreOffice.
+
+
+* Ensuite, nous allons installer le filtre LibreOffice disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/CNIG%20reglePLU%20v1.0.jar[ici].
 
 Après avoir téléchargé le fichier "CNIG reglePLU v1.0.jar", suivez les étapes suivantes :
 

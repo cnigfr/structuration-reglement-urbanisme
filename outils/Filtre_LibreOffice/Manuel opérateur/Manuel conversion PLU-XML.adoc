@@ -69,6 +69,9 @@ Les prescriptions sont des couches géographiques matérialisées par les tables
 
 * *Lecteur PDF* : Vous devez avoir un lecteur de fichier PDF installé sur votre ordinateur (Adobe Acrobat Reader, Foxit Reader...)
 
+* JAVA *
+Vous devez avoir une version à jour de https://www.java.com/fr/download/help/windows_manual_download.html[Java] installée sur votre ordinateur
+
 * *Libre Office Writer*
 
 Installer la dernière version de LibreOffice Writer disponible sur le site de https://www.libreoffice.org/download/download[LibreOffice].
@@ -79,8 +82,8 @@ Note : L'outil n'a pas été testé sur des versions antérieures à LibreOffice
 
 * *QGIS*
 
-Il peut être nécessaire d'installer QGIS afin de visualiser les prescriptions et de récupérer les données attributaires des prescriptions du GPU.
-Dans ce cas, vous pouvez télécharger et installer https://www.qgis.org/fr/site/forusers/download.html[QGIS] (l'installateur indépendant suffit).
+Il peut être nécessaire d'installer QGIS pour effectuer les vérifications décrites dans le chapitre <<Cohérence avec le GPU>>.
+Le cas échéant, vous pouvez télécharger et installer https://www.qgis.org/fr/site/forusers/download.html[QGIS] (l'installateur indépendant suffit).
 
 * *Un éditeur de texte simple* pour vérifier le format du fichier. Par exemple, WordPad, le Bloc-notes Windows ou NotePad++.
 

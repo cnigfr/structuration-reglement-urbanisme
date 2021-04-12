@@ -86,9 +86,7 @@ Dans ce cas, vous pouvez télécharger et installer https://www.qgis.org/fr/site
 
 === Extension Libre Office
 
-* Tout d'abord, il est nécessaire d'installer l'extension xslt2-transformer.
-
-Pour cela : 
+Tout d'abord, il est nécessaire d'installer l'extension xslt2-transformer. Pour cela : 
 
 . Télécharger le fichier .oxt qui se trouve https://github.com/dtardon/xslt2-transformer/releases[ici]. 
 . Installer l’extension dans LibreOffice :
@@ -96,7 +94,7 @@ Outils > Gestionnaire des extensions > Ajouter et sélectionner le fichier tél�
 . Relancer LibreOffice.
 
 
-* Ensuite, nous allons installer le filtre LibreOffice disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/CNIG%20reglePLU%20v1.0.jar[ici].
+Ensuite, nous allons installer le filtre LibreOffice disponible https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/outils/Filtre_LibreOffice/CNIG%20reglePLU%20v1.0.jar[ici].
 
 Après avoir téléchargé le fichier "CNIG reglePLU v1.0.jar", suivez les étapes suivantes :
 

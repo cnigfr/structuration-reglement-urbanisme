@@ -208,7 +208,15 @@ Voici un exemple d’ordre de gestion des styles :
 |Titre 5
 |===
 
-WARNING: Votre document doit impérativement commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.
+WARNING: Votre document doit IMPERATIVEMENT commencer par un titre de niveau 1 (style = Titre 1 sous libre office) et il ne doit pas y avoir de trou dans l'enchaînement des titres. Par exemple, sous un titre de niveau 2, il doit obligatoirement y avoir un titre de niveau 3, etc.
+
+Ex de document non valide :
+
+image::images/docNonValide.png[align=center]
+
+Ex de document valide :
+
+image::images/docValide.png[align=center]
 
 === Gras / souligné / italique
 Pour mettre une partie de texte en gras / italique ou souligné, il faut utiliser les styles également.

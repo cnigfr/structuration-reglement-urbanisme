@@ -450,7 +450,7 @@ image::images/export.png[align=center]
 
 Puis,
 
-. Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code postal de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
+. Nommer votre fichier XXXXX_reglement_YYYYYYYY.xml où XXXXX désigne le code INSEE de la commune (ou le code SIREN pour un PLUi) et YYYYYYYY la date d'enregistrement
 . Cliquer sur enregistrer
 
 == Etape 7. Vérification

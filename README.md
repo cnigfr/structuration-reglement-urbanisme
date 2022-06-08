@@ -1,10 +1,17 @@
 # Structuration-reglement-urbanisme
 Dépôt des fichiers des  travaux du SG6 du GT DDU
 
-## **Le projet de standard "Structuration du règlement d'urbanisme"**
-Ce projet vise à permettre à un logiciel d'extraire et exploiter les informations d'un règlement suivant ses articles et paragraphes. Le premier niveau (projet actuel) répond au besoin de présentation des informations structurées pour la consultation du règlement à la parcelle. Le deuxième niveau visera l'extraction des règles d'urbanisme associées (ex : marge de recul, etc.) et leurs paramètres (ex : 10m).
+## **Le projet de standard Structuration du règlement d'urbanisme (SRU)**
+Ce projet vise à permettre à un logiciel d'extraire et exploiter les informations d'un règlement suivant ses articles et paragraphes.
 
-Le standard CNIG PLU est disponible sur [le Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard). Le manuel opérateur permet de réaliser la structuration du réglement. Les [CR](https://drive.google.com/drive/folders/1ByGnnNvx73jlKic-Hqd86HiICzdMDDI8) des précédentes réunions, le [mandat](https://drive.google.com/drive/folders/10djtHulZaWpaszGtQAUPltCG6n6r8cHS) et le [manuel opérateur](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF) sont disponible sur le [drive](https://drive.google.com/drive/folders/1kdwaL4_TPqR5ZKf1qADUVyL9Eim5Ysgo).
+Le premier niveau (projet actuel) répond au besoin de présentation des informations structurées pour la consultation du règlement à la parcelle.
 
-La section des issues et celle de la discussion sont disponibles pour les membres du SG pour leurs questions et leurs remarques.
+Le deuxième niveau visera l'extraction des règles d'urbanisme associées (ex : marge de recul, etc.) et leurs paramètres (ex : 10m).
+
+Le projet de standard CNIG SRU est disponible sur [le Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard).
+
+Le manuel opérateur permet de réaliser la structuration du réglement. Les [CR](https://drive.google.com/drive/folders/1ByGnnNvx73jlKic-Hqd86HiICzdMDDI8) des précédentes réunions, le [mandat](https://drive.google.com/drive/folders/10djtHulZaWpaszGtQAUPltCG6n6r8cHS) et le [manuel opérateur](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF) sont disponible sur le [drive](https://drive.google.com/drive/folders/1kdwaL4_TPqR5ZKf1qADUVyL9Eim5Ysgo).
+
+La section des issues et celle de la discussion sont disponibles pour les membres du SG6 du [GT CNIG DDU](http://cnig.gouv.fr/?page_id=2732) pour leurs questions et leurs remarques.
+
 Une page Web [CNIG](http://cnig.gouv.fr/?page_id=25890) concernant le standard SRU est également disponible.

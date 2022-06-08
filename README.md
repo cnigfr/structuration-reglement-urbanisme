@@ -15,7 +15,6 @@ Le projet de standard CNIG SRU est disponible sur [le Github](https://github.com
 Le manuel opérateur permet de réaliser la structuration du réglement, il est disponible dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
 
  
-
-La section des issues et celle de la discussion sont disponibles pour les membres du SG6 du [GT CNIG DDU](http://cnig.gouv.fr/?page_id=2732) pour leurs questions et leurs remarques.
+La section des issues et celle de la discussion sont disponibles pour les membres du SG6 pour leurs questions et leurs remarques.
 
 

@@ -1,1 +1,1 @@
-Dépôt des schémas UML (enterprise Architect) et XML
+Dépôt des schémas UML (enterprise Architect) et XSD

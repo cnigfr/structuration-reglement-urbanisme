@@ -10,9 +10,9 @@ Ce projet vise à permettre à un logiciel d'extraire et exploiter les informati
 
 - Le deuxième niveau visera l'extraction des règles d'urbanisme associées (ex : marge de recul, etc.) et leurs paramètres (ex : 10m).
 
-Le projet de standard CNIG SRU est disponible sur [le Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard) et dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
+Le projet de standard CNIG SRU est disponible dans le [Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard) et dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
 
-Le manuel opérateur permet de réaliser la structuration du réglement, il est disponible dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
+Le manuel opérateur permet de réaliser la structuration du réglement, il est disponible dans le [Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/outils/Filtre_LibreOffice/Manuel%20op%C3%A9rateur) dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
 
  
 La section des issues et celle de la discussion sont disponibles pour les membres du SG6 pour leurs questions et leurs remarques.

@@ -45,7 +45,7 @@ La classe `ConditionUnitaire` définit une condition unitaire devant être véri
 - `BandeConstructibilite` : la contrainte s'applique sur une bande de constructibilité principale ou secondaire définie par une profondeur par rapport aux bordures donnant sur la voirie.
 - `SurfaceTerrain` : la contrainte s'applique si la superficie du terrain est comprise entre aireMin et aireMax
  
-[Commentaire : on pourra associer dans une version plus avancée les conditions et les contraintes à des schémas pour permettre une documentation : comme ce qui a été fait ici : https://simplu3d.github.io/plu-formel/registry/ ]
+[Commentaire : on pourra associer dans une version plus avancée les conditions et les contraintes à des schémas pour permettre une documentation : comme ce qui a été fait dans le [registre de règles SimPLU](https://simplu3d.github.io/plu-formel/registry/)]
 
 
 # Classe `ContrainteUnitaire`
@@ -64,8 +64,6 @@ La classe `ContrainteUnitaire` définit une contrainte à appliquer sur une parc
 
 # Implémentation dans un formalisme
 
-L'implémentation pourrait s'appuyer sur la proposition faite ici : https://simplu3d.github.io/plu-formel/ 
-Il s'agit de lier les éléments de contraintes et de conditions unitaires à des codes et des listes de paramètres associées.
-L'avantage de ce formalisme est de rendre possible et accessible la définition d'éléments unitaires personnalisés.
+L'implémentation pourrait s'appuyer sur la proposition faite ici : https://simplu3d.github.io/plu-formel/. Il s'agit de lier les éléments de contraintes et de conditions unitaires à des codes et des listes de paramètres associées. L'avantage de ce formalisme est de rendre possible et accessible la définition d'éléments unitaires personnalisés.
 
 

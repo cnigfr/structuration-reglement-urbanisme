@@ -35,7 +35,7 @@ Le standard CNIG SRU niveau 2 permet de modéliser ces conditions et ces contrai
 Comme plusieurs conditions et contraintes sont possibles, le chaînage permet d'associer plusieurs conditions et contraintes unitaires par un opérateur logique (ET, OU) pour former des règles, par exemple sous cette forme :
 condition1 ET condition2 OU condition 3 implique contrainte1 ET contrainte2 OU contrainte3
 
-# Classe `ConditionUnitaire`
+# Classe ConditionUnitaire
 
 La classe `ConditionUnitaire` définit une condition unitaire devant être vérifiée pour que la contrainte s'applique. La classe `ConditionUnitaire` est abstraite, différentes classes peuvent l'instancier et prendre la forme de différentes conditions :
 
@@ -48,7 +48,7 @@ La classe `ConditionUnitaire` définit une condition unitaire devant être véri
 [Commentaire : on pourra associer dans une version plus avancée les conditions et les contraintes à des schémas pour permettre une documentation : comme ce qui a été fait dans le [registre de règles SimPLU](https://simplu3d.github.io/plu-formel/registry/)]
 
 
-# Classe `ContrainteUnitaire`
+# Classe ContrainteUnitaire
 
 La classe `ContrainteUnitaire` définit une contrainte à appliquer sur une parcelle. Les contraintes unitaires ont quelques attributs associés comme un **nom** qui peut reprendre une partie du texte et un **type** qui spécifie le type de contrainte concerné (par exemple, basé sur le nom de classe). Il s'agit d'une classe abstraite qui peut avoir différentes implémentations :
 

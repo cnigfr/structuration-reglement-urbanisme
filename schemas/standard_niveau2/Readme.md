@@ -12,15 +12,15 @@ Le contenu d'un article de règlement d'urbanisme se décompose en règles struc
 
 Si l'on prend le réglement d'un PLU en exemple, nous aurons les éléments suivants codés dans les niveaux 1 et 2 : 
 
-- Plan Local d'Urbanisme de Strabourg => classe `ReglementPLU` (cf. standard CNIG SRU niveau 1)
+- Plan Local d'Urbanisme de Strabourg => classe `ReglementPLU` (cf. [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard))
 
 Cela se traduit en JSON par `{id=uri, nom=Règlement PLU de Strasbourg, lien=url}`
 
 - Article 6 – **Implantation des constructions par rapport aux voies et emprises publiques ou privées** classe `Titre`
 
-Cela se traduit en JSON par `{id=uri, intitule=Implantation des constructions par rapport aux voies et emprises publiques ou privées, niveau=1, numero=6, href=id}`  (cf. standard niveau 1)
+Cela se traduit en JSON par `{id=uri, intitule=Implantation des constructions par rapport aux voies et emprises publiques ou privées, niveau=1, numero=6, href=id}`  (cf. [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard))
 
-- "Dans  la  zone CEN UB 44, en bordure  de la  rue Georges Wodli  et du  boulevard du  Président Wilson, la  hauteur maximum  mesurée à l’égout principal  des  toitures  sera de  20 mètres sur une profondeur  de  30 mètres  à compter de  l’alignement  de ces  voies." classe `Contenu` (standard niveau 1)
+- "Dans  la  zone CEN UB 44, en bordure  de la  rue Georges Wodli  et du  boulevard du  Président Wilson, la  hauteur maximum  mesurée à l’égout principal  des  toitures  sera de 20 mètres sur une profondeur de 30 mètres à compter de l’alignement de ces voies." classe `Contenu` ([standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard))
 
 Cela se traduit en JSON par `{id=URI, href=URI}` et est lié à un objet de la classe `RegleStructure` (standard CNIG SRU niveau 2). 
 

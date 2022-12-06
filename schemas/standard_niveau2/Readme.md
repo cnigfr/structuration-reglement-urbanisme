@@ -1,4 +1,4 @@
-# Modèlisation des règles d'urbanisme dans le standard CNIG SRU niveau 2
+# Modélisation des règles d'urbanisme dans le standard CNIG SRU niveau 2
 
 L'objectif de ce document est de présenter comment les règles du standard SRU de niveau 2 s'implémentent dans le modèle.
 

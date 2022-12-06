@@ -2,7 +2,7 @@
 
 L'objectif de ce document est de présenter comment les règles du standard SRU de niveau 2 s'implémentent dans le modèle.
 
-Le modèle s'appuie sur les classes du standard SRU de niveau 1 (les deux premières "colonnes" dans le schéma UML) en l'enrichissant au niveau de la classe `Contenu`.
+Le modèle s'appuie sur les classes du [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard) (les deux premières "colonnes" dans le schéma UML) en l'enrichissant au niveau de la classe `Contenu`.
 
 # Règle structurée
 

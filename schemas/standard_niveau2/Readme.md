@@ -1,13 +1,14 @@
-# Proposition d'un modèle de règles pour le standard 2
+# Modèlisation des règles d'urbanisme dans le standard CNIG SRU niveau 2
 
 L'objectif de ce document est de présenter comment les règles du standard SRU de niveau 2 s'implémentent dans le modèle.
-Le modèle s'appuie sur les classes du standard SRU de niveau 1 (les deux premières "colonnes") en l'enrichissant au niveau de la classe `Contenu`.
+
+Le modèle s'appuie sur les classes du standard SRU de niveau 1 (les deux premières "colonnes" dans le schéma UML) en l'enrichissant au niveau de la classe `Contenu`.
 
 # Règle structurée
 
 ## Principe de base
 
-Le contenu d'un article de règlement d'urbanisme se décompose en règles structurées. C'est à dire que pour l'ensemble du texte d'un contenu d'article, des règles structurées seront associées.
+Le contenu d'un article de règlement d'urbanisme se décompose en règles structurées. C'est à dire que pour l'ensemble du texte d'un contenu d'article de règlement d'urbanisme, des règles structurées seront associées.
 
 Si l'on prend le réglement d'un PLU en exemple, nous aurons les éléments suivants codés dans les niveaux 1 et 2 : 
 
@@ -15,7 +16,7 @@ Si l'on prend le réglement d'un PLU en exemple, nous aurons les éléments suiv
 
 Cela se traduit en JSON par `{id=uri, nom=Règlement PLU de Strasbourg, lien=url}`
 
-- Article 6 – **Implantation des constructions par rapport aux voies et emprises publiques ou privées** classe titre
+- Article 6 – **Implantation des constructions par rapport aux voies et emprises publiques ou privées** classe `Titre`
 
 Cela se traduit en JSON par `{id=uri, intitule=Implantation des constructions par rapport aux voies et emprises publiques ou privées, niveau=1, numero=6, href=id}`  (cf. standard niveau 1)
 
@@ -23,7 +24,7 @@ Cela se traduit en JSON par `{id=uri, intitule=Implantation des constructions pa
 
 Cela se traduit en JSON par `{id=URI, href=URI}` et est lié à un objet de la classe `RegleStructure` (standard CNIG SRU niveau 2). 
 
-La règle textuelle contient deux parties, une partie avec une **condtion** ("Dans  la  zone CEN UB 44,  en bordure  de la  rue Georges Wodli  et du  boulevard du  Président Wilson") qui doit être vérifiée pour que la **contrainte**  ("la  hauteur maximum  mesurée à l’égout principal  des  toitures  sera de  20 mètres sur une profondeur  de  30 mètres  à compter de  l’alignement  de ces  voies") s'applique.
+La règle littérale contient deux parties, une partie avec une **condition** ("Dans la  zone CEN UB 44, en bordure de la rue Georges Wodli et du boulevard du  Président Wilson") qui doit être vérifiée pour que la **contrainte**  ("la  hauteur maximum  mesurée à l’égout principal des toitures sera de 20 mètres sur une profondeur de 30 mètres à compter de l’alignement de ces voies") s'applique.
 
 Le standard CNIG SRU niveau 2 permet de modéliser ces conditions et ces contraintes.
 

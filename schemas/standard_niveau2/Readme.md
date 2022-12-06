@@ -64,6 +64,6 @@ La classe `ContrainteUnitaire` définit une contrainte à appliquer sur une parc
 
 # Implémentation dans un formalisme
 
-L'implémentation pourrait s'appuyer sur la proposition faite ici : https://simplu3d.github.io/plu-formel/. Il s'agit de lier les éléments de contraintes et de conditions unitaires à des codes et des listes de paramètres associées. L'avantage de ce formalisme est de rendre possible et accessible la définition d'éléments unitaires personnalisés.
+L'implémentation pourrait s'appuyer sur la proposition faite dans le [Registre de règles SimPLU3D](https://simplu3d.github.io/plu-formel/). Il s'agit de lier les éléments de contraintes et de conditions unitaires à des codes et des listes de paramètres associées. L'avantage de ce formalisme est de rendre possible et accessible la définition d'éléments unitaires personnalisés.
 
 

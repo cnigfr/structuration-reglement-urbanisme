@@ -29,7 +29,7 @@ La règle littérale contient deux parties, une partie avec une **condition** ("
 
 Le standard CNIG SRU niveau 2 permet de modéliser ces conditions et ces contraintes.
 
-Étant donné le lien entre les classes, les règles structurées sont associées à un numéro d'article, lui même associé soit à une zone d'urbanisme, soit aux disposiotions générales concernant toutes les zones d'urbanisme.
+Étant donné le lien entre les classes, les règles structurées sont associées à un numéro d'article, lui même associé soit à une zone d'urbanisme, soit aux dispositions générales concernant toutes les zones d'urbanisme.
 
 ## Chaînage
 

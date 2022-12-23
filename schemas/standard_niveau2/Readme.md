@@ -67,7 +67,7 @@ La classe `ContrainteUnitaire` définit une contrainte à appliquer sur une parc
 
 L'implémentation pourrait s'appuyer sur la proposition faite dans le [Registre de règles SimPLU3D](https://simplu3d.github.io/plu-formel/). Il s'agit de lier les éléments de contraintes et de conditions unitaires à des codes et des listes de paramètres associées. L'avantage de ce formalisme est de rendre possible et accessible la définition d'éléments unitaires personnalisés.
 
-# Modélisation graphique
+# Modèle conceptuel de données sous forme graphique
 
 <img src=https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/221223_MCD_SRU_niv2.png width='100%' align=center>
 

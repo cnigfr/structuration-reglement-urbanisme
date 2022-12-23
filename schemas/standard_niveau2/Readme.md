@@ -2,7 +2,7 @@
 
 L'objectif de ce document est de présenter comment les règles du standard SRU de niveau 2 s'implémentent dans le modèle.
 
-Le modèle s'appuie sur les classes du [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard) (les deux premières "colonnes" dans le schéma UML) en l'enrichissant au niveau de la classe `Contenu`.
+Le modèle s'appuie sur les classes du [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1) (les deux premières "colonnes" dans le schéma UML) en l'enrichissant au niveau de la classe `Contenu`.
 
 # Règle structurée
 
@@ -12,16 +12,16 @@ Le contenu d'un article de règlement d'urbanisme se décompose en règles struc
 
 Si l'on prend le réglement d'un PLU en exemple, nous aurons les éléments suivants codés dans les niveaux 1 et 2 : 
 
-- Plan Local d'Urbanisme de Strabourg => classe `ReglementPLU` (cf. [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard))
+- Plan Local d'Urbanisme de Strabourg => classe `ReglementPLU` (cf. [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1))
 
 Cela se traduit en JSON par :
 `{id="246700488_reglement_20210625",nom="Règlement du PLUi de l'Eurométropole de STRASBOURG",typeDoc="PLUI",lien=https://www.geoportail-urbanisme.gouv.fr/document/by-id/bbe0a6f433efa7e20b2753e39b40cad4, idUrba="246700488_PLUI_20210625"}`
 
 - Article 6 – **Implantation des constructions par rapport aux voies et emprises publiques ou privées** classe `Titre`
 
-Cela se traduit en JSON par `{id=uri, intitule=Implantation des constructions par rapport aux voies et emprises publiques ou privées, niveau=1, numero=6, href=id}`  (cf. [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard))
+Cela se traduit en JSON par `{id=uri, intitule=Implantation des constructions par rapport aux voies et emprises publiques ou privées, niveau=1, numero=6, href=id}`  (cf. [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1))
 
-- "Dans  la  zone CEN UB 44, en bordure  de la  rue Georges Wodli  et du  boulevard du  Président Wilson, la  hauteur maximum  mesurée à l’égout principal  des  toitures  sera de 20 mètres sur une profondeur de 30 mètres à compter de l’alignement de ces voies." classe `Contenu` ([standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard))
+- "Dans  la  zone CEN UB 44, en bordure  de la  rue Georges Wodli  et du  boulevard du  Président Wilson, la  hauteur maximum  mesurée à l’égout principal  des  toitures  sera de 20 mètres sur une profondeur de 30 mètres à compter de l’alignement de ces voies." classe `Contenu` ([standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1))
 
 Cela se traduit en JSON par `{id=URI, href=URI}` et est lié à un objet de la classe `RegleStructure` (standard CNIG SRU niveau 2). 
 

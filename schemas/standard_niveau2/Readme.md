@@ -13,7 +13,7 @@ Dans le standard SRU de niveau 2,  le contenu d'un article de règlement d'urban
 Prenons un extrait de règlement de PLU et analysons sa traduction suivant les niveaux 1 et 2 du standard SRU.
 
 
-### L'exemple :
+## Un exemple :
 
 ***Plan Local d'Urbanisme de Strabourg***
 
@@ -21,7 +21,7 @@ Prenons un extrait de règlement de PLU et analysons sa traduction suivant les n
 
 ***Dans  la  zone CEN UB 44, en bordure  de la  rue Georges Wodli  et du  boulevard du  Président Wilson, la  hauteur maximum  mesurée à l’égout principal  des  toitures  sera de 20 mètres sur une profondeur de 30 mètres à compter de l’alignement de ces voies.***
 
-### Traduction dans le [standard SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1) :
+## Traduction dans le [standard SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1) :
 
 Plan Local d'Urbanisme de Strabourg => classe `ReglementPLU`
 
@@ -40,7 +40,7 @@ En JSON, le contenu de cet règle se traduit par un simple paragraphe dans la cl
 
 Étant donné le lien entre les classes, les contenus sont associées à un numéro d'article, lui même associé soit à une zone d'urbanisme, soit aux dispositions générales concernant toutes les zones d'urbanisme.
 
-### Traduction dans le standard SRU de niveau 2 :
+## Traduction dans le standard SRU de niveau 2 :
 
 Les descriptions du règlement, de l'article 6 et de l'énoncé de la règle d'urbanisme sont inchangées => classes `ReglementPLU`, `Titre` et `Contenu`
 

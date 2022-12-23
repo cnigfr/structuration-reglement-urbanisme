@@ -69,5 +69,7 @@ L'implémentation pourrait s'appuyer sur la proposition faite dans le [Registre 
 
 # Modélisation graphique
 
-https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/221223_MCD_SRU_niv2.png
+<img src=https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/221223_MCD_SRU_niv2.png width='100%' align=center>
+
+
 

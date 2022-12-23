@@ -14,7 +14,8 @@ Si l'on prend le réglement d'un PLU en exemple, nous aurons les éléments suiv
 
 - Plan Local d'Urbanisme de Strabourg => classe `ReglementPLU` (cf. [standard CNIG SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard))
 
-Cela se traduit en JSON par `{id=uri, nom=Règlement PLU de Strasbourg, lien=url}`
+Cela se traduit en JSON par :
+`{id="246700488_reglement_20210625",nom="Règlement du PLUi de l'Eurométropole de STRASBOURG",typeDoc="PLUI",lien=https://www.geoportail-urbanisme.gouv.fr/document/by-id/bbe0a6f433efa7e20b2753e39b40cad4, idUrba="246700488_PLUI_20210625"}`
 
 - Article 6 – **Implantation des constructions par rapport aux voies et emprises publiques ou privées** classe `Titre`
 

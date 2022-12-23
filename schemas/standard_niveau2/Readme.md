@@ -63,13 +63,13 @@ La classe `ContrainteUnitaire` définit une contrainte à appliquer sur une parc
 	- **Retrait** : un retrait par rapport à la référence qui peut autoriser ou non les alignements. Le retrait peut être minimal ou maximal
 	- **RetraitFacadeHauteur** qui s'appliquent sur toutes les façades, celles avec ou sans vue. Ce retrait se fait suivant un prospect défini par une pente et un recul minimal.
 
-# Implémentation dans un formalisme
-
-L'implémentation pourrait s'appuyer sur la proposition faite dans le [Registre de règles SimPLU3D](https://simplu3d.github.io/plu-formel/). Il s'agit de lier les éléments de contraintes et de conditions unitaires à des codes et des listes de paramètres associées. L'avantage de ce formalisme est de rendre possible et accessible la définition d'éléments unitaires personnalisés.
 
 # Modèle conceptuel de données sous forme graphique
 
 <img src=https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/221223_MCD_SRU_niv2.png width='100%' align=center>
 
 
+# Implémentation dans un formalisme
+
+L'implémentation pourrait s'appuyer sur la proposition faite dans le [Registre de règles SimPLU3D](https://simplu3d.github.io/plu-formel/). Il s'agit de lier les éléments de contraintes et de conditions unitaires à des codes et des listes de paramètres associées. L'avantage de ce formalisme est de rendre possible et accessible la définition d'éléments unitaires personnalisés.
 

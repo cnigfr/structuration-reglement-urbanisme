@@ -18,3 +18,7 @@ Le manuel opérateur permet de réaliser la structuration du réglement, il est 
 La section des issues et celle de la discussion sont disponibles pour les membres du SG6 pour leurs questions et leurs remarques.
 
 
+
+La section des issues et celle de la discussion sont disponibles pour les membres du SG pour leurs questions et leurs remarques.
+Une page Web [CNIG](http://cnig.gouv.fr/?page_id=25890) concernant le standard SRU est également disponible.
+

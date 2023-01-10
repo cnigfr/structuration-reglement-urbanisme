@@ -23,7 +23,7 @@ Prenons un extrait de règlement de PLU et analysons sa traduction suivant les n
 
 ## Traduction dans le [standard SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1) :
 
-Plan Local d'Urbanisme de Strabourg => classe `ReglementPLU`
+Plan Local d'Urbanisme de Strasbourg => classe `ReglementPLU`
 
 Cela se traduit en JSON par :
 `{id="246700488_reglement_20210625",nom="Règlement du PLUi de l'Eurométropole de STRASBOURG",typeDoc="PLUI",lien=https://www.geoportail-urbanisme.gouv.fr/document/by-id/bbe0a6f433efa7e20b2753e39b40cad4, idUrba="246700488_PLUI_20210625"}`

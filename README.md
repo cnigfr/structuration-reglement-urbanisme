@@ -20,7 +20,7 @@ Pour l'expérimentation du standard SRU de niveau 1, deux outils ont été déve
 
 - Le second est un outil de saisie web accessible via le [Github de l'IGN](https://ignf.github.io/cnig-sg6-demo). Il y également possible d'y accéder directement via ce [lien](https://ignf.github.io/cnig-sg6-demo/examples/). [Un manuel opérateur](https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/standard_niveau_1/Outil_Web_%C3%A9dition_niveau_1/230302_Manuel%20op%C3%A9rateur%20outil%20de%20saisie%20web_v1.pdf) décrivant les différentes fonctionnalités de l'outil et les bonnes pratiques pour son utilisation. Une section des [issues](https://github.com/IGNF/cnig-sg6-demo/issues) est disponible à enfin de faire remonter les dysfonctionnements éventuels de l'outil.
  
-La section des issues et celle de la discussion sur ce GitHub permettent aux membres du SG6 de déposer leurs questions et leurs remarques.
+La section des [issues](https://github.com/cnigfr/structuration-reglement-urbanisme/issues) et celle de la discussion sur ce GitHub permettent aux membres du SG6 de déposer leurs questions et leurs remarques.
 
 
 

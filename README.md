@@ -10,15 +10,17 @@ Ce projet vise à permettre à un logiciel d'extraire et exploiter les informati
 
 - Le [deuxième niveau](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/schemas/standard_niveau2) vise l'extraction des règles d'urbanisme associées (ex : marge de recul, etc.) et leurs paramètres (ex : 10m).
 
-Le projet de standard CNIG SRU est disponible dans le [Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard) et dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
+La version définitive du standard CNIG SRU (niveau 1) est disponible dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing) du SG6 et sur le [portail du CNIG](http://cnig.gouv.fr/IMG/pdf/230112_standard_cnig_sru_v2022-10.pdf).
 
-Le manuel opérateur permet de réaliser la structuration du réglement, il est disponible dans le [Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/outils/Filtre_LibreOffice/Manuel%20op%C3%A9rateur) dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
+Le projet du standard SRU (niveau 2) est disponible sur le Github. 
 
+Pour l'expérimentation du standard SRU de niveau 1, deux outils ont été développés. 
+
+- Le premier est disponible sous la forme d'un fichier de libreOffice disponible sur le Github. Le manuel opérateur permet de réaliser la structuration du réglement, il est disponible dans le [Github](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/outils/Filtre_LibreOffice/Manuel%20op%C3%A9rateur) dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing).
+
+- Le second est un outil de saisie web accessible via le [Github de l'IGN](https://ignf.github.io/cnig-sg6-demo). Il y également possible d'y accéder directement via ce [lien](https://ignf.github.io/cnig-sg6-demo/examples/). [Un manuel opérateur](https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/standard_niveau_1/Outil_Web_%C3%A9dition_niveau_1/230302_Manuel%20op%C3%A9rateur%20outil%20de%20saisie%20web_v1.pdf) décrivant les différentes fonctionnalités de l'outil et les bonnes pratiques pour son utilisation. Une section des issues est disponible à enfin de faire remonter les dysfonctionnements éventuels de l'outil.
  
-La section des issues et celle de la discussion sont disponibles pour les membres du SG6 pour leurs questions et leurs remarques.
+La section des issues et celle de la discussion sur ce GitHub permettent aux membres du SG6 de déposer leurs questions et leurs remarques.
 
 
-
-La section des issues et celle de la discussion sont disponibles pour les membres du SG pour leurs questions et leurs remarques.
-Une page Web [CNIG](http://cnig.gouv.fr/?page_id=25890) concernant le standard SRU est également disponible.
 

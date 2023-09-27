@@ -10,6 +10,8 @@ Ce projet vise à permettre à un logiciel d'extraire et exploiter les informati
 
 - Le [deuxième niveau](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/schemas/standard_niveau2) vise l'extraction des règles d'urbanisme associées (ex : marge de recul, etc.) et leurs paramètres (ex : 10m).
 
+Une [présentation globale du projet](https://drive.google.com/file/d/1tt5zETKcVkC5FmRoV7Ln8-ucSNYx-QQx/view?usp=sharing) a été faite au séminaire GPU de mai 2023
+
 La version définitive du standard CNIG SRU (niveau 1) est disponible dans [le drive](https://drive.google.com/drive/folders/1roIrTo9kGWws8XzGni8eHfA6vgNtArYF?usp=sharing) du SG6 et sur le [portail du CNIG](http://cnig.gouv.fr/IMG/pdf/230112_standard_cnig_sru_v2022-10.pdf).
 
 Le projet du standard SRU (niveau 2) est disponible sur le Github. 

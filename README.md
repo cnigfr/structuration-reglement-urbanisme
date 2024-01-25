@@ -1,7 +1,8 @@
 # Structuration du réglement urbanisme
-_structuration-reglement-urbanisme_ est le dépôt des fichiers des travaux du [sous-groupe 6 (SG6)](http://cnig.gouv.fr/?page_id=25890) du [GT CNIG DDU](http://cnig.gouv.fr/?page_id=2732).
+_structuration-reglement-urbanisme_ est le dépôt des fichiers des travaux du [sous-groupe 6 (SG6)](https://cnig.gouv.fr/structuration-des-reglements-d-urbanisme-a25890.html) du [GT CNIG DDU](https://cnig.gouv.fr/gt-ddu-a2918.html).
 
-Le [mandat du SG6](http://cnig.gouv.fr/wp-content/uploads/2020/11/200527_Mandat-SG6-du-GT-DDU_v1.3.pdf) et les [compte-rendus de réunions](http://cnig.gouv.fr/?page_id=25890) sont disponibles sur le drive.
+- Le [mandat du SG6](https://cnig.gouv.fr/IMG/documents_wordpress/2020/11/200527_Mandat-SG6-du-GT-DDU_v1.3.pdf) 
+- Les [compte-rendus de réunions](https://cnig.gouv.fr/structuration-des-reglements-d-urbanisme-a25890.html), également disponibles [sur le drive](https://drive.google.com/drive/folders/1NMfohWj4VfN_0fXXWsxuO1rkzbZqr97i?usp=sharing).
 
 ## **Le projet de standard Structuration du règlement d'urbanisme (SRU)**
 Ce projet vise à permettre à un logiciel d'extraire et exploiter les informations d'un règlement suivant ses articles et paragraphes.

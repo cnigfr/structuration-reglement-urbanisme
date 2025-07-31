@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlxs="http://www.w3.org/2001/XMLSchema" xmlxlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml" targetNamespace="https://cnig.gouv.fr/structuration-des-reglements-d-urbanisme-a25890.html" elementFormDefault="qualified">
+	
+<xs:element name="StructurationReglementNiveau2">
+		<xs:annotation>
+			<xs:documentation>Contient le règlement de Niveau 2 sur la structuration des rélgments d'urbanisme</xs:documentation>
+		</xs:annotation>
+	<xs:element name="Alignement" type="AlignementType" substitutionGroup="RetraitAlignement"/>
+	<xs:complexType name="AlignementType">
+		<xs:complexContent>
+			<xs:extension base="RetraitAlignementType">
+				<xs:sequence>
+					<xs:element name="alignement">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeAlignement"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="idAli" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AlignementPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Alignement"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="AspectExterieur" type="AspectExterieurType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="AspectExterieurType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="abords" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="facade" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="materiauxCouleurs" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="ouvertures" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="ouvragesSaillie" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="toitures" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AspectExterieurPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="AspectExterieur"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Autorisation" type="AutorisationType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="AutorisationType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="existReserve" type="xs:boolean" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="idAut" type="xs:string"/>
+					<xs:element name="reserve" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AutorisationPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Autorisation"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="BandeConstructibilite" type="BandeConstructibiliteType" substitutionGroup="Condition"/>
+	<xs:complexType name="BandeConstructibiliteType">
+		<xs:complexContent>
+			<xs:extension base="ConditionType">
+				<xs:sequence>
+					<xs:element name="bandeConstructibilite" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeBandeConstructibilite"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="idBcons" type="xs:string"/>
+					<xs:element name="profondeurDebut" type="xs:double"/>
+					<xs:element name="profondeurFin" type="xs:double"/>
+					<xs:element name="reference" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeReference"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="BandeConstructibilitePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="BandeConstructibilite"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="CES" type="CESType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="CESType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="idCes" type="xs:string"/>
+					<xs:element name="ratioMax" type="xs:double"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CESPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="CES"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="ChampApplication" type="ChampApplicationType" substitutionGroup="Condition"/>
+	<xs:complexType name="ChampApplicationType">
+		<xs:complexContent>
+			<xs:extension base="ConditionType">
+				<xs:sequence>
+					<xs:element name="idCa" type="xs:string"/>
+					<xs:element name="reference" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeReference"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ChampApplicationPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="ChampApplication"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Cloture" type="ClotureType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="ClotureType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="hMassif" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="hMax" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="hMaxMurBahut" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="idClot" type="xs:string"/>
+					<xs:element name="permeabiliteMax" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CloturePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Cloture"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="CoefficientBiotope" type="CoefficientBiotopeType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="CoefficientBiotopeType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="coeffEspaceVegatalise" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="coeffParking" type="xs:double" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="coeffPleineTerre" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="coeffToitVegetal" type="xs:double" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="idCoefB" type="xs:string"/>
+					<xs:element name="typeSurfaceCalcule" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CoefficientBiotopePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="CoefficientBiotope"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Condition" type="ConditionType" abstract="true" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="ConditionType" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence>
+					<xs:element name="categorieCondition" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="commentaire" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="idCdt">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="xs:anyURI"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="libelle" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ConditionPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Condition"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Contrainte" type="ContrainteType" abstract="true" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="ContrainteType" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence>
+					<xs:element name="categorieContrainte" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="commentaire" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="idCtu">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="xs:anyURI"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="libelle" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ContraintePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Contrainte"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="ContrainteUnitaireSpecifique" type="ContrainteUnitaireSpecifiqueType" substitutionGroup="Condition"/>
+	<xs:complexType name="ContrainteUnitaireSpecifiqueType">
+		<xs:complexContent>
+			<xs:extension base="ConditionType">
+				<xs:sequence>
+					<xs:element name="idCtusp" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ContrainteUnitaireSpecifiquePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="ContrainteUnitaireSpecifique"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="DimensionParcelle" type="DimensionParcelleType" substitutionGroup="Condition"/>
+	<xs:complexType name="DimensionParcelleType">
+		<xs:complexContent>
+			<xs:extension base="ConditionType">
+				<xs:sequence>
+					<xs:element name="aireMax" type="xs:double"/>
+					<xs:element name="aireMin" type="xs:double"/>
+					<xs:element name="idDimenParc" type="xs:string"/>
+					<xs:element name="largeur" type="xs:double"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DimensionParcellePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="DimensionParcelle"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Hauteur" type="HauteurType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="HauteurType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="idHaut" type="xs:string"/>
+					<xs:element name="typeZmax" type="xs:string"/>
+					<xs:element name="typeZminn" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="HauteurPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Hauteur"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Interdiction" type="InterdictionType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="InterdictionType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="existReserve" type="xs:boolean" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="idInt" type="xs:string"/>
+					<xs:element name="reserve" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="InterdictionPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Interdiction"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="OperateurLogique" type="OperateurLogiqueType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="OperateurLogiqueType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence>
+					<xs:element name="operator">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="AND_OR"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="OperateurLogiquePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="OperateurLogique"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="OperateurLogique" type="OperateurLogiqueType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="OperateurLogiqueType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence>
+					<xs:element name="operator">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="OR_AND"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="OperateurLogiquePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="OperateurLogique"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Regle" type="RegleType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="RegleType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence>
+					<xs:element name="idRegle">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="xs:anyURI"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ReglePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Regle"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Retrait" type="RetraitType" substitutionGroup="RetraitAlignement"/>
+	<xs:complexType name="RetraitType">
+		<xs:complexContent>
+			<xs:extension base="RetraitAlignementType">
+				<xs:sequence>
+					<xs:element name="distance" type="xs:double"/>
+					<xs:element name="idRet" type="xs:string"/>
+					<xs:element name="rMax" type="xs:double" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="rMin" type="xs:double" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="type" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeRetrait"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RetraitPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Retrait"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="RetraitAlignement" type="RetraitAlignementType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="RetraitAlignementType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="idRetAl" type="xs:string"/>
+					<xs:element name="reference" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeReference"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RetraitAlignementPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="RetraitAlignement"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="RetraitFacadeHauteur" type="RetraitFacadeHauteurType" substitutionGroup="RetraitAlignement"/>
+	<xs:complexType name="RetraitFacadeHauteurType">
+		<xs:complexContent>
+			<xs:extension base="RetraitAlignementType">
+				<xs:sequence>
+					<xs:element name="idRetFaH" type="xs:string"/>
+					<xs:element name="pente" type="xs:double"/>
+					<xs:element name="retraitMin" type="xs:double"/>
+					<xs:element name="typeFacade" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeFacade"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RetraitFacadeHauteurPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="RetraitFacadeHauteur"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="Stationnement" type="StationnementType" substitutionGroup="Contrainte"/>
+	<xs:complexType name="StationnementType">
+		<xs:complexContent>
+			<xs:extension base="ContrainteType">
+				<xs:sequence>
+					<xs:element name="destinationType" type="xs:integer" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dimensionPlace" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="idStat" type="xs:string"/>
+					<xs:element name="modeCalcul" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeModeCalcul"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="nombrePlaceVelo" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="nombrePlaceVoitures" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StationnementPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Stationnement"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeBatiment" type="TypeBatimentType" substitutionGroup="Condition"/>
+	<xs:complexType name="TypeBatimentType">
+		<xs:complexContent>
+			<xs:extension base="ConditionType">
+				<xs:sequence>
+					<xs:element name="destinationType" type="xs:integer" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="hMax" type="xs:double" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="hMin" type="xs:double" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="idTypeBa" type="xs:string"/>
+					<xs:element name="typeLogement" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeLogement"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeBatimentPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeBatiment"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="VoirieBordante" type="VoirieBordanteType" substitutionGroup="Condition"/>
+	<xs:complexType name="VoirieBordanteType">
+		<xs:complexContent>
+			<xs:extension base="ConditionType">
+				<xs:sequence>
+					<xs:element name="idVoiBo" type="xs:string"/>
+					<xs:element name="largueurVoirie" minOccurs="0" maxOccurs="1">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="hy-p:WidthRange"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="nom" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="reference" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeReference"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="voirie" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="gml:AbstractMemberType">
+									<xs:sequence>
+										<xs:element ref="TypeVoirie"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="VoirieBordantePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="VoirieBordante"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeAlignement" type="TypeAlignementType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeAlignementType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeAlignementPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeAlignement"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeBandeConstructibilite" type="TypeBandeConstructibiliteType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeBandeConstructibiliteType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeBandeConstructibilitePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeBandeConstructibilite"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeFacade" type="TypeFacadeType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeFacadeType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeFacadePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeFacade"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeLogement" type="TypeLogementType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeLogementType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeLogementPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeLogement"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeModeCalcul" type="TypeModeCalculType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeModeCalculType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeModeCalculPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeModeCalcul"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeReference" type="TypeReferenceType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeReferenceType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeReferencePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeReference"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeRetrait" type="TypeRetraitType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeRetraitType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeRetraitPropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeRetrait"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+	<xs:element name="TypeVoirie" type="TypeVoirieType" substitutionGroup="gml:AbstractGML"/>
+	<xs:complexType name="TypeVoirieType">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractGMLType">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TypeVoiriePropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="TypeVoirie"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

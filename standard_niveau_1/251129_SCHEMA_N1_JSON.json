@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cnig.gouv.fr/sru/niveau1/SCHEMA_N1_JSON.json",
+  "title": "Standard CNIG SRU Niveau 1 — Règlement d’urbanisme (JSON)",
+  "type": "object",
+  "$ref": "#/$defs/ReglementDU",
+  "$defs": {
+    "TypeDocEnum": {
+      "type": "string",
+      "enum": ["PLU", "PLUI"],
+      "description": "Type du document d’urbanisme."
+    },
+    "InseeCode": {
+      "type": "string",
+      "pattern": "^[0-9A-Z]{5}$",
+      "description": "Code INSEE commune (5 caractères alphanumériques, ex : 75056, 2A004)"
+    },
+    "SIREN": {
+      "type": "string",
+      "pattern": "^\\d{9}$",
+      "description": "SIREN intercommunalité (9 chiffres)"
+    },
+    "ZoneLibelle": {
+      "type": "string",
+      "pattern": "^(porteeGenerale|[A-Za-z0-9]+)$",
+      "description": "Libellé de ZONE_URBA (ex: UG, UE2, 1AU) ou 'porteeGenerale'"
+    },
+    "PrescriptionCode": {
+      "type": "string",
+      "pattern": "^(nonConcerne|00-00|00-00-00|[0-9]{2}-[0-9]{2}(-[A-Za-z0-9_]+)?)$",
+      "description": "Code prescription ou valeurs spéciales"
+    },
+    "IdURI": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_./:-]+$",
+      "description": "Identifiant style URI/chemin (idReglement/idTitre/idContenu)"
+    },
+    "HtmlNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tag": {
+          "type": "string",
+          "enum": [
+            "div",
+            "p",
+            "span",
+            "ul",
+            "ol",
+            "li",
+            "em",
+            "strong",
+            "table",
+            "tr",
+            "td",
+            "a",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "br",
+            "img"
+          ]
+        },
+        "attrs": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "href": { "type": "string", "format": "uri" },
+            "src": { "type": "string", "format": "uri" },
+            "alt": { "type": "string", "maxLength": 500 },
+            "style": {
+              "type": "string",
+              "pattern": "^\\s*text-decoration\\s*:\\s*underline\\s*;?\\s*$",
+              "description": "Uniquement autorisé pour souligner le texte."
+            }
+          }
+        },
+        "text": {
+          "type": "string",
+          "description": "Texte brut si nœud feuille."
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "anyOf": [{ "$ref": "#/$defs/HtmlNode" }, { "type": "string" }]
+          }
+        }
+      },
+      "required": ["tag"]
+    },
+    "ReglementDU": {
+      "type": "object",
+      "title": "ReglementDU",
+      "properties": {
+        "idReglement": { "$ref": "#/$defs/IdURI" },
+        "nom": { "type": "string", "minLength": 1 },
+        "typeDoc": { "$ref": "#/$defs/TypeDocEnum" },
+        "lien": { "type": "string", "format": "uri" },
+        "idUrba": { "type": "string", "minLength": 1 },
+        "inseeCommune": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/InseeCode" }
+        },
+        "sirenIntercomm": { "$ref": "#/$defs/SIREN" },
+        "titre": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Titre" }
+        }
+      },
+      "required": [
+        "idReglement",
+        "nom",
+        "typeDoc",
+        "lien",
+        "idUrba",
+        "titre",
+        "inseeCommune"
+      ],
+      "additionalProperties": false
+    },
+    "Titre": {
+      "type": "object",
+      "title": "Titre",
+      "additionalProperties": false,
+      "properties": {
+        "idTitre": { "$ref": "#/$defs/IdURI" },
+        "intitule": { "type": "string", "minLength": 1 },
+        "niveau": { "type": "integer", "minimum": 1 },
+        "numero": { "type": "string" },
+        "idZone": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/ZoneLibelle" }
+        },
+        "idPrescription": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/PrescriptionCode" }
+        },
+        "inseeCommune": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/InseeCode" }
+        },
+        "contenu": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Contenu" }
+        },
+        "titre": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Titre" },
+          "description": "Sous-titres (récursif)."
+        }
+      },
+      "required": [
+        "idTitre",
+        "intitule",
+        "niveau",
+        "idZone",
+        "idPrescription",
+        "inseeCommune",
+        "contenu"
+      ]
+    },
+    "Contenu": {
+      "type": "object",
+      "title": "Contenu",
+      "properties": {
+        "idContenu": { "$ref": "#/$defs/IdURI" },
+        "idZone": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/ZoneLibelle" }
+        },
+        "idPrescription": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/PrescriptionCode" }
+        },
+        "html": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "anyOf": [{ "$ref": "#/$defs/HtmlNode" }, { "type": "string" }]
+          }
+        }
+      },
+      "required": ["idContenu", "idZone", "idPrescription", "html"],
+      "additionalProperties": false
+    }
+  }
+}

@@ -12,7 +12,7 @@
     },
     "InseeCode": {
       "type": "string",
-      "pattern": "^[0-9A-Z]{5}$",
+      "pattern": "^(2[AB]\d{3}|\d{5})$",
       "description": "Code INSEE commune (5 caractères alphanumériques, ex : 75056, 2A004)"
     },
     "SIREN": {
@@ -195,3 +195,4 @@
     }
   }
 }
+

@@ -69,7 +69,7 @@
           "additionalProperties": false,
           "properties": {
             "href": { "type": "string", "format": "uri" },
-            "src": { "type": "string", "format": "uri" },
+            "src": { "type": "string", "format": "uri-reference" },
             "alt": { "type": "string", "maxLength": 500 },
             "style": {
               "type": "string",
@@ -195,4 +195,5 @@
     }
   }
 }
+
 

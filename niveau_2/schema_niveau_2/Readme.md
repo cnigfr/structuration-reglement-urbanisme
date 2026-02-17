@@ -21,7 +21,7 @@ Prenons un extrait de règlement de PLU et analysons sa traduction suivant les n
 
 ***Dans  la  zone CEN UB 44, en bordure  de la  rue Georges Wodli  et du  boulevard du  Président Wilson, la  hauteur maximum  mesurée à l’égout principal  des  toitures  sera de 20 mètres sur une profondeur de 30 mètres à compter de l’alignement de ces voies.***
 
-## Traduction dans le [standard SRU de niveau 1](https://github.com/cnigfr/structuration-reglement-urbanisme/tree/master/standard_niveau_1) :
+## Traduction dans le [standard SRU de niveau 1](https://cnig.gouv.fr/ressources-dematerialisation-documents-d-urbanisme-a2732.html) :
 
 Plan Local d'Urbanisme de Strasbourg => classe `ReglementPLU`
 

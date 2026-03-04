@@ -1,0 +1,72 @@
+{
+  "idReglement": "60668_PLU_20201207/reglement",
+  "nom": "Règlement du PLU de Verderel-lès-Sauqueuse",
+  "typeDoc": "PLU",
+  "lien": "https://www.geoportail-urbanisme.gouv.fr",
+  "idUrba": "60668_PLU_20201207",
+  "inseeCommune": ["60668"],
+  "titre": [
+    {
+      "idTitre": "60668_PLU_20201207/titre/dg",
+      "intitule": "Dispositions générales",
+      "niveau": 1,
+      "numero": "I",
+      "idZone": ["porteeGenerale"],
+      "idPrescription": ["nonConcerne"],
+      "inseeCommune": ["60668"],
+      "contenu": [
+        {
+          "idContenu": "60668_PLU_20201207/titre/dg/contenu01",
+          "idZone": ["porteeGenerale"],
+          "idPrescription": ["nonConcerne"],
+          "html": [
+            { "tag": "h2", "text": "Portées et dispositions générales (extrait)" },
+            { "tag": "div", "text": "Texte introductif (extrait) ..." }
+          ]
+        }
+      ],
+      "titre": [
+        {
+          "idTitre": "60668_PLU_20201207/titre/UE/UE2/implantation",
+          "intitule": "Implantation des constructions",
+          "niveau": 2,
+          "numero": "II 2.1",
+          "idZone": ["UE2"],
+          "idPrescription": ["00-00"],
+          "inseeCommune": ["60668"],
+          "contenu": [
+            {
+              "idContenu": "60668_PLU_20201207/titre/UE/UE2/implantation/contenu02",
+              "idZone": ["UE2"],
+              "idPrescription": ["07-03"],
+              "html": [
+                {
+                  "tag": "div",
+                  "children": [
+                    {
+                      "tag": "h3",
+                      "text": "2. Constructions autorisées sous conditions"
+                    },
+                    {
+                      "tag": "ul",
+                      "children": [
+                        {
+                          "tag": "li",
+                          "text": "les constructions destinées à la vente directe des produits de la ferme ;"
+                        },
+                        {
+                          "tag": "li",
+                          "text": "les commerces et activités de services."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

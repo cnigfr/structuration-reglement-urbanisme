@@ -1,0 +1,23 @@
+{
+  "idContenu": "60668_PLU_20201207/titre/UE/UE2/implantation/contenu02",
+  "idRegle": "60668_PLU_20201207/titre/UE/UE2/implantation/contenu02/regle01",
+  "conditions": [
+    {
+      "idCondition": "60668_PLU_20201207/titre/UE/UE2/implantation/contenu02/regle01/condition01",
+      "libelle": "Règles applicables à la zone UE2",
+      "catCondition": "ChampApplication",
+      "reference": ["fond"]
+    }
+  ],
+  "contraintes": [
+  
+    {
+      "idContrainte": "60668_PLU_20201207/titre/UE/UE2/implantation/contenu02/regle01/contrainte01",
+	  "libelle": "Constructions autorisées sous conditions en zone UE2",
+      "catContrainte": "Autorisation",
+      "existeReserve": true,
+      "reserve": "Sont autorisées sous conditions : les constructions destinées à la vente directe des produits de la ferme ; les commerces et activités de services."
+    },
+
+  ]
+}

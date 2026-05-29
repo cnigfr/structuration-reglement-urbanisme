@@ -1,0 +1,598 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cnig.gouv.fr/sru/niveau2/SCHEMA_N2_JSON_corrige.json",
+  "title": "Standard CNIG SRU Niveau 2 - Reglement d'urbanisme (JSON corrige)",
+  "type": "object",
+  "$ref": "#/$defs/ReglementDU",
+  "$defs": {
+    "TypeDocEnum": {
+      "type": "string",
+      "enum": ["PLU", "PLUI"],
+      "description": "Type du document d'urbanisme."
+    },
+    "InseeCode": {
+      "type": "string",
+      "pattern": "^(2[AB]\\d{3}|\\d{5})$",
+      "description": "Code INSEE commune, par exemple 75056 ou 2A004."
+    },
+    "SIREN": {
+      "type": "string",
+      "pattern": "^\\d{9}$",
+      "description": "SIREN intercommunalite, 9 chiffres."
+    },
+    "IdURI": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_./:-]+$",
+      "description": "Identifiant style URI/chemin, coherent avec le schema N1."
+    },
+    "PrescriptionCode": {
+      "type": "string",
+      "pattern": "^(nonConcerne|00-00|00-00-00|[0-9]{2}-[0-9]{2}(-[A-Za-z0-9_]+)?)$",
+      "description": "Code prescription ou valeur speciale."
+    },
+    "ReglementDU": {
+      "type": "object",
+      "title": "ReglementDU",
+      "additionalProperties": false,
+      "properties": {
+        "idReglement": { "$ref": "#/$defs/IdURI" },
+        "nom": { "type": "string", "minLength": 1 },
+        "typeDoc": { "$ref": "#/$defs/TypeDocEnum" },
+        "lien": { "type": "string", "format": "uri" },
+        "idUrba": { "type": "string", "minLength": 1 },
+        "inseeCommune": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/InseeCode" }
+        },
+        "sirenIntercomm": { "$ref": "#/$defs/SIREN" },
+        "regles": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Regle" }
+        }
+      },
+      "required": [
+        "idReglement",
+        "nom",
+        "typeDoc",
+        "lien",
+        "idUrba",
+        "inseeCommune",
+        "regles"
+      ]
+    },
+    "Regle": {
+      "type": "object",
+      "title": "Regle",
+      "additionalProperties": false,
+      "properties": {
+        "idRegle": { "$ref": "#/$defs/IdURI" },
+        "idContenu": {
+          "$ref": "#/$defs/IdURI",
+          "description": "Cle etrangere vers le Contenu N1 source."
+        },
+        "conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Condition" }
+        },
+        "contraintes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Contrainte" }
+        },
+        "commentaire": { "type": "string" }
+      },
+      "required": ["idRegle", "idContenu", "conditions", "contraintes"]
+    },
+    "BaseCondition": {
+      "type": "object",
+      "required": ["idCondition", "libelle", "catCondition"],
+      "properties": {
+        "idCondition": { "$ref": "#/$defs/IdURI" },
+        "libelle": { "type": "string", "minLength": 1 },
+        "catCondition": { "$ref": "#/$defs/CatCondition" },
+        "commentaire": { "type": "string" }
+      }
+    },
+    "Condition": {
+      "oneOf": [
+        { "$ref": "#/$defs/BandeConstructibilite" },
+        { "$ref": "#/$defs/TypeBatiment" },
+        { "$ref": "#/$defs/DimensionParcelle" },
+        { "$ref": "#/$defs/VoirieBordante" },
+        { "$ref": "#/$defs/ChampApplication" },
+        { "$ref": "#/$defs/ConditionSpecifique" }
+      ]
+    },
+    "BandeConstructibilite": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseCondition" },
+        {
+          "type": "object",
+          "properties": {
+            "catCondition": { "const": "BandeConstructibilite" },
+            "nature": { "$ref": "#/$defs/TypeBC" },
+            "profondeurDebut": { "type": "number" },
+            "profondeurFin": { "type": "number" },
+            "reference": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/TypeReference" }
+            }
+          },
+          "required": ["nature", "profondeurDebut", "profondeurFin", "reference"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "TypeBatiment": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseCondition" },
+        {
+          "type": "object",
+          "properties": {
+            "catCondition": { "const": "TypeBatiment" },
+            "nature": { "$ref": "#/$defs/TypeLogement" },
+            "destinationType": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "hMax": { "type": "number" },
+            "hMin": { "type": "number" }
+          },
+          "required": ["nature"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "DimensionParcelle": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseCondition" },
+        {
+          "type": "object",
+          "properties": {
+            "catCondition": { "const": "DimensionParcelle" },
+            "nomVoie": { "type": "string" },
+            "aireMin": { "type": "number" },
+            "aireMax": { "type": "number" },
+            "largeurMin": { "type": "number" },
+            "profondeurParcelleMin": { "type": "number" },
+            "profondeurParcelleMax": { "type": "number" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "VoirieBordante": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseCondition" },
+        {
+          "type": "object",
+          "properties": {
+            "catCondition": { "const": "VoirieBordante" },
+            "largeurVoirieMin": { "type": "number" },
+            "largeurVoirieMax": { "type": "number" },
+            "nature": { "$ref": "#/$defs/TypeVoirie" },
+            "reference": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/TypeReference" }
+            }
+          },
+          "required": ["reference"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "ChampApplication": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseCondition" },
+        {
+          "type": "object",
+          "properties": {
+            "catCondition": { "const": "ChampApplication" },
+            "reference": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/TypeReference" }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "ConditionSpecifique": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseCondition" },
+        {
+          "type": "object",
+          "properties": {
+            "catCondition": { "const": "ConditionSpecifique" },
+            "idPrescription": {
+              "$ref": "#/$defs/PrescriptionCode",
+              "description": "Cle vers une PRESCRIPTION CNIG PLU."
+            }
+          },
+          "required": ["idPrescription"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "BaseContrainte": {
+      "type": "object",
+      "required": ["idContrainte", "libelle", "catContrainte"],
+      "properties": {
+        "idContrainte": { "$ref": "#/$defs/IdURI" },
+        "libelle": { "type": "string", "minLength": 1 },
+        "catContrainte": { "$ref": "#/$defs/CatContrainte" },
+        "commentaire": { "type": "string" }
+      }
+    },
+    "Contrainte": {
+      "oneOf": [
+        { "$ref": "#/$defs/Alignement" },
+        { "$ref": "#/$defs/Retrait" },
+        { "$ref": "#/$defs/RetraitAlignement" },
+        { "$ref": "#/$defs/RetraitFacadeHauteur" },
+        { "$ref": "#/$defs/CES" },
+        { "$ref": "#/$defs/Hauteur" },
+        { "$ref": "#/$defs/Gabarit" },
+        { "$ref": "#/$defs/Cloture" },
+        { "$ref": "#/$defs/AspectExterieur" },
+        { "$ref": "#/$defs/Stationnement" },
+        { "$ref": "#/$defs/CoefficientBiotope" },
+        { "$ref": "#/$defs/Interdiction" },
+        { "$ref": "#/$defs/Autorisation" }
+      ]
+    },
+    "Alignement": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Alignement" },
+            "nature": { "$ref": "#/$defs/TypeAutorisationAlignement" },
+            "alignementTotal": { "type": "boolean" },
+            "pMinAlignement": { "type": "number" },
+            "pMaxAlignement": { "type": "number" },
+            "lMinAlignement": { "type": "number" },
+            "lMaxAlignement": { "type": "number" }
+          },
+          "required": ["nature"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "Retrait": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Retrait" },
+            "retraitTotal": { "type": "boolean" },
+            "vMinRetrait": { "type": "number" },
+            "vMaxRetrait": { "type": "number" },
+            "lMinRetrait": { "type": "number" },
+            "lMaxRetrait": { "type": "number" },
+            "pMinRetrait": { "type": "number" },
+            "pMaxRetrait": { "type": "number" },
+            "parRapport": { "type": "string" }
+          },
+          "required": ["vMinRetrait"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "RetraitAlignement": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "RetraitAlignement" },
+            "reference": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/TypeReference" }
+            },
+            "alignement": { "$ref": "#/$defs/TypeAlignement" }
+          },
+          "required": ["reference"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "RetraitFacadeHauteur": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "RetraitFacadeHauteur" },
+            "nature": { "$ref": "#/$defs/TypeFacade" },
+            "pente": { "type": "number" },
+            "retraitMin": { "type": "number" },
+            "referenceVerticaleMetres": { "type": "number" },
+            "referenceVerticaleEtage": { "type": "integer" }
+          },
+          "required": ["nature"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "CES": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "CES" },
+            "ratioMax": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": ["ratioMax"]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "Hauteur": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Hauteur" },
+            "hauteurFaitageMaxBatimentToiturePente": { "type": "number" },
+            "hauteurMaxEgoutBatimentToiturePente": { "type": "number" },
+            "pointBas": { "$ref": "#/$defs/TypePointBas" },
+            "hauteurMaxAcrotereBatiment": { "type": "number" },
+            "nbMaxNivDroits": { "type": "integer" },
+            "nbMaxNivSupplAttique": { "type": "integer" },
+            "nbMaxNivSupplAttiqueComble": { "type": "integer" },
+            "combleHabitablesInterdits": { "type": "boolean" },
+            "applicationRetrait": { "$ref": "#/$defs/ModaliteApplicationRetrait" },
+            "hauteurMaxFacade": { "type": "number" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "Gabarit": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Gabarit" },
+            "pointAccrochage": { "type": "string" },
+            "pente": { "type": "number" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "Cloture": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Cloture" },
+            "hMax": { "type": "number" },
+            "permeabiliteMax": { "type": "number" },
+            "hMaxMurBahut": { "type": "number" },
+            "hMassif": { "type": "number" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "AspectExterieur": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "AspectExterieur" },
+            "materiauxCouleurs": { "type": "string" },
+            "facade": { "type": "string" },
+            "ouvertures": { "type": "string" },
+            "ouvragesSaillie": { "type": "string" },
+            "abords": { "type": "string" },
+            "toitures": { "type": "string" },
+            "penteToitureMin": { "type": "number" },
+            "penteToitureMax": { "type": "number" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "Stationnement": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Stationnement" },
+            "nbMinPlaceVoiture": { "type": "integer" },
+            "nbMaxPlaceVoiture": { "type": "integer" },
+            "nbPlaceDeuxRouesMotorises": { "type": "integer" },
+            "modeCalcul": { "$ref": "#/$defs/TypeModeCalcul" },
+            "reductionNbPlace": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/TypeReduction" }
+            },
+            "destinationType": { "type": "string" },
+            "dimPlaceVoiture": { "type": "number" },
+            "SurfPlaceVelo": { "type": "number" },
+            "AireAutocar": { "type": "boolean" },
+            "stationnementExterieurVolumeConstruction": { "type": "number" },
+            "rampeAcces": { "type": "boolean" },
+            "typeProjet": { "$ref": "#/$defs/TypeProjet" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "CoefficientBiotope": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "CoefficientBiotope" },
+            "typeSurfaceCalcule": { "type": "string" },
+            "coeffParking": { "type": "number" },
+            "coeffToitVegetal": { "type": "number" },
+            "coeffEspaceVegetalise": { "type": "number" },
+            "coeffPleineTerre": { "type": "number" },
+            "proportionEspaceVert": { "type": "number" },
+            "proportionEspacePleineTerre": { "type": "number" },
+            "profondeur": { "type": "number" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "Interdiction": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Interdiction" },
+            "existeReserve": { "type": "boolean" },
+            "reserve": { "type": "string" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "Autorisation": {
+      "allOf": [
+        { "$ref": "#/$defs/BaseContrainte" },
+        {
+          "type": "object",
+          "properties": {
+            "catContrainte": { "const": "Autorisation" },
+            "existeReserve": { "type": "boolean" },
+            "reserve": { "type": "string" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "CatCondition": {
+      "type": "string",
+      "enum": [
+        "ChampApplication",
+        "DimensionParcelle",
+        "BandeConstructibilite",
+        "VoirieBordante",
+        "TypeBatiment",
+        "ConditionSpecifique"
+      ]
+    },
+    "CatContrainte": {
+      "type": "string",
+      "enum": [
+        "Hauteur",
+        "Stationnement",
+        "Alignement",
+        "Retrait",
+        "RetraitAlignement",
+        "RetraitFacadeHauteur",
+        "CES",
+        "Gabarit",
+        "Cloture",
+        "AspectExterieur",
+        "CoefficientBiotope",
+        "Interdiction",
+        "Autorisation"
+      ]
+    },
+    "TypeBC": {
+      "type": "string",
+      "enum": ["principale", "secondaire"]
+    },
+    "TypeLogement": {
+      "type": "string",
+      "enum": ["logementCommerceRDC", "logementSocial", "logementEtudiant"]
+    },
+    "TypeVoirie": {
+      "type": "string",
+      "enum": ["nationale", "departementale", "communale"]
+    },
+    "TypeFacade": {
+      "type": "string",
+      "enum": ["avecVue", "sansVue", "toutes"]
+    },
+    "TypeAutorisationAlignement": {
+      "type": "string",
+      "enum": ["autorise", "impose", "interdit"]
+    },
+    "TypeReference": {
+      "type": "string",
+      "enum": [
+        "fond",
+        "pignonAttenant",
+        "axeVoie",
+        "limiteLaterale",
+        "limitePublique",
+        "emprisePublique",
+        "litCoursEau",
+        "batimentMitoyen",
+        "alignementOppose",
+        "bergesCoursEau"
+      ]
+    },
+    "TypeAlignement": {
+      "type": "string",
+      "enum": ["alignementObligatoire", "retraitObligatoire", "alignementEtRetraitPossibles"]
+    },
+    "TypeModeCalcul": {
+      "type": "string",
+      "enum": [
+        "typeLogement",
+        "enFonctionNbPlaceVoiture",
+        "trancheSurfacePlancher",
+        "nombreLogement",
+        "surfacePlancher"
+      ]
+    },
+    "TypeReduction": {
+      "type": "string",
+      "enum": [
+        "autopartage",
+        "logementSocial",
+        "residenceUniversitaire",
+        "residenceSenior",
+        "existencePlanStationnement"
+      ]
+    },
+    "TypeProjet": {
+      "type": "string",
+      "enum": ["neuf", "extension", "changementDestination"]
+    },
+    "TypePointBas": {
+      "type": "string",
+      "enum": [
+        "pointLePlusBasTerrain",
+        "pointRueOuEmprisePubliqueJouxtantUniteFonciere",
+        "pointLePlusHautTerrain",
+        "pointPlusBasBatiment"
+      ]
+    },
+    "ModaliteApplicationRetrait": {
+      "type": "string",
+      "enum": ["pourcentageSurface", "retraitMinFacade"]
+    }
+  }
+}

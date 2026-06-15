@@ -72,6 +72,6 @@ Cette licence facilite la réutilisation libre et gratuite des informations publ
 
 Etalab est la mission chargée, sous l'autorité du Premier ministre, d'ouvrir le plus grand nombre de données publiques des administrations de l'État et de ses établissements publics. Elle a réalisé la Licence Ouverte pour faciliter la réutilisation libre et gratuite de ces informations publiques, telles que définies par l'article L321-1 du CRPA.
 
-Cette licence est la version 2.0 de la Licence Ouverte.
+Cette licence est la [version 2.0 de la Licence Ouverte](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf).
 
 Etalab se réserve la faculté de proposer de nouvelles versions de la Licence Ouverte. Cependant, les « Réutilisateurs » pourront continuer à réutiliser les informations qu'ils ont obtenues sous cette licence s'ils le souhaitent.
